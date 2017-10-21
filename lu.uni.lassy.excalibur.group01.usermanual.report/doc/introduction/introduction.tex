@@ -22,9 +22,6 @@ given error code which action has to be taken accordingly.
 In addition the definition of different icons will be shown and explained.
 
 
-
-
-
 \section{Intended audience}
 
 The software is intended to be primarily used in the enterprise sector more
@@ -50,19 +47,90 @@ insight to the results achieved with varying environmental conditions.
 
 
 \subsection{Actors \& Functionalities}
-Overview of all the \textbf{\emph{\glspl{actor}}} interacting with the software
-being them either humans (called end-users in the standard
-\cite{IEEE-2001-userdocumentation}) or not. For each actor, describe the main
-software functions that are offered to him. Structure of this sub-section MUST
-be by actor/functionalities.
+
+The \textbf{gardener} is in charge of planting and retrieving the plants. The
+gardner uses other actors like the ph meter and the ec meter to check the water
+or the soil of the diffrent plants.Furthermore he sees two tables the
+sensors table with their data and the storage of the crops.He can take
+away crops but not delete them from the list. Also he has the possibility
+to ask for a diffrent food or vegtable which isn't in the table. For
+planting the plants he sees the temperature preference and the ph-Amount
+and he has to deside in which room he has to plant the given crops.\break
+
+\noindent The \textbf{technician} sees the tables of sensors and has to
+check if there is a sensor which isn't functionaing properly. If he sees
+that a sensors gives a non realistic value inside the table he can request
+a new sensor to the manager by filling difrent input fields. In addition
+he can also add a new sensor to the list and delete one in case the sensor
+isn't util or functional any more for on ore several reason.\break
+
+\noindent The \textbf{manager} sees 4 tables. One keeps track of the
+inventory of the diffrent crops left or available. Also he sees when the
+gardener retrives crops with the indicated date. He's the only person who
+can delete from the inventory. In addition, he can also insert new
+vegtables or fruits inside the inventory table. He has to implent the data
+correctly that means the ph-Amount and temperature reaserches have to be
+done by him self. Furthermore he sees any request for vegtables, frood or
+sensors. He has the right to decline or accept it.\break
+
+\noindent The \textbf{director} can basically do everything what the
+other actors can like the manager technician and gardner. In addtion, he
+gets the statistics of the month which means he gets displayed diffrent
+information like how mony crops have been used how many times where the
+leds on and what are the diffrent costs for it.\break
+
+\noindent The non human Actors:\hfill \break
+The \textbf{temperature sensor} is in charge to read the temperature and to
+communicate the data to the computer.
+
+\noindent The \textbf{Software} is in charge to commit any request from human
+actors to the respected person. In addtion if the gardner doesn't asks for a
+request the software will ask for it automatically. In addtions, the soft keeps
+track of the retriving crops and send the information to the manager.
+
+\noindent The \textbf{humidity sensor} is in charge to collect the humidity
+percentage in the soil and communicate it to the computer.
+
+\noindent The \textbf{light sensor} is in charge to collect the light density
+ inside and outside the greenhouse and to communicate the data to the
+ computer.
+
+\noindent The \textbf{motion sensor} is  in charge of the security of the
+greenhouse. The sensors captures any motion by human or inhuman to the
+computer.
+
+
+\noindent The \textbf{ph meter} is used to check if the water has the perfect ph
+scale for the plants and has to communicate the data to the computer.
+
+\noindent The \textbf{Ec meter} is in charge the check if the nutrition inside
+the water tank is good.
+
+\noindent The \textbf{security camera} is recording what is happening inside the
+greenhouse which is displayed in live on the website.
+
+\noindent The mouse and keyboard are used to control and give input to the
+computer and the web page.
+
+\noindent The display is there to display the data webside and so on. 
+
+\noindent The heater is used to warm up the different rooms to a given
+temperature.
+
+\noindent The windows can automatically be opened to give fresh air and cool
+down the temperature.
 
 
 \subsection{Operating environment}
 Brief overview of the infrastructure on which the software is deployed and used.
+Controlling part of the software will run on a windows 10 Pro environment while
+created statistics will be stored in a SQL database. Data from the sensors will
+also be stored in a SQL database. The website can be accessed from a
+phone/tablet or computer. Windows 10 is used for its GUI so it is easier to use
+for the people using the software.
 
 \section{Document structure}  
 Information on how this document is organised and it is expected to be
 used. Recommendations on which members of the audience
 should consult which sections of the document, and explanations about the used
 notation (i.e. description of formats and conventions) must also be provided.
-

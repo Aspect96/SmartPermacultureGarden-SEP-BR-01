@@ -133,7 +133,7 @@ validation or not.\\
 \vspace{0.5cm}
 \hrule
 \hfill \break
-\begin{lyxlist}{PC4}
+\begin{lyxlist}{PC1}
 \small{
 \item [\textbf{Procedure:}] Ask for a diffrent fruit or vegtable
 \item [\textbf{Scope:}] New fruit or vegtable demand to the manager.
@@ -171,7 +171,7 @@ information and presses the button \emph{Ask to the manager}. \\
 \vspace{0.5cm}
 \hrule
 \hfill \break
-\begin{lyxlist}{PC4}
+\begin{lyxlist}{PC1}
 \small{
 \item [\textbf{Procedure:}] Retrives/Modifies amount left of crops
 \item [\textbf{Scope:}] Retrives Crops from the table.
@@ -204,12 +204,85 @@ information and presses the button \emph{Modify}. \\
 
 
 
+\subsection{Remove crops from inventory}
+
+\vspace{0.5cm}
+\hrule
+\hfill \break
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] Possibility to remove an hole inventory of crops.
+\item [\textbf{Scope:}] Deletes all the Crops left of one kind from the table.
+\item [\textbf{Primary Actor}:] Manager
+\item [\textbf{Secondary Actor(s)}:] Software
+\item [\textbf{Goal:}] The intention that the manager can delet an hole stock of
+crops for any reason.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Manager} is on the manager screen. \\
+2. \emph{Manager} sees the inventory table.\\
+3. \emph{Manager} by pressing the red button he cant delete the given row of
+crops.\\
+4. \emph{System} shows up a message of success and table gets updated.
+5. \emph{System} updates the Gardner inventory table.
+\item [\textbf{Extensions}]:\\
+2.a  \emph{System} sends a message or a nodentification to the gardner that a
+change has been done to the inventory table.\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+
+\subsection{Requests for fruit or vegtable}
+
+\vspace{0.5cm}
+\hrule
+\hfill \break
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] Possibility to accept or decline a requested fruit
+or vegtable.
+\item [\textbf{Scope:}] Ability to accept the request from the system or the
+gardner.
+\item [\textbf{Primary Actor}:] Manager
+\item [\textbf{Secondary Actor(s)}:] Software
+\item [\textbf{Goal:}] The intention that the manager can decline or accept a
+given vegtable or fruit request.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Manager} is on the manager request screen. \\
+2. \emph{Manager} sees the request fruit or vegtable table.\\
+3. \emph{Manager} has to choice red cross or green arrow button.\\
+3.a \textbf{In case of the green button:}
+ \begin{Tab}{2em} 3.a.1 \emph{System} shows an green message Storage refilled to
+ show that the action was successfull.\\
+ 3.a.2 The system refills automatically the inventory of the selectioned fruit
+ or vegtable.
+  \end{Tab}
+3.b \textbf{In case of the red button}
+\begin{Tab}{2em} 3.b.1 \emph{System} checks if the request amount isn't 0.\\
+\emph{System} if amount is 0 the system tells that it is impossible to delete
+the request.
+\emph{System} if amount is diffrent than 10 the request gets declined and
+removed from the list.
+\end{Tab}
+\item [\textbf{Extensions}]:\\
+2.a  \emph{System} System sends a message to the gardner if the request has
+been accepted or declined.\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+\break
+
 
 \subsection{Sign In}
 \vspace{0.5cm}
 \hrule
 \hfill \break
-\begin{lyxlist}{PC2}
+\begin{lyxlist}{PC1}
 \small{
 \item [\textbf{Procedure:}] SignIn
 \item [\textbf{Scope:}] Identified usage of the software
@@ -236,7 +309,7 @@ information and presses the button \emph{Modify}. \\
 \vspace{0.5cm}
 \hfill \break
 \hrule
-\begin{lyxlist}{PC3}
+\begin{lyxlist}{PC1}
 \small{
 \item [\textbf{Procedure:}] Adding data
 \item [\textbf{Scope:}] Adding data to a datalist
@@ -255,7 +328,7 @@ information and presses the button \emph{Modify}. \\
 
 
 
-
+\break
 
 
 

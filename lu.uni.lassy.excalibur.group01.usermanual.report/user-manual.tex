@@ -20,7 +20,12 @@
 \usepackage{breakurl} 
 \usepackage{graphicx}
 %--------------------------------------------
-  
+  \newenvironment{Tab}[1]%
+{\begin{list}{}
+         {\setlength{\leftmargin}{#1}}
+         \item[]
+}
+{\end{list}}
 % DOCUMENT BEGIN
 %--------------------------------------------
 \begin{document}

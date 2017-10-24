@@ -336,10 +336,32 @@ been accepted or declined.\\
 Mono-procedures must be grouped by actors.
 
 
-\subsection{MyActor1}
 
-\subsubsection{MyProcedure1MyActor1}
-\ldots
+\subsection{System}
+
+\subsubsection{Automatically updates the Manager request table}
+\vspace{0.5cm}
+\hrule
+\hfill \break
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] Incase that the storage of crops decreases the
+system will modify the request table from the manager.
+\item [\textbf{Scope:}] If the crops are less than 6 left the system will
+request 50 crops.
+\item [\textbf{Goal:}] The intention that the system requests the manager for
+crops.
+1. \emph{System} checks every modification on the storage of crops. \\
+2. \emph{System} in case the amount of crops of any kind is below 6.\\
+3. \emph{System} will modify the request table from the gardner.\\
+\item [\textbf{Extensions}]:\\
+2.a  \emph{System} sends a message to notify the manager that there are crops
+which are going to be out of stock.\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
 
 \subsubsection{MyProcedure2MyActor1}
 \ldots

@@ -305,26 +305,47 @@ been accepted or declined.\\
 
 
 
-\subsection{Adding data}
+\subsection{Adding task to the gardenerís schedule}
 \vspace{0.5cm}
 \hfill \break
 \hrule
 \begin{lyxlist}{PC1}
 \small{
-\item [\textbf{Procedure:}] Adding data
-\item [\textbf{Scope:}] Adding data to a datalist
-\item [\textbf{Primary Actor}:] Manager
-\item [\textbf{Secondary Actor(s)}:] Greenhouse Software GS
-\item [\textbf{Goal:}] Adding a task to the schedule
+\item [\textbf{Procedure:}] Adding data to a datalist
+\item [\textbf{Scope:}] Adding a task to the schedule
+\item [\textbf{Primary Actor}:] actManager
+\item [\textbf{Secondary Actor}:] actSystem
+\item [\textbf{Goal:}] Manager can add a task to the schedule
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{User} presses the ‚Äúadd‚Äù button\\
-2. \emph{GS} adds the task to the schedule\\
+1. \emph{actManager} presses the add button\\
+2. \emph{actSystem} adds task to data list\\
 }
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
 
+\subsection{Gardener searches a task in the gardenerís schedule}
+\vspace{0.5cm}
+\hfill \break
+\hrule
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] Searching data list for matching data
+\item [\textbf{Scope:}] Searching schedule for a specific task
+\item [\textbf{Primary Actor}:] actGardener
+\item [\textbf{Secondary Actor}:] actSystem
+\item [\textbf{Goal:}] actGardener can access the gardeners schedule
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{actManager} presses the search button\\
+2. \emph{actSystem} will search the data list for matching data\\
+\item [\textbf{Extensions}]:\\
+2.a No matching data found\\
+\hspace*{0.5cm} 2.a.1 \emph{actSystem} will display an empty data list}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
 
 
 

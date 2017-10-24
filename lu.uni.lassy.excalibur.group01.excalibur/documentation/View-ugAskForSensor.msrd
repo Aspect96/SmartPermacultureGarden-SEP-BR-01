@@ -1,0 +1,10 @@
+/*
+@author Gaetan1991
+@date Tue Oct 24 23:51:24 CEST 2017
+*/
+
+
+@@view ugAskForSensor
+@model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugAskForSensor 
+@description ""
+@caption ""

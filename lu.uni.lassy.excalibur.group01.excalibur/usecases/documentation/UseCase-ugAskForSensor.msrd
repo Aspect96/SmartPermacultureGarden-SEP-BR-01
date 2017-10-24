@@ -1,0 +1,26 @@
+/*
+@author Gaetan1991
+@date Wed Oct 25 00:48:07 CEST 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugAskForSensor
+@description "The Technician goal is to request a sensor type to the manager."
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+The gardner has to be logged in the system.
+"
+@endPreConditions
+@postCondition
+"
+The table request from manager is updated
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

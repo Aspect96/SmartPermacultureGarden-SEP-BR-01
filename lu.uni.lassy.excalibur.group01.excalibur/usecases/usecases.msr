@@ -41,6 +41,39 @@ import lu.uni.lassy.messir.libraries.string
 		ordering constraint
 		"step (a) must always precede step (b)."
 		}
+		
+	use case system usergoal ugAskForSensor() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary,active]
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[secondary,passive]
+		reuse oeEntersFields[1..1]
+		reuse sfChecksInputFields[1..*]
+		reuse oeRequestPushedToTable[1..1]
+		
+		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		executes oeEntersFields()
+		
+		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem
+		executes sfChecksInputFields()
+		
+		step c: lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem
+		executes oeRequestPushedToTable()
+		
+		ordering constraint "step (a) must be executed first"
+		ordering constraint "step(b) has to be sussesfully to preceed step(c)"
+		
+		}
+	use case system subfunction oeEntersFields() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
+		}
+	use case system subfunction sfSendsRequest() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[primary, active]
+		}
+	use case system subfunction sfChecksInputFields() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[primary, active]
+		}
+	use case system subfunction oeRequestPushedToTable() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[primary, active]
+		}
 	}
 
 }

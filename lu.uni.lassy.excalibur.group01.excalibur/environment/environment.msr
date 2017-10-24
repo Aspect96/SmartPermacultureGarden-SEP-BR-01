@@ -26,5 +26,17 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			output interface outactGardener {
 			}
 		}
+	actor actSystem role rnactSystem cardinality[0 .. *] {
+			input interface inactSystem {
+			}
+			output interface outactSystem {
+			}
+		}
+	actor actManager role rnactManager cardinality[0 .. *] {
+			input interface inactManager {
+			}
+			output interface outactManager {
+			}
+		}
 	}
 }

@@ -1,0 +1,10 @@
+/*
+@author Gaetan1991
+@date Tue Oct 24 20:29:16 CEST 2017
+*/
+
+
+@@view ugSecurelyUseSystem
+@model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugSecurelyUseSystem 
+@description ""
+@caption ""

@@ -21,6 +21,26 @@ import lu.uni.lassy.messir.libraries.string
 	use case system subfunction sfplating() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
 		}
+	use case system subfunction oeLogin() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
+		}
+	use case system subfunction oeLogout() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
+		}
+	use case system usergoal ugSecurelyUseSystem() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary,active]
+		
+		reuse oeLogin[1..1]
+		reuse oeLogout[1..1]
+		
+		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
+			executes oeLogin
+		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
+			executes oeLogout
+			
+		ordering constraint
+		"step (a) must always precede step (b)."
+		}
 	}
 
 }

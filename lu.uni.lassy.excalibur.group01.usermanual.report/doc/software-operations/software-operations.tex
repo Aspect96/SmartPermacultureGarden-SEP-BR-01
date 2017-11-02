@@ -73,3 +73,32 @@ the date.
 \subsection{MyExample1}
 The manager wants to add a watering task to the schedule, so fills out the
 textinputfields as shown in the image and then he clicks on the add button.
+
+
+
+\section{Automatical request for crops}
+\label{operation:RequestForCrops}
+The system checks the crops if any specifique crop is less then 10 and requests
+crops.
+
+\begin{description}
+
+\item \textbf{Parameters:} ListOfCrops
+\item \textbf{Precondition:} The system is bootedup and any actor is logged in.
+\item \textbf{Post-condition:} Request table from Manager Screen2 updated with
+the amount of crops which have to be refilled.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item System checks every singel amount left of crops in the vegtable table.
+\item In case that an amount is less than 10.
+\item System send request to the manager.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of Automatical Frood/Vegtable Request}
+Gardener retrives a chosen amount of crops of a specific vegtable or frood.
+If the amount of the specifique crop is less than 10.
+The System will send the request to the manager request table.
+
+

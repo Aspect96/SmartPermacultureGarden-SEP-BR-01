@@ -88,48 +88,8 @@ different stages of the process while its is performed by the actor(s).
 
 \section{Multi-procedures}
 
-\subsection{Ask for new sensor}
-
-\vspace{0.5cm}
-\hrule
-\hfill \break
-\begin{lyxlist}{PC1}
-\small{
-\item [\textbf{Procedure:}] AskForNewSensor
-\item [\textbf{Scope:}] New Sensor demand to the manager.
-\item [\textbf{Primary Actor}:] Technician
-\item [\textbf{Secondary Actor(s)}:] Manager
-\item [\textbf{Goal:}] The intention that the technician can ask a new Sensor to
-the manager and to show to the manager the demand.
-\item [\textbf{Level}:] User-goal level
-\item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Gardner} complets the diffrent text fields with there given
-information and presses the button \emph{push to the manager}. 
-\begin{figure}
-\includegraphics[width=1\textwidth]{images/AskForSensor.eps}
-\end{figure} \\
-2. \emph{System} pushes the information to the Manager Sensor Table on the
- managerscreen. \\
- \begin{figure}
-\includegraphics[width=1\textwidth]{images/requestsensor.eps}
-\end{figure}
-3. \emph{System.NoTA} alerts \emph{Manger} that a request has been send from
-the \emph{Gardner}.\\
-4. \emph{Manager} can contact now the company of the asked sensor for a new
-one.\\
-\item [\textbf{Extensions}]:\\
-2.a  \emph{Manager} sends to the Gardner a message of
-validation or not.\\
-}
-\end{lyxlist}
-
-\hrule
-\vspace{0.5cm}
-
-\break
 
 \subsection{Ask for diffrent fruit or vegtable}
-
 \vspace{0.5cm}
 \hrule
 \hfill \break
@@ -145,11 +105,10 @@ Vegtable to the manager and to show to the manager the demand.
 \item [\textbf{Main~Success~Scenario}]:\\
 1. \emph{Gardner} Complets the diffrent text fields with there given
 information and presses the button \emph{Ask to the manager}. \\
-2. \emph{System} Shows a pop up with the information entred.\\
+2. Shows a pop up with the information entred.\\
 3. \emph{Gardner} Has to choice to accept or to cancel .\\
 	3.a \textbf{In case of accept:}
-		\begin{Tab}{2em} \emph{System} Sends the request to the manager
-		request table.\end{Tab}
+		\begin{Tab}{2em}  requested item send to the manager.\end{Tab}
 	3.b \textbf{In case of decline:}
 		\begin{Tab}{2em} \emph{System} cancels the action and the gardner can
 		now refill the input or do an other task. \end{Tab}
@@ -160,45 +119,6 @@ information and presses the button \emph{Ask to the manager}. \\
 \hrule
 \vspace{0.5cm}
 
-
-
-
-
-
-
-\subsection{Retrive/Modify Crops from Table}
-
-\vspace{0.5cm}
-\hrule
-\hfill \break
-\begin{lyxlist}{PC1}
-\small{
-\item [\textbf{Procedure:}] Retrives/Modifies amount left of crops
-\item [\textbf{Scope:}] Retrives Crops from the table.
-\item [\textbf{Primary Actor}:] Gardener
-\item [\textbf{Secondary Actor(s)}:] Software
-\item [\textbf{Goal:}] The intention that the gardner can retrive he's desired
-amount of crops from the storage of crops to plant the crops.
-\item [\textbf{Level}:] User-goal level
-\item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Gardner} Complets the diffrent text fields with there given
-information and presses the button \emph{Modify}. \\
-2. \emph{System} Shows a pop up with the information entred.\\
-3. \emph{Gardner} Has to choice to accept or to cancel .\\
-	3.a \textbf{In case of accept:}
-		\begin{Tab}{2em} \emph{System} Sends the request to the manager
-		request table.\end{Tab}
-	3.b \textbf{In case of decline:}
-		\begin{Tab}{2em} \emph{System} cancels the action and the gardner can
-		now refill the input or do an other task. \end{Tab}
-\item [\textbf{Extensions}]:\\
-2.a  \emph{Manager} Approves the request or declines the request.\\
-}
-\end{lyxlist}
-\hrule
-\vspace{0.5cm}
-
-\break
 
 
 
@@ -234,46 +154,7 @@ change has been done to the inventory table.\\
 \vspace{0.5cm}
 
 
-\subsection{Requests for fruit or vegtable}
 
-\vspace{0.5cm}
-\hrule
-\hfill \break
-\begin{lyxlist}{PC1}
-\small{
-\item [\textbf{Procedure:}] Possibility to accept or decline a requested fruit
-or vegtable.
-\item [\textbf{Scope:}] Ability to accept the request from the system or the
-gardner.
-\item [\textbf{Primary Actor}:] Manager
-\item [\textbf{Secondary Actor(s)}:] Software
-\item [\textbf{Goal:}] The intention that the manager can decline or accept a
-given vegtable or fruit request.
-\item [\textbf{Level}:] User-goal level
-\item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Manager} is on the manager request screen. \\
-2. \emph{Manager} sees the request fruit or vegtable table.\\
-3. \emph{Manager} has to choice red cross or green arrow button.\\
-3.a \textbf{In case of the green button:}
- \begin{Tab}{2em} 3.a.1 \emph{System} shows an green message Storage refilled to
- show that the action was successfull.\\
- 3.a.2 The system refills automatically the inventory of the selectioned fruit
- or vegtable.
-  \end{Tab}
-3.b \textbf{In case of the red button}
-\begin{Tab}{2em} 3.b.1 \emph{System} checks if the request amount isn't 0.\\
-\emph{System} if amount is 0 the system tells that it is impossible to delete
-the request.
-\emph{System} if amount is diffrent than 10 the request gets declined and
-removed from the list.
-\end{Tab}
-\item [\textbf{Extensions}]:\\
-2.a  \emph{System} System sends a message to the gardner if the request has
-been accepted or declined.\\
-}
-\end{lyxlist}
-\hrule
-\vspace{0.5cm}
 
 \break
 
@@ -355,42 +236,142 @@ been accepted or declined.\\
 
 
 \section{Mono-procedures}
-Mono-procedures must be grouped by actors.
 
 
-\subsection{System}
 
-\subsubsection{Automatically updates the Manager request table}
+\subsection{Technician}
+
+\subsubsection{Ask for new sensor}
+
 \vspace{0.5cm}
 \hrule
 \hfill \break
 \begin{lyxlist}{PC1}
 \small{
-\item [\textbf{Procedure:}] Incase that the storage of crops decreases the
-system will modify the request table from the manager.
-\item [\textbf{Scope:}] If the crops are less than 6 left the system will
-request 50 crops.
-\item [\textbf{Goal:}] The intention that the system requests the manager for
-crops.
-1. \emph{System} checks every modification on the storage of crops. \\
-2. \emph{System} in case the amount of crops of any kind is below 6.\\
-3. \emph{System} will modify the request table from the gardner.\\
+\item [\textbf{Procedure:}] AskForNewSensor
+\item [\textbf{Scope:}] New Sensor demand to the manager.
+\item [\textbf{Primary Actor}:] Technician
+\item [\textbf{Goal:}] The intention that the technician can ask a new Sensor to
+the manager and to show to the manager the demand.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Gardner} complets the diffrent text fields with there given
+information and presses the button \emph{push to the manager}. 
+\begin{figure}
+\includegraphics[width=1\textwidth]{images/AskForSensor.eps}
+\end{figure} \\
+2. Message appears of validation.
+ \begin{figure}
+
+\end{figure}
 \item [\textbf{Extensions}]:\\
-2.a  \emph{System} sends a message to notify the manager that there are crops
-which are going to be out of stock.\\
+2.a  \emph{Manager} sends to the Gardner a message of
+validation or not.\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+\break
+
+\subsubsection{Add a new sensor to a room}
+\vspace{0.5cm}
+\hrule
+\hfill \break
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] AddaNewSensor
+\item [\textbf{Scope:}] Adding a sensor to a room.
+\item [\textbf{Primary Actor}:] Technician
+\item [\textbf{Goal:}] The intention to add a sensor to a specifique room.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Gardner} complets the diffrent text fields with there given
+information and presses the green plus button. 
+\begin{figure}
+
+\end{figure} \\
+2. Message appears of validation.
+ \begin{figure}
+
+\end{figure}
+\item [\textbf{Extensions}]:\\
+2.a  \emph{Manager} gets notified where the new sensor is positioned .\\
 }
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
 
 
-\subsubsection{MyProcedure2MyActor1}
-\ldots
 
 
-\subsection{My-Actor2}
+\subsection{Manager}
+\subsubsection{Requests for fruit or vegtable}
 
-\subsubsection{MyProcedure1MyActor2}
+\vspace{0.5cm}
+\hrule
+\hfill \break
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] Possibility to accept or decline a requested fruit
+or vegtable.
+\item [\textbf{Scope:}] Ability to accept the request from the system or the
+gardner.
+\item [\textbf{Primary Actor}:] Manager
+\item [\textbf{Goal:}] The intention that the manager can decline or accept a
+given vegtable or fruit request.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Manager} is on the manager request screen. \\
+2. \emph{Manager} sees the request fruit or vegtable table.\\
+3. \emph{Manager} has to choice red cross or green arrow button.\\
+3.a \textbf{In case of the green button:}
+ \begin{Tab}{2em} 3.a.1 Message appears of validation and that the request
+ has been validated and refilled.\\
+  \end{Tab}
+3.b \textbf{In case of the red button}
+\begin{Tab}{2em} 3.b.1 The request is removed from the table.\\
+3.b.2 The decline won't work if there is no decline.
+\end{Tab}
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+\subsection{Gardener}
+\subsubsection{Retrive/Modify Crops from Table}
+
+\vspace{0.5cm}
+\hrule
+\hfill \break
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] Retrives vegtable or
+frood the amount left of crops
+\item [\textbf{Scope:}] Retrives Crops from the table or asks for new non
+existing items.
+\item [\textbf{Primary Actor}:] Gardener
+\item [\textbf{Goal:}] The intention that the gardner can retrive he's desired
+amount of crops from the storage of crops to plant the crops or ask for a
+diffrent frood or vegtable.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Gardner} Complets the diffrent text fields with there given
+information and presses the button \emph{Modify}. \\
+2.A pop up appears with the previsualisation of the information entred.\\
+3. \emph{Gardner} Has the choice to accept or to cancel .\\
+	3.a \textbf{In case of accept green button:}
+		\begin{Tab}{2em}  the request has been passed to the manager.\end{Tab}
+	3.b \textbf{In case of decline red button:}
+		\begin{Tab}{2em} cancels the action and the gardner can
+		now refill the input or do an other task. \end{Tab}
+\item [\textbf{Extensions}]:\\
+2.a  \emph{Manager} Approves the request or declines the request.\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
 \ldots
 
 \subsubsection{MyProcedure2MyActor2}

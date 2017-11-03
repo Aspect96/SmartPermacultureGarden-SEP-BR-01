@@ -1,0 +1,27 @@
+/*
+@author Gaetan1991
+@date Fri Nov 03 15:59:36 CET 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.suRequestItem
+@description ""
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+User (any actor) has to be logged in and the different text fields have to be filled.
+"
+@endPreConditions
+@postCondition
+"
+Request has been send to the manager.
+"
+@endPostConditions
+@additionalInformation
+"
+There are no constraints what the different actors are entering inside the text fields. The information which are entered there
+has to be correct.
+"

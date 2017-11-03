@@ -1,0 +1,27 @@
+package usecases.uci {
+	import lu.uni.lassy.excalibur.group01.excalibur.usecases
+
+	Use Case Model {
+
+		use case instance uciSecurelyUseSystem : ugSecurelyUseSystem{
+			actors {
+				bill:lu.uni.lassy.excalibur.group01.excalibur.environment.actUser
+				
+			}
+			use case steps {
+				bill
+				executed instanceof subfunction
+				oeLogin("Greenhouse","GreenCODE"){
+					ieMessage('You are logged in.')returned to bill
+				}
+				bill
+				executed instanceof subfunction
+				oeLogout{
+					ieMessage('You are logged out!')returned to bill
+				}
+				
+				
+			}
+		}
+	}
+}

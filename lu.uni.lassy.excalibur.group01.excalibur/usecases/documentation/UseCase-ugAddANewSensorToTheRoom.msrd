@@ -1,0 +1,24 @@
+/*
+@author Gaetan1991
+@date Fri Nov 03 16:46:23 CET 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugAddANewSensorToTheRoom
+@description ""
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

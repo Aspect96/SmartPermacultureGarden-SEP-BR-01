@@ -1,0 +1,26 @@
+/*
+@author Gaetan1991
+@date Fri Nov 03 15:04:45 CET 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugSecurelyUseSystem
+@description "Every actor has the possibility to connect to the system but no other person from outside"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+No actor has to be logged in.
+"
+@endPreConditions
+@postCondition
+"
+The given actor can execute he's tasks and can logout after.
+"
+@endPostConditions
+@additionalInformation
+"
+The given actor has to logout him self.
+"

@@ -12,7 +12,7 @@
 @endProtocolConditions
 @preCondition
 "
-The gardner has to be logged in the system.
+The gardener has to be logged in the system.
 "
 @endPreConditions
 @postCondition

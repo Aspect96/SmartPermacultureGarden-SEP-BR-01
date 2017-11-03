@@ -6,5 +6,5 @@
 
 @@view ugAskForSensor
 @model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugAskForSensor 
-@description ""
-@caption ""
+@description "The technician has the ability to request a sensor"
+@caption "Technician requests sensor"

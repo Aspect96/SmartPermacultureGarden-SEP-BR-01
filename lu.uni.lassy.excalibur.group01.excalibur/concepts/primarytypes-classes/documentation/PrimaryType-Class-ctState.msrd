@@ -1,0 +1,16 @@
+/*
+@author Gaetan1991
+@date Fri Nov 03 15:04:39 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState.vpStarted
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState.init
+""
+@endOperations

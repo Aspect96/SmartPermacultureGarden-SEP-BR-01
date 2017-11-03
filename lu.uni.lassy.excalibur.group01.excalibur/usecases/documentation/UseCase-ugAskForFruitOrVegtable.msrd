@@ -1,0 +1,27 @@
+/*
+@author Gaetan1991
+@date Fri Nov 03 16:43:18 CET 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugAskForFruitOrVegtable
+@description "The gardener has the ability to ask for a new fruit or vegetable"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+The gardener has to be logged in and has to be on his home screen.
+"
+@endPreConditions
+@postCondition
+"
+The request has been send to the manger.
+"
+@endPostConditions
+@additionalInformation
+"
+There are no constraints on the demand but there is a pop up which appears which has to be accepted to successfully
+send the request.
+"

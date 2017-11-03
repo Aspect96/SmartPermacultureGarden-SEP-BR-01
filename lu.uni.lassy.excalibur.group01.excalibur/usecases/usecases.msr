@@ -22,48 +22,15 @@ import lu.uni.lassy.messir.libraries.string
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
 		}
 	use case system subfunction oeLogin() {
-			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actUser[primary, active]
 		}
 	use case system subfunction oeLogout() {
-			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actUser[primary, active]
 		}
-	use case system usergoal ugSecurelyUseSystem() {
-		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary,active]
-		
-		reuse oeLogin[1..1]
-		reuse oeLogout[1..1]
-		
-		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
-			executes oeLogin
-		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
-			executes oeLogout
 			
-		ordering constraint
-		"step (a) must always precede step (b)."
-		}
-		
-	use case system usergoal ugAskForSensor() {
-		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary,active]
-		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[secondary,passive]
-		reuse oeEntersFields[1..1]
-		reuse sfChecksInputFields[1..*]
-		reuse oeRequestPushedToTable[1..1]
-		
-		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
-		executes oeEntersFields()
-		
-		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem
-		executes sfChecksInputFields()
-		
-		step c: lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem
-		executes oeRequestPushedToTable()
-		
-		ordering constraint "step (a) must be executed first"
-		ordering constraint "step(b) has to be sussesfully to preceed step(c)"
-		
-		}
 	use case system subfunction oeEntersFields() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
+		
 		}
 	use case system subfunction sfSendsRequest() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[primary, active]
@@ -73,6 +40,41 @@ import lu.uni.lassy.messir.libraries.string
 		}
 	use case system subfunction oeRequestPushedToTable() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[primary, active]
+		}
+	use case system summary suRequestItem() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary,active]
+		}
+	use case system usergoal ugSecurelyUseSystem() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actUser[primary,active]
+		
+		reuse oeLogin[1..1]
+		reuse oeLogout[1..1]
+		
+		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actUser
+			executes oeLogin
+		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actUser
+			executes oeLogout
+			
+		ordering constraint
+		"step (a) must always precede step (b)."
+		}
+		
+	use case system usergoal ugAskForSensor() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary,active]
+		reuse oeEntersFields[1..1]
+		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		executes oeEntersFields
+		}
+
+		
+		
+	use case system usergoal ugAskForFruitOrVegtable() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary,active]
+		
+		
+		}
+	use case system usergoal ugAddANewSensorToTheRoom() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary,active]
 		}
 	}
 

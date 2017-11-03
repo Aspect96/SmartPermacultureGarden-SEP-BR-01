@@ -6,5 +6,5 @@
 
 @@view ugSecurelyUseSystem
 @model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugSecurelyUseSystem 
-@description "Technician requests a sensor to the manager"
+@description "A given actor can securely login in."
 @caption ""

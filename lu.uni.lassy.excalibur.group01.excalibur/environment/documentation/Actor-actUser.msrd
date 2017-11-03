@@ -1,0 +1,12 @@
+/*
+@author Gaetan1991
+@date Fri Nov 03 15:41:35 CET 2017
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.group01.excalibur.environment.actUser
+@description "The actor user is a user which represents all the Human actors."
+//input events
+
+//output events
+

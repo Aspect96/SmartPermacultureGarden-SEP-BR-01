@@ -12,7 +12,7 @@ operations to several actors may be grouped and presented once to avoid redundan
 
 \section{MyOperation}
 \label{operation:MyOperation}
-The system operator creates and adds a new crisis to the system after being
+The system operator creates and adds a new crisis to the system after being 
 informed by a third party (citizen, organization) and selects a crisis handler for the crisis.
 
 \begin{description}
@@ -41,6 +41,8 @@ Each example must show how the actor uses the software operation under
 description to achieve (at least one of) its expected outcome.
 
 It might be required to include GUI screenshots to illustrate the example.
+
+
 
 
 \section{Adding task to gardeners schedule}
@@ -76,6 +78,7 @@ textinputfields as shown in the image and then he clicks on the add button.
 
 
 
+
 \section{Automatical request for crops}
 \label{operation:RequestForCrops}
 The system checks the crops if any specifique crop is less then 10 and requests
@@ -102,3 +105,166 @@ If the amount of the specifique crop is less than 10.
 The System will send the request to the manager request table.
 
 
+
+
+\section{Build Temperature Line Diagram}
+\label{operation:BuildTemperatureDiagram}
+The system draws the line diagram for the temperature of the selected room of
+the dropdown menu next to it.
+
+\begin{description}
+
+\item \textbf{Parameters:} HistoryOfTemperaturesInAllRooms
+\item \textbf{Precondition:} The system is bootedup and any actor is logged in.
+\item \textbf{Post-condition:} The corresponding diagram will be drawn and
+shown.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item If at any time the \emph{statistics} page is accessed.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of Build Temperature Line Diagram}
+The logged in user wants to see the statistics of the past days.
+The user clicks on the \emph{statistics} page in the menu.
+The system will now draw the temperature line diagram.
+
+
+
+
+\section{Build Current Stock Bar Diagram}
+\label{operation:BuildCurrentStockDiagram}
+The system draws the bar diagram of the current stock of the inventory.
+
+\begin{description}
+
+\item \textbf{Parameters:} CurrentStockOfSeeds
+\item \textbf{Precondition:} The system is bootedup and any actor is logged in.
+\item \textbf{Post-condition:} The corresponding diagram will be drawn and
+shown.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item If at any time the \emph{statistics} page is accessed.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of Build Current Stock Bar Diagram}
+The logged in user wants to see the current stock of the inventory.
+The user clicks on the \emph{statistics} page in the menu.
+The system will now draw the current stock bar diagram.
+
+
+
+
+\section{Build Water Consumption And Luminosity Level Bar And Line Diagram}
+\label{operation:BuildWaterConsumptionAndLuminosityLevelDiagram}
+The system draws the bar and line diagram for the water consumption in
+milliliter and the luminosity level in spectral power of the selected room of
+the dropdown menu next to it.
+
+\begin{description}
+
+\item \textbf{Parameters:} HistoryOfWaterConsumptionInAllRooms,
+HistoryOfLuminosityLevelInAllRooms
+\item \textbf{Precondition:} The system is bootedup and any actor is logged in.
+\item \textbf{Post-condition:} The corresponding diagram will be drawn and
+shown.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item If at any time the \emph{statistics} page is accessed.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of Build Water Consumption And Luminosity Level Bar And Line
+Diagram}
+The logged in user wants to see the statistics of the past days.
+The user clicks on the \emph{statistics} page in the menu.
+The system will now draw the temperature line diagram.
+
+
+
+
+\section{Show Crop statistics}
+\label{operation:ShowCropStatistics}
+The system shows the statistics of the crop \emph{(Date harvested, Plant
+harvested, Number of plants harvested, Total weigth of the harvest)} and
+calulates the \emph{Average weigth/plant, Days until the plants were harvested
+and the growth per day}.
+
+\begin{description}
+
+\item \textbf{Parameters:} DatePlanted, DateHarvested, PlantHarvested,
+NumberOfPlants, TotalWeigthOfCrop
+\item \textbf{Precondition:} The system is bootedup and any actor is logged in.
+\item \textbf{Post-condition:} The corresponding information will be calculated
+and shown.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item If at any time the \emph{statistics} page is accessed.
+\item The logged in user chooses a different crop from the crop list on the
+\emph{statistics} page.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of Show Crop statistics}
+The logged in user wants to see the statistics of the past crops.
+The user clicks on the \emph{statistics} page in the menu.
+The system will now calculate and show the information on the latest crop.
+The user wants to see older crops and triggers this system operation by choosing
+a different crop.
+
+
+
+\section{Automatical Creation of Alert for Sensors}
+\label{operation:AddAlertForSensors}
+The system checks the incoming signal from all the different sensors for invalid
+data or no incoming signal.
+
+\begin{description}
+
+\item \textbf{Parameters:} SensorData
+\item \textbf{Precondition:} The system is bootedup.
+\item \textbf{Post-condition:} AlertsDatabase is updated with a new entry.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item The Sensors transmit invalid or impossible data.
+\item The Sensors transmit no data.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of Automatical Creation of Alert for Sensors}
+The system is bootedup and is monitoring the signal of the sensors.
+Now one of the sensors sends invalid data (example: Humidity Sensor sends data
+with more than 100 percent humidity) or lost the connection for whatever reason
+to the system, an entry will be added into the alerts database.
+
+
+
+
+\section{Automatical Creation of Alert for Warnings}
+\label{operation:AddAlertForWarnigns}
+The system checks the incoming signal from the humidity and temperature sensors
+for data which is out of the pre-defined range.
+
+\begin{description}
+
+\item \textbf{Parameters:} SensorData
+\item \textbf{Precondition:} The system is bootedup.
+\item \textbf{Post-condition:} AlertsDatabase is updated with a new entry.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item The Sensors transmit data out of the pre-defined range
+\end{enumerate}
+\end{description}
+
+\subsection{Example of Automatical Creation of Alert for Warnings}
+The system is bootedup and is monitoring the signal of the sensors.
+Now the temperature sensors sends a temperature of 18 degrees celsius. The
+pre-defined range for the temperature is from 20 to 27 degrees. The system will
+add a warning to the alerts database, the temperature is too low.

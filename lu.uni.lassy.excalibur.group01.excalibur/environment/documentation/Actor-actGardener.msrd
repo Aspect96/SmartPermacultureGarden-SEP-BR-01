@@ -5,7 +5,7 @@
 
 
 @@Actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
-@description "is a gardener."
+@description "The gardener is a low authorized user able to view all data corresponding to their tasks or create requests which need to be approved by a higher authorized user."
 //input events
 
 //output events

@@ -12,10 +12,13 @@
 @endProtocolConditions
 @preCondition
 "
+Actor has to logged in.
+Fields are empty.
 "
 @endPreConditions
 @postCondition
 "
+The fields are complete.
 "
 @endPostConditions
 @additionalInformation

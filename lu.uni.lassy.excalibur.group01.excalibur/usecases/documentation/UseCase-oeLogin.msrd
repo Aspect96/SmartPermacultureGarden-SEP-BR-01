@@ -12,13 +12,15 @@
 @endProtocolConditions
 @preCondition
 "
+No actor is logged in.
 "
 @endPreConditions
 @postCondition
 "
+The actor has now access to the software.
 "
 @endPostConditions
 @additionalInformation
 "
-none
+If the a given actor x is logged in, he has to be logged out before logging in again. 
 "

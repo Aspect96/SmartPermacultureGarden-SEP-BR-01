@@ -1,0 +1,12 @@
+/*
+@author Gaetan1991
+@date Mon Nov 06 10:25:54 CET 2017
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTemperatureSensor
+@description "The temperature sensor measures the current temperature inside the room. This information is sent to the system."
+//input events
+
+//output events
+

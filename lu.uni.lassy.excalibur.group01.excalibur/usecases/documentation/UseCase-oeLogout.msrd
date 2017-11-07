@@ -5,20 +5,22 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.oeLogout
-@description ""
+@description "The currently signed in user is signed out by calling this function."
 @protocolCondition
 "
 "
 @endProtocolConditions
 @preCondition
 "
+Actor is logged in.
 "
 @endPreConditions
 @postCondition
 "
+Actor is logged out.
 "
 @endPostConditions
 @additionalInformation
 "
-none
+The actor has to be logged in. 
 "

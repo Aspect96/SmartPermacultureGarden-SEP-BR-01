@@ -1,0 +1,10 @@
+/*
+@author Gaetan1991
+@date Tue Nov 07 12:52:43 CET 2017
+*/
+
+
+@@view ugAddRoom
+@model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugAddRoom 
+@description "The manager has the ability to add a room."
+@caption "Add Room Function for the Manager Actor"

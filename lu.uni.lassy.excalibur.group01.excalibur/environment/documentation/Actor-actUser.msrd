@@ -5,7 +5,7 @@
 
 
 @@Actor lu.uni.lassy.excalibur.group01.excalibur.environment.actUser
-@description "The actor user is a user which represents all the Human actors."
+@description "The actor user is a user which represents all the Human actors inside our system"
 //input events
 
 //output events

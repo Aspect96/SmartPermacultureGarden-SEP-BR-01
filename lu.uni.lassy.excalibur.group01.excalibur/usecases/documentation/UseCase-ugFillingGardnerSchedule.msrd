@@ -1,0 +1,26 @@
+/*
+@author Gaetan1991
+@date Tue Nov 07 13:50:39 CET 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugFillingGardnerSchedule
+@description "The goal is it to qdd tasks to the schedule"
+@protocolCondition 
+"
+"
+@endProtocolConditions
+@preCondition 
+"
+Manager must be securly logined and be on the manager screen.
+"
+@endPreConditions
+@postCondition 
+"
+Schedule has an additonal task more tasks
+"
+@endPostConditions 
+@additionalInformation
+"
+The input has to be write no sanity checks are done.
+"

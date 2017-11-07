@@ -23,9 +23,15 @@ import lu.uni.lassy.messir.libraries.string
 		}
 	use case system subfunction oeLogin() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actUser[primary, active]
+			returned messages{
+				ieMessage returned to lu.uni.lassy.excalibur.group01.excalibur.environment.actUser
+			}
 		}
 	use case system subfunction oeLogout() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actUser[primary, active]
+			returned messages{
+				ieHLoggedOut returned to lu.uni.lassy.excalibur.group01.excalibur.environment.actUser
+			}
 		}
 			
 	use case system subfunction oeEntersFields() {
@@ -34,6 +40,9 @@ import lu.uni.lassy.messir.libraries.string
 		}
 	use case system subfunction sfSendsRequest() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[primary, active]
+			returned messages{
+				
+			}
 		}
 	use case system subfunction sfChecksInputFields() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[primary, active]
@@ -43,7 +52,7 @@ import lu.uni.lassy.messir.libraries.string
 		}
 	use case system summary suRequestItem() {
 		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary,active]
-		}
+	}
 	use case system usergoal ugSecurelyUseSystem() {
 		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actUser[primary,active]
 		
@@ -62,8 +71,11 @@ import lu.uni.lassy.messir.libraries.string
 	use case system usergoal ugAskForSensor() {
 		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary,active]
 		reuse oeEntersFields[1..1]
+		reuse suRequestItem[1..1]
 		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
 		executes oeEntersFields
+		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		executes suRequestItem()
 		}
 
 		
@@ -75,6 +87,41 @@ import lu.uni.lassy.messir.libraries.string
 		}
 	use case system usergoal ugAddANewSensorToTheRoom() {
 		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary,active]
+		}
+	use case system usergoal ugAddRoom() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		
+		reuse sfEnterFields[0..*]
+		reuse sfAddRoom[0..*]
+		
+		step a:lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfEnterFields()
+		step b:lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfAddRoom()
+		}
+	use case system subfunction sfAddRoom() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system subfunction sfEnterFields() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system usergoal ugFillingGardnerSchedule() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary,active]
+		
+		reuse sfFillingTextFields[0..*]
+		reuse sfChooseImportance[0..1]
+		
+		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfEnterFields()
+		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfChooseImportance()
+		
+		}
+	use case system subfunction sfFillingTextFields() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system subfunction sfChooseImportance() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
 		}
 	}
 

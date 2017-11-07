@@ -5,7 +5,7 @@
 
 
 @@Actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
-@description ""
+@description "The manager is a high authorized user able to access and modify any information inside the software."
 //input events
 
 //output events

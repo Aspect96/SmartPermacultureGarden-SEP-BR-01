@@ -1,0 +1,10 @@
+/*
+@author Gaetan1991
+@date Tue Nov 07 13:56:05 CET 2017
+*/
+
+
+@@view ugFillingGardnerSchedule
+@model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugFillingGardnerSchedule 
+@description "The goal is it to add a task to the schedule"
+@caption "Adding task to schedule"

@@ -44,5 +44,41 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			output interface outactUser {
 			}
 		}
+	actor actTemperatureSensor role rnactTemperatureSensor cardinality[0 .. *] {
+			input interface inactTemperatureSensor {
+			}
+			output interface outactTemperatureSensor {
+			}
+		}
+	actor actHumiditySensor role rnactHumiditySensor cardinality[0 .. *] {
+			input interface inactHumiditySensor {
+			}
+			output interface outactHumiditySensor {
+			}
+		}
+	actor actLightSensor role rnactLightSensor cardinality[0 .. *] {
+			input interface inactLightSensor {
+			}
+			output interface outactLightSensor {
+			}
+		}
+	actor actPhMeter role rnactPhMeter cardinality[0 .. *] {
+			input interface inactPhMeter {
+			}
+			output interface outactPhMeter {
+			}
+		}
+	actor actEcMeter role rnactEcMeter cardinality[0 .. *] {
+			input interface inactEcMeter {
+			}
+			output interface outactEcMeter {
+			}
+		}
+	actor actMotionSensor role rnactMotionSensor cardinality[0 .. *] {
+			input interface inactMotionSensor {
+			}
+			output interface outactMotionSensor {
+			}
+		}
 	}
 }

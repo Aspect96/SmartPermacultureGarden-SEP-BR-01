@@ -1,0 +1,12 @@
+/*
+@author Gaetan1991
+@date Mon Nov 06 10:22:34 CET 2017
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.group01.excalibur.environment.actPhMeter
+@description "The PH Meter is a sensor to measure the current Ph value from the water tank. This information are sent to the system."
+//input events
+
+//output events
+

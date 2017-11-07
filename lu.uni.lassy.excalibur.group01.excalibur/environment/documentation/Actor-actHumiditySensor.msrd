@@ -1,0 +1,12 @@
+/*
+@author Gaetan1991
+@date Mon Nov 06 10:18:22 CET 2017
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.group01.excalibur.environment.actHumiditySensor
+@description "The humidity sensor controls the current humidity inside the soil. This information are concurrently sent to the system and saved inside a log."
+//input events
+
+//output events
+

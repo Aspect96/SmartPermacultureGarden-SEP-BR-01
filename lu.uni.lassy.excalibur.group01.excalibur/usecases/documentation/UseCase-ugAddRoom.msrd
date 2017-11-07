@@ -1,0 +1,26 @@
+/*
+@author Gaetan1991
+@date Tue Nov 07 12:44:04 CET 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugAddRoom
+@description "The goal is to add a new Room to the room database."
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+The user needs to be a manager to be able to add a new room.
+"
+@endPreConditions
+@postCondition
+"
+The new room is added to the database.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

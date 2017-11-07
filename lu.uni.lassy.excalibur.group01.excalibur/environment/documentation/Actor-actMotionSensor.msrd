@@ -1,0 +1,12 @@
+/*
+@author Gaetan1991
+@date Mon Nov 06 10:22:26 CET 2017
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.group01.excalibur.environment.actMotionSensor
+@description "The motion sensor recognizes movements of animals, humans or possible intruders. The information are sent to the system."
+//input events
+
+//output events
+

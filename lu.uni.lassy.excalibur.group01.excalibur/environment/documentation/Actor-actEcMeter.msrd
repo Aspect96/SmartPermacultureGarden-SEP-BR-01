@@ -1,0 +1,12 @@
+/*
+@author Gaetan1991
+@date Mon Nov 06 10:12:18 CET 2017
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.group01.excalibur.environment.actEcMeter
+@description "The EC Meter is a sensor to control the water quality and gives information on the current nutrients inside the water. The EC Meter actor sends the information to the system."
+//input events
+
+//output events
+

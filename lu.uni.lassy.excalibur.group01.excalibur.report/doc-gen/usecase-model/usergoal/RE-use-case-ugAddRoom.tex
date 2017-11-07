@@ -1,0 +1,67 @@
+\subsubsection{usergoal-ugAddRoom}
+
+\label{RE-use-case-ugAddRoom}
+
+
+The goal is to add a new Room to the room database.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{ugAddRoom}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{usergoal}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actManager[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The goal is to add a new Room to the room database.}
+
+\addrowheading{Reuse}
+\addnumberedsinglerow{}{\msrucname{sfEnterFields [0..*]}}
+\addnumberedsinglerow{}{\msrucname{sfAddRoom [0..*]}}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+The user needs to be a manager to be able to add a new room.
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The new room is added to the database.
+}
+
+\addrowheading{Main Steps}
+\addalphanumberedsinglerow{}{the actor \msrcode{actManager} executes the \msrucname{sfEnterFields} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actManager} executes the \msrucname{sfAddRoom} use case}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+none
+}
+
+\end{usecase} 
+
+
+Figure \ref{fig:lu.uni.lassy.excalibur.group01.excalibur-RE-UCD-ugAddRoom}
+The manager has the ability to add a room.
+
+\begin{figure}[htbp]
+\begin{center}
+
+\includegraphics[
+angle=0
+]{./images-report-gen/usecase-model/usergoal/ugAddRoom.eps}
+\end{center}
+\caption[lu.uni.lassy.excalibur.group01.excalibur Use Case Diagram: ugAddRoom]{Add Room Function for the Manager Actor}
+\label{fig:lu.uni.lassy.excalibur.group01.excalibur-RE-UCD-ugAddRoom}
+\end{figure}
+\vspace{0.5cm}

@@ -1,0 +1,45 @@
+\subsubsection{subfunction-sfEnterFields}
+
+\label{RE-use-case-sfEnterFields}
+
+
+The Manager needs to enter the different information for the new room to be added.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfEnterFields}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actManager[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The Manager needs to enter the different information for the new room to be added.}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+All fields must be filled out correctly.
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{ 
+The input fields get cleared and the new room is now added to the database
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+Room name must be unique.
+All other data must be numeric (Length, width, soil height)
+}
+
+\end{usecase} 
+

@@ -4,7 +4,4 @@
 */
 
 
-@@view uc-ugSecurelyUseSystem
-@model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugSecurelyUseSystem 
-@description ""
-@caption ""
+

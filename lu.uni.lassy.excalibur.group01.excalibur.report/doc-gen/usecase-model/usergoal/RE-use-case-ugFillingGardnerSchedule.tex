@@ -1,0 +1,67 @@
+\subsubsection{usergoal-ugFillingGardnerSchedule}
+
+\label{RE-use-case-ugFillingGardnerSchedule}
+
+
+The goal is it to qdd tasks to the schedule		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{ugFillingGardnerSchedule}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{usergoal}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actManager[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The goal is it to qdd tasks to the schedule}
+
+\addrowheading{Reuse}
+\addnumberedsinglerow{}{\msrucname{sfFillingTextFields [0..*]}}
+\addnumberedsinglerow{}{\msrucname{sfChooseImportance [0..1]}}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+Manager must be securly logined and be on the manager screen.
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+Schedule has an additonal task more tasks
+}
+
+\addrowheading{Main Steps}
+\addalphanumberedsinglerow{}{the actor \msrcode{actManager} executes the \msrucname{sfEnterFields} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actManager} executes the \msrucname{sfChooseImportance} use case}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+The input has to be write no sanity checks are done.
+}
+
+\end{usecase} 
+
+
+Figure \ref{fig:lu.uni.lassy.excalibur.group01.excalibur-RE-UCD-ugFillingGardnerSchedule}
+The goal is it to add a task to the schedule
+
+\begin{figure}[htbp]
+\begin{center}
+
+\includegraphics[
+angle=0
+]{./images-report-gen/usecase-model/usergoal/ugFillingGardnerSchedule.eps}
+\end{center}
+\caption[lu.uni.lassy.excalibur.group01.excalibur Use Case Diagram: ugFillingGardnerSchedule]{Adding task to schedule}
+\label{fig:lu.uni.lassy.excalibur.group01.excalibur-RE-UCD-ugFillingGardnerSchedule}
+\end{figure}
+\vspace{0.5cm}

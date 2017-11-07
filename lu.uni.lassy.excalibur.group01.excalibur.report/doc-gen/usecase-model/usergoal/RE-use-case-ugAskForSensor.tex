@@ -1,0 +1,67 @@
+\subsubsection{usergoal-ugAskForSensor}
+
+\label{RE-use-case-ugAskForSensor}
+
+
+The Technician goal is to request a sensor type to the manager.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{ugAskForSensor}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{usergoal}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actTechnician[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The Technician goal is to request a sensor type to the manager.}
+
+\addrowheading{Reuse}
+\addnumberedsinglerow{}{\msrucname{oeEntersFields [1..1]}}
+\addnumberedsinglerow{}{\msrucname{suRequestItem [1..1]}}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+The gardener has to be logged in the system.
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The table request from manager is updated
+}
+
+\addrowheading{Main Steps}
+\addalphanumberedsinglerow{}{the actor \msrcode{actTechnician} executes the \msrucname{oeEntersFields} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actTechnician} executes the \msrucname{suRequestItem} use case}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+none
+}
+
+\end{usecase} 
+
+
+Figure \ref{fig:lu.uni.lassy.excalibur.group01.excalibur-RE-UCD-ugAskForSensor}
+The technician has the ability to request a sensor
+
+\begin{figure}[htbp]
+\begin{center}
+
+\includegraphics[
+angle=0
+]{./images-report-gen/usecase-model/usergoal/ugAskForSensor.eps}
+\end{center}
+\caption[lu.uni.lassy.excalibur.group01.excalibur Use Case Diagram: ugAskForSensor]{Technician requests sensor}
+\label{fig:lu.uni.lassy.excalibur.group01.excalibur-RE-UCD-ugAskForSensor}
+\end{figure}
+\vspace{0.5cm}

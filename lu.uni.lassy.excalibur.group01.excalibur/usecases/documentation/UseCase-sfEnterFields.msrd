@@ -16,7 +16,7 @@ All fields must be filled out correctly.
 "
 @endPreConditions
 @postCondition
-"
+" 
 The input fields get cleared and the new room is now added to the database
 "
 @endPostConditions

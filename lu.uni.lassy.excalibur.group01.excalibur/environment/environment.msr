@@ -67,7 +67,7 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			}
 			output interface outactPhMeter {
 			}
-		}
+		}   
 	actor actEcMeter role rnactEcMeter cardinality[0 .. *] {
 			input interface inactEcMeter {
 			}

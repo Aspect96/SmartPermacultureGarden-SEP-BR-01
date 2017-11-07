@@ -1,0 +1,44 @@
+\subsubsection{subfunction-oeLogout}
+
+\label{RE-use-case-oeLogout}
+
+
+The currently signed in user is signed out by calling this function.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{oeLogout}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actUser[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The currently signed in user is signed out by calling this function.}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+Actor is logged in.
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+Actor is logged out.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+The actor has to be logged in. 
+}
+
+\end{usecase} 
+

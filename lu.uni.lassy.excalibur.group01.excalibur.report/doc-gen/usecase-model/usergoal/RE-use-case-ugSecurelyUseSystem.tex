@@ -1,0 +1,69 @@
+\subsubsection{usergoal-ugSecurelyUseSystem}
+
+\label{RE-use-case-ugSecurelyUseSystem}
+
+
+Every actor has the possibility to connect to the system but no other person from outside		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{ugSecurelyUseSystem}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{usergoal}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actUser[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{Every actor has the possibility to connect to the system but no other person from outside}
+
+\addrowheading{Reuse}
+\addnumberedsinglerow{}{\msrucname{oeLogin [1..1]}}
+\addnumberedsinglerow{}{\msrucname{oeLogout [1..1]}}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+No actor has to be logged in.
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The given actor can execute he's tasks and can logout after.
+}
+
+\addrowheading{Main Steps}
+\addalphanumberedsinglerow{}{the actor \msrcode{actUser} executes the \msrucname{oeLogin} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actUser} executes the \msrucname{oeLogout} use case}
+\addrowheading{Steps Ordering Constraints}
+\addnumberedsinglerow{}{step (a) must always precede step (b).}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+The given actor has to logout him self.
+}
+
+\end{usecase} 
+
+
+Figure \ref{fig:lu.uni.lassy.excalibur.group01.excalibur-RE-UCD-ugSecurelyUseSystem}
+A given actor can securely login in.
+
+\begin{figure}[htbp]
+\begin{center}
+
+\includegraphics[
+angle=0
+]{./images-report-gen/usecase-model/usergoal/ugSecurelyUseSystem.eps}
+\end{center}
+\caption[lu.uni.lassy.excalibur.group01.excalibur Use Case Diagram: ugSecurelyUseSystem]{}
+\label{fig:lu.uni.lassy.excalibur.group01.excalibur-RE-UCD-ugSecurelyUseSystem}
+\end{figure}
+\vspace{0.5cm}

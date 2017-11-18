@@ -79,30 +79,140 @@ textinputfields as shown in the image and then he clicks on the add button.
 
 
 
-\section{Automatical request for crops}
-\label{operation:RequestForCrops}
-The system checks the crops if any specifique crop is less then 10 and requests
-crops.
-
+\section{Remove Crops from Inventory}
+\label{operation:RemoveCrops}
+The manager can remove a given kind of crops completly.
 \begin{description}
 
-\item \textbf{Parameters:} ListOfCrops
-\item \textbf{Precondition:} The system is bootedup and any actor is logged in.
-\item \textbf{Post-condition:} Request table from Manager Screen2 updated with
-the amount of crops which have to be refilled.
+\item \textbf{Parameters:} NameCrops, Amount
+\item \textbf{Precondition:} The system is bootedup and manager has to be
+logged in and be on the manager request screen.
+\item \textbf{Post-condition:} Request table has been updated with the removed
+crop.
 
 \item \textbf{Triggering:}
 \begin{enumerate}
-\item System checks every singel amount left of crops in the vegtable table.
-\item In case that an amount is less than 10.
-\item System send request to the manager.
+\item \textbf{Manager} presses the red button on the crops inventory table.
+\item System removes the crops from the crops inventory on the manager and
+gardener screen.
 \end{enumerate}
 \end{description}
 
-\subsection{Example of Automatical Frood/Vegtable Request}
-Gardener retrives a chosen amount of crops of a specific vegtable or frood.
-If the amount of the specifique crop is less than 10.
-The System will send the request to the manager request table.
+\subsection{Example of removing crops}
+\textbf{Manager} removes the crops by pressing the red button. The System
+updates the changes on the manager request screen and Gardener screen.
+
+\section{Sort request crops}
+\label{operation:sortCropsRequest}
+The manager can sort the crops which are requested by ascanding order.
+\begin{description}
+
+\item \textbf{Parameters:} /
+\item \textbf{Precondition:} The system is bootedup and manager has to be
+logged in and be on the manager request screen.
+\item \textbf{Post-condition:} Request crops table has been ordered in ascanding
+order.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Manager} presses the top arrow.
+\item System sorts the list by amount value by ascending order.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of removing crops}
+\textbf{Manager} presses the arraw on the request crop table. System sorts the
+the table by amount in ascending order.
+
+
+
+\section{Modify/Retrive crops Amount}
+\label{operation:modifyCropsAmount}
+The \textbf{Gardener} can modify the amount of crops on the crops inventory
+table.
+\begin{description}
+\item \textbf{Parameters:} Name,amount
+\item \textbf{Precondition:} The system is bootedup and the gardener has to be
+logged in and be on the Gardener sreen.
+\item \textbf{Post-condition:} Crops inventory has been modifyed on manager and
+gardener screen.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Gardener} Complets the input text fields and presses the modify
+button.
+\item System updates the table of crop inventory and adds a the time of
+retriving to the manager retriving Gardener table adn reloads the screen.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of removing crops}
+\textbf{Gardener} enters the two input fields name = Tomatoe and amount=10.
+The system retrives the amount which is equal to 10 from the inventory amount of
+the name Tomatoe.
+
+
+
+
+\section{Filter by sensor type}
+\label{operation:filterSensorTable}
+The \textbf{Technician} can filter the table by filter type.
+\begin{description}
+
+\item \textbf{Parameters:} /
+\item \textbf{Precondition:} The system is bootedup and Technician has to be
+logged in and be on the technician screen.
+\item \textbf{Post-condition:} The table on the screens show only the filtered
+values.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Technician} choses on the top down menu a sensor type.
+\item System filters out all the non equal types and doesn't display them.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of filtering the Sensors}
+\textbf{Technician} choses a type on a the top down menu Temperature. System
+know doesn't display the sensor where the type isn't equal to Temperature.
+
+
+
+
+
+
+
+\section{Removes sensor from Sensor Array}
+\label{operation:removesSensor}
+The \textbf{Technician} removes the a specific sensor from the table.
+\begin{description}
+
+\item \textbf{Parameters:} /
+\item \textbf{Precondition:} The system is bootedup and Technician has to be
+logged in and be on the technician screen.
+\item \textbf{Post-condition:} The table of sensors has been updated on the
+technician and gardener screen.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Technician} choses the sensor which he wants to delete and presses
+the red button.
+\item System removes the sensor from the table.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of removing Sensor}
+\textbf{Technician} choses a given sensors on the Sensor table Temperature 1
+sensor and presses the red button on the same line.
+System removes the line from the table and reloads the screen to update it.
+
+ 
+
+
+
+
+
+
 
 
 

@@ -88,72 +88,92 @@ different stages of the process while its is performed by the actor(s).
 
 \section{Multi-procedures}
 
-
-\subsection{Ask for diffrent fruit or vegtable}
+\subsection{Request a new sensor}
 \vspace{0.5cm}
+\hfill
 \hrule
-\hfill \break
 \begin{lyxlist}{PC1}
 \small{
-\item [\textbf{Procedure:}] Ask for a diffrent fruit or vegtable
-\item [\textbf{Scope:}] New fruit or vegtable demand to the manager.
+\item [\textbf{Procedure:}] Request a new sensor
+\item [\textbf{Scope:}] Request Management System(\emph{RMS})
+\item [\textbf{Primary Actor}:] Technician
+\item [\textbf{Secondary Actor(s)}:] Manager,\\
+ Error Management System
+\item [\textbf{Goal:}] The intention that the Technician can request a new
+sensor.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Technician} complets the diffrent input textfields and instructs the
+\emph{RMS} to push a request for a sensor by pressing Push to the manager Button.
+\begin{figure}
+\includegraphics[width=1\textwidth]{images/AskForNewSensor.eps}
+\end{figure} \\
+2.\emph{RMS} displays a popup with the information entered by the Technician.
+3.\emph{Technician} accepts the information.
+4.\emph{RMS} displays a message of validation and selects the values entered
+from the \emph{Technician} and pushes them to the Manager request table.\\
+ \begin{figure}
+\includegraphics[width=1\textwidth]{images/RequestAskForNewSensor.eps}
+\end{figure}
+5. \emph{Manager} accepts the request and instructs the \emph{RMS} to send a
+confirmation to the Technician.\\
+6. \emph{Technician} adds the sensor to the to the sensor table.\\
+ \begin{figure}
+\includegraphics[width=1\textwidth]{images/AddANewSensor.eps}
+\end{figure} 
+
+7. \emph{RMS}display a message for success.\\
+\item [\textbf{Extensions}]:\\
+2.a Technician enters wrong input\\
+\hspace*{0.5cm} 2.a.1 (5)-(8)\emph{EMS} displays the message error (5)-(8).
+Action canceled.\\
+\hspace*{0.5cm} \textbf{procedure restarts at step 1}\\
+2.b Technician cancels action in the pop up.\\
+\hspace*{0.5cm} \textbf{procedure restarts at step 1}\\
+2.c Manager declines request\\
+\hspace*{0.5cm} 2.b.1 \emph{RMS} informs \emph{Technician} that the request
+has been declined.\\
+c
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+\break
+
+
+\subsection{Request a different crop}
+\vspace{0.5cm}
+\hrule
+\hfill
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] Request a diffrent Crops
+\item [\textbf{Scope:}] Request Management System(\emph{RMS})
 \item [\textbf{Primary Actor}:] Gardener
-\item [\textbf{Secondary Actor(s)}:] Manager
-\item [\textbf{Goal:}] The intention that the gardner can ask a new Fruit or
-Vegtable to the manager and to show to the manager the demand.
+\item [\textbf{Secondary Actor(s)}:] Manager,\\
+Error Management System
+\item [\textbf{Goal:}] The intention that the Gardener can request a new
+non already existing crop.
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Gardner} Complets the diffrent text fields with there given
-information and presses the button \emph{Ask to the manager}. \\
-2. Shows a pop up with the information entred.\\
-3. \emph{Gardner} Has to choice to accept or to cancel .\\
-	3.a \textbf{In case of accept:}
-		\begin{Tab}{2em}  requested item send to the manager.\end{Tab}
-	3.b \textbf{In case of decline:}
-		\begin{Tab}{2em} \emph{System} cancels the action and the gardner can
-		now refill the input or do an other task. \end{Tab}
+1. \emph{Gardener} complets the input text fields and presses the ask new crop
+button.
+2. \emph{RMS} displays a pop to show the input to the \emph{Gardener}\\
+3.\emph{Gardener} accepts the intput and instructs the \emph{RMS} to send
+request.\\
+4.\emph{RMS} pushes the input values to the manager request crops table.\\
+5.\emph{Manager} accepts the request and instructs the \emph{RMS} to update the
+inventory of crops.\\
+6. \emph{Rms} updates Manager crops table and Gardener crops table.\\
 \item [\textbf{Extensions}]:\\
-2.a  \emph{Manager} Approves the request or declines the request.\\
+2.a Gardener cancels the request\\
+\hspace*{0.5cm} 2.a.1 {EMS} removes the pop up. Action canceled.\\
+\hspace*{0.5cm} \textbf{procedure has stopped or can be resrarted at 1}
 }
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
-
-
-
-
-
-
-\subsection{Remove crops from inventory}
-
-\vspace{0.5cm}
-\hrule
-\hfill \break
-\begin{lyxlist}{PC1}
-\small{
-\item [\textbf{Procedure:}] Possibility to remove an hole inventory of crops.
-\item [\textbf{Scope:}] Deletes all the Crops left of one kind from the table.
-\item [\textbf{Primary Actor}:] Manager
-\item [\textbf{Secondary Actor(s)}:] Software
-\item [\textbf{Goal:}] The intention that the manager can delet an hole stock of
-crops for any reason.
-\item [\textbf{Level}:] User-goal level
-\item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Manager} is on the manager screen. \\
-2. \emph{Manager} sees the inventory table.\\
-3. \emph{Manager} by pressing the red button he cant delete the given row of
-crops.\\
-4. \emph{System} shows up a message of success and table gets updated.
-5. \emph{System} updates the Gardner inventory table.
-\item [\textbf{Extensions}]:\\
-2.a  \emph{System} sends a message or a nodentification to the gardner that a
-change has been done to the inventory table.\\
-}
-\end{lyxlist}
-\hrule
-\vspace{0.5cm}
-
-
 
 
 \break
@@ -241,67 +261,8 @@ change has been done to the inventory table.\\
 
 \subsection{Technician}
 
-\subsubsection{Ask for new sensor}
 
-\vspace{0.5cm}
-\hrule
-\hfill \break
-\begin{lyxlist}{PC1}
-\small{
-\item [\textbf{Procedure:}] AskForNewSensor
-\item [\textbf{Scope:}] New Sensor demand to the manager.
-\item [\textbf{Primary Actor}:] Technician
-\item [\textbf{Goal:}] The intention that the technician can ask a new Sensor to
-the manager and to show to the manager the demand.
-\item [\textbf{Level}:] User-goal level
-\item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Gardner} complets the diffrent text fields with there given
-information and presses the button \emph{push to the manager}. 
-\begin{figure}
-\includegraphics[width=1\textwidth]{images/AskForNewSensor.eps}
-\end{figure} \\
-2. Message appears of validation.
- \begin{figure}
-\includegraphics[width=1\textwidth]{images/RequestAskForNewSensor.eps}
-\end{figure}
-\item [\textbf{Extensions}]:\\
-2.a  \emph{Manager} sends to the Gardner a message of
-validation or not.\\
-}
-\end{lyxlist}
-\hrule
-\vspace{0.5cm}
 
-\break
-
-\subsubsection{Add a new sensor to a room}
-\vspace{0.5cm}
-\hrule
-\hfill \break
-\begin{lyxlist}{PC1}
-\small{
-\item [\textbf{Procedure:}] AddaNewSensor
-\item [\textbf{Scope:}] Adding a sensor to a room.
-\item [\textbf{Primary Actor}:] Technician
-\item [\textbf{Goal:}] The intention to add a sensor to a specifique room.
-\item [\textbf{Level}:] User-goal level
-\item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Gardner} complets the diffrent text fields with there given
-information and presses the green plus button. 
-
- \begin{figure}
-\includegraphics[width=1\textwidth]{images/AddANewSensor.eps}
-\end{figure} 
-2. Message appears of validation.
- \begin{figure}
-\includegraphics[width=1\textwidth]{images/RequestAddANewSensor.eps}
-\end{figure}
-\item [\textbf{Extensions}]:\\
-2.a  \emph{Manager} gets notified where the new sensor is positioned .\\
-}
-\end{lyxlist}
-\hrule
-\vspace{0.5cm}
 
 
 
@@ -328,10 +289,6 @@ information and presses the green plus button.
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
-\break
-
-
-
 
 \subsubsection{Delete Room}
 
@@ -357,42 +314,6 @@ information and presses the green plus button.
 
 
 
-\subsubsection{Requests for fruit or vegtable}
-
-\vspace{0.5cm}
-\hrule
-\hfill \break
-\begin{lyxlist}{PC1}
-\small{
-\item [\textbf{Procedure:}] Possibility to accept or decline a requested fruit
-or vegtable.
-\item [\textbf{Scope:}] Ability to accept the request from the system or the
-gardner.
-\item [\textbf{Primary Actor}:] Manager
-\item [\textbf{Goal:}] The intention that the manager can decline or accept a
-given vegtable or fruit request.
-\item [\textbf{Level}:] User-goal level
-\item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Manager} is on the manager request screen. \\
-2. \emph{Manager} sees the request fruit or vegtable table.\\
-3. \emph{Manager} has to choice red cross or green arrow button.\\
-3.a \textbf{In case of the green button:}
- \begin{Tab}{2em} 3.a.1 Message appears of validation and that the request
- has been validated and refilled.\\
-  \end{Tab}
-3.b \textbf{In case of the red button}
-\begin{Tab}{2em} 3.b.1 The request is removed from the table.\\
-3.b.2 The decline won't work if there is no decline.
-\end{Tab}
-}
-\end{lyxlist}
-\hrule
-\vspace{0.5cm}
-\break
-
-
-
-
 \subsection{Gardener}
 \subsubsection{Retrive/Modify Crops from Table}
 
@@ -403,38 +324,42 @@ given vegtable or fruit request.
 \small{
 \item [\textbf{Procedure:}] Retrives vegtable or
 frood the amount left of crops
-\item [\textbf{Scope:}] Retrives Crops from the table or asks for new non
-existing items.
-\item [\textbf{Primary Actor}:] Gardener
-\item [\textbf{Goal:}] The intention that the gardner can retrive he's desired
-amount of crops from the storage of crops to plant the crops or ask for a
-diffrent frood or vegtable.
+\item [\textbf{Scope:}] Modify Management System \emph{MMS}
+\item [\textbf{Primary Actor}:] Gardener,\\
+Error Management System (EMS)
+\item [\textbf{Goal:}] The intention that the gardner can retrive crops from
+the inventory.
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Gardner} Complets the diffrent text fields with there given
-information and presses the button \emph{Modify}. \\
+1. \emph{Gardner} Complets the diffrent input text fields with there given
+information and instructs the \emph{MMS} to retrive the crops by
+pressing \emph{Modify}.\\
+
 \begin{figure}
 \includegraphics[width=1\textwidth]{images/RetriveCropsBase.eps}
 \end{figure}
-2.A pop up appears with the previsualisation of the information entred.\\
+
+ 2.{EMS} displays a pop up with the input entered by the \emph{Gardener}.\\
 \begin{figure}
 \includegraphics[width=1\textwidth]{images/PopUpRetrive.eps}
 \end{figure}
-3. \emph{Gardner} Has the choice to accept or to cancel .\\
-	3.a \textbf{In case of accept green button:}
-		\begin{Tab}{2em}  the request has been passed to the manager.\end{Tab}
-	3.b \textbf{In case of decline red button:}
-		\begin{Tab}{2em} cancels the action and the gardner can
-		now refill the input or do an other task. \end{Tab}
+3.\emph{Gardner} validates the input.\\
+4.\emph{MMS} removes the crops from the table and updates the table.\\
+5.\emph{MMS} enters new values to the Manager table at which time the crops
+have been taken away.\\
 \item [\textbf{Extensions}]:\\
-2.a  \emph{Manager} Approves the request or declines the request.\\
+2.a  \emph{Gardener} declines the pop up request to retrive crops.\\
+\hspace*{0.5cm} 2.a.1 \emph{EMS}  disables the pop up and action has been
+canceld\\
+\hspace*{0.5cm} \textbf{procedure continues at step 1 or can be anulated}
+\item 
 }
 \end{lyxlist}
 \hrule
 \vspace{0.5cm}
 
-\ldots
 
+\break
 \subsubsection{MyProcedure2MyActor2}
 \ldots
 

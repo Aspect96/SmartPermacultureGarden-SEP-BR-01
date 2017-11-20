@@ -12,37 +12,75 @@ operations to several actors may be grouped and presented once to avoid redundan
 
 \section{Adding task to gardeners schedule}
 
-
-
+\hrule
+\hfill
+\vspace{0.5cm}
 \label{operation:addTaskGardener}
-The manager creates and adds a new task to be added to schedule.
 
-
+The manager creates and adds a new task to be added to gardener's schedule.
 \begin{description}
 
-\item \textbf{Parameters:} Task name, Task description, Room, Gardeners name,
-Name of the task
-\item \textbf{Precondition:} The manager is logged in
+\item \textbf{Parameters:} nameTask, taskDescription, room, nameGardener, date,
+importance
+\item \textbf{Precondition:} The manager is logged in and on the manage gardener
+schedule screen
 \item \textbf{Post-condition:} A new task has been added to the schedule and the
-new task has been assigned to the specified gardener.
-\item \textbf{Output messages:} The manager will be notified that the task has
-been created.
+new task has been assigned to the specified gardener and the manager is
+notified that the task has been added.
+\item \textbf{Output messages:} The \textvf{manager} will be notified that the
+task has been created.
 
 \item \textbf{Triggering:}
 \begin{enumerate}
-\item From within the Manager Schedule screen, the manger fills out the 
-required entries related to the task information like the name of the task or
+\item From within the manage gardener schedule screen, the \textbf{manger} fills
+out the required entries related to the task information like the name of the task or
 the date.
 \item Click on the add button and add the task to the schedule.
 \end{enumerate}
 \end{description}
-\subsection{MyExample1}
-The manager wants to add a watering task to the schedule, so fills out the
-textinputfields as shown in the image and then he clicks on the add button.
+\subsection{Example of adding a task}
+The \textbf{manager} wants to add a watering task to the schedule, so fills out
+the textinputfields as shown in the image and then he clicks on the add button.
+
+\includegraphics[width=1\textwidth]{images/addingTaskGardener.eps}
 
 
 
-\break
+\section{Adding task to technician schedule}
+
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:addTaskTechnichian}
+
+The manager creates and adds a new task to be added to technician's schedule.
+\begin{description}
+
+\item \textbf{Parameters:} nameTask, taskDescription, room, nameTechnician,
+date, importance
+\item \textbf{Precondition:} The manager is logged in and on the manage gardener
+schedule screen.
+\item \textbf{Post-condition:} A new task has been added to the schedule and the
+new task has been assigned to the specified technician and the manager is
+notified that the task has been added.
+\item \textbf{Output messages:} The \textvf{manager} will be notified that the
+task has been created.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item From within the managa technician schedule screen, the \textbf{manger}
+fills out the required entries related to the task information like the name of the task or
+the date.
+\item Click on the add button and add the task to the schedule.
+\end{enumerate}
+\end{description}
+\subsection{Example of adding a task}
+The \textbf{manager} wants to the technician to change sensors, so he fills out
+the requied fields and then presses the add button as shown in the image.
+
+\includegraphics[width=1\textwidth]{images/addTaskTechnichian.eps}
+
+
 
 \section{Request a new sensor}
 
@@ -142,12 +180,6 @@ table and displays the new updated table.
 \hfill
 \vspace{0.5cm}
 \hrule
-
-
-
-
-
-
 
 
 

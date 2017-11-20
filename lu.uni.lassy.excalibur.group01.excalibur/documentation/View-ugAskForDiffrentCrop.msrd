@@ -1,0 +1,11 @@
+/*
+@author Gaetan1991
+@date Mon Nov 20 23:04:44 CET 2017
+*/
+
+
+@@view ugAskForDiffrentCrop
+@model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugAskForDiffrentCrop 
+@description "The Gardener can do a request for a new crop. The manager has to accept the 
+request and adds the requested crop to the table."
+@caption "The process of adding a new non existing crop."

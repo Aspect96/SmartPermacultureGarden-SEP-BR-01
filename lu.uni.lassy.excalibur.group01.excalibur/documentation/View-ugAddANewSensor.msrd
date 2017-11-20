@@ -1,0 +1,11 @@
+/*
+@author Gaetan1991
+@date Mon Nov 20 23:03:21 CET 2017
+*/
+
+
+@@view ugAddANewSensor
+@model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugAddANewSensor 
+@description "The Technician can request a new sensor to the manager the manager is the
+ person who allows the request and the technician adds the sensor after validation of the request"
+@caption "Procedure for adding a new sensor"

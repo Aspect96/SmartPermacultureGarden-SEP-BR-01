@@ -123,6 +123,76 @@ import lu.uni.lassy.messir.libraries.string
 	use case system subfunction sfChooseImportance() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
 		}
+	use case system subfunction sfRequestANewSensor() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
+		}
+	use case system subfunction sfAcceptRequestForNewSensor() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system subfunction sfAddANewSensor() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
+		}
+	use case system subfunction sfReliveRequestSensor() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[primary, active]
+		}
+	use case system subfunction sfAskForANewCrop() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
+		}
+	use case system subfunction sfAcceptDiffrentCrop() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system subfunction sfAddCropToInventory() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system subfunction sfRemoveCropsFromInventory() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
+		}
+	use case system subfunction sfSortByAmountRequest() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system subfunction sfFilterBySensorName() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
+		}
+	use case system subfunction sfRemoveSensorFromSensorList() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
+		}
+		
+		
+	use case system usergoal ugAddANewSensor() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[secondary, active]
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[secondary, active]
+		
+		reuse sfRequestANewSensor[1..*]
+		reuse sfAcceptRequestForNewSensor[1..*]
+		reuse sfAddANewSensor[1..*]
+		reuse sfRemoveSensorFromSensorList[1..*]
+		
+		step a:lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		executes sfRequestANewSensor()
+		step b:lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfAcceptRequestForNewSensor()
+		step c:lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		executes sfAddANewSensor()
+		step d: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		executes sfRemoveSensorFromSensorList()
+		
+		
+		}
+	use case system usergoal ugAskForDiffrentCrop() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary,active]
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[secondary,active]
+		reuse sfAskForANewCrop[0..*]
+		reuse sfAcceptDiffrentCrop[0..*]
+		reuse sfAddCropToInventory[0..*]
+		
+		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
+		executes sfAskForANewCrop()
+		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfAcceptDiffrentCrop()
+		step c: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfAddCropToInventory()
+		
+		}
 	}
 
 }

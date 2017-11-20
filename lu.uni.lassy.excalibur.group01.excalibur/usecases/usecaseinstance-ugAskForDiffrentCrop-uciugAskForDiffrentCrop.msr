@@ -1,0 +1,49 @@
+package usecases.uciugAskForDiffrentCrop {
+	import lu.uni.lassy.excalibur.group01.excalibur.usecases
+
+	Use Case Model {
+
+		use case instance uciugAskForDiffrentCrop : ugAskForDiffrentCrop{
+			actors {
+				theGardener: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
+				theManager: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+			}
+			use case steps {
+				theGardener
+				executed instanceof subfunction
+				oeLogin("Gardener","Password")
+				
+				theManager 
+				executed instanceof subfunction 
+				oeLogin("Manager","123456") 
+				
+				theGardener
+				executed instanceof subfunction 
+				sfAskForANewCrop("Coconut","50"){
+				ieMessage("Request has been send") returned to theGardener
+				}
+				theManager
+				executed instanceof subfunction 
+				sfAcceptDiffrentCrop(){
+				ieMessage("Storage refilled") returned to theManager
+				}
+				theManager
+				executed instanceof subfunction 
+				sfAddCropToInventory("Coconut","50","9","false","25"){
+				ieMessage("Successfully added item") returned to theManager
+				}
+				
+				
+				theGardener
+				executed instanceof subfunction 
+				oeLogout(){}
+				
+				theManager 
+				executed instanceof subfunction 
+				oeLogout(){}
+				
+				
+			}
+		}
+	}
+}

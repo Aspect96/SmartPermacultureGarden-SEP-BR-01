@@ -1,0 +1,10 @@
+/*
+@author Gaetan1991
+@date Mon Nov 20 23:43:58 CET 2017
+*/
+
+
+@@view uciugAddANewSensor
+@instance Use-Case usecases.uciugAddANewSensor.uciugAddANewSensor 
+@description "Example of the execution for a request and adding a sensor"
+@caption "Example of execution for Add a New Sensor"

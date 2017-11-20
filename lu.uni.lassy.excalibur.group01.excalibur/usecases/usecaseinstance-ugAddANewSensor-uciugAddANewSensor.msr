@@ -1,0 +1,64 @@
+package usecases.uciugAddANewSensor {
+	import lu.uni.lassy.excalibur.group01.excalibur.usecases
+
+	Use Case Model {
+
+		use case instance uciugAddANewSensor : ugAddANewSensor{
+			actors {
+				theTechnician: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+				theManager: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+			}
+			use case steps {
+				theTechnician
+				executed instanceof subfunction
+				oeLogin("Technician","Password")
+				
+				theManager 
+				executed instanceof subfunction 
+				oeLogin("Manager","123456") 
+				
+				theTechnician 
+				executed instanceof subfunction 
+				sfRequestANewSensor("Temperature1","1","Technician","Reason") {
+				ieMessage("Message with the request pushed to the manager") returned to theTechnician
+				}
+				
+				theManager
+				executed instanceof subfunction 
+				sfAcceptRequestForNewSensor(){
+				ieMessage("Successfully allowed to replace the sensor") returned to theManager
+				}
+				
+				theTechnician 
+				executed instanceof subfunction 
+				sfAddANewSensor("Temperature1","25","1","Technician","20") {
+				ieMessage("Successfully added to the sensor list") returned to theTechnician
+					}
+				
+				theTechnician 
+				executed instanceof subfunction
+				sfRemoveSensorFromSensorList() {
+				ieMessage("successfully deleted the requested sensor")returned to theTechnician
+					}
+				
+				theTechnician 
+				executed instanceof subfunction 
+				oeLogout(){}
+				
+				theManager 
+				executed instanceof subfunction 
+				oeLogout(){}
+
+					
+
+
+
+			
+					
+
+				
+				
+			}
+		}
+	}
+}

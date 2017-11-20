@@ -82,10 +82,6 @@ than more complex and less utilised ones.
 different stages of the process while its is performed by the actor(s).
 
 
-
-
-
-
 \section{Multi-procedures}
 
 \subsection{Add a new sensor}
@@ -108,8 +104,8 @@ sensor.
 \begin{figure}
 \includegraphics[width=1\textwidth]{images/AskForNewSensor.eps}
 \end{figure} \\
-2.\emph{RMS} displays a popup with the information entered by the Technician.
-3.\emph{Technician} accepts the information.
+2.\emph{RMS} displays a popup with the information entered by the Technician.\\
+3.\emph{Technician} accepts the information.\\
 4.\emph{RMS} displays a message of validation and selects the values entered
 from the \emph{Technician} and pushes them to the Manager request table.\\
  \begin{figure}
@@ -117,12 +113,15 @@ from the \emph{Technician} and pushes them to the Manager request table.\\
 \end{figure}
 5. \emph{Manager} accepts the request and instructs the \emph{RMS} to send a
 confirmation to the Technician.\\
-6. \emph{Technician} adds the sensor to the to the sensor table.\\
+7. \emph{RMS} sets the value on the request sensor table from pending to true.
+6. \emph{Technician} complets the fromular and presses add.\\
+8. \emph{RMS} adds the sensor to the sensor table.\\
+9.\emph{Technician} removes the sensor from the request sensor table by
+pressing the red button.\\
+10.\emph{RMS} displays a message of succesfully removed the sensor.
  \begin{figure}
 \includegraphics[width=1\textwidth]{images/AddANewSensor.eps}
 \end{figure} 
-
-7. \emph{RMS}display a message for success.\\
 \item [\textbf{Extensions}]:\\
 2.a Technician enters wrong input\\
 \hspace*{0.5cm} 2.a.1 (5)-(8)\emph{EMS} displays the message error (5)-(8).
@@ -163,13 +162,22 @@ button.\\
 3.\emph{Gardener} accepts the intput and instructs the \emph{RMS} to send
 request.\\
 4.\emph{RMS} pushes the input values to the manager request crops table.\\
-5.\emph{Manager} accepts the request and instructs the \emph{RMS} to update the
-inventory of crops.\\
-6. \emph{Rms} updates Manager crops table and Gardener crops table.\\
+5.\emph{Manager} accepts the request and instructs the \emph{RMS} to go on
+the manager home screen.\\
+6. \emph{Manager} complets the formula adding item to inventory and presses
+add.\\
+7. \emph{RMS} displays a pop up with the information written by the Manager.\\
+8.\emph{Manager} validates the input and instructs the \emph{RMS} to update the
+inventory.\\
+9. \emph{RMS} adds the given information to the crop invenotry table and
+updates all the inventory tables.
 \item [\textbf{Extensions}]:\\
 2.a Gardener cancels the request\\
 \hspace*{0.5cm} 2.a.1 {EMS} removes the pop up. Action canceled.\\
 \hspace*{0.5cm} \textbf{procedure has stopped or can be resrarted at 1}
+2.b Manager cancels the validation
+\hspace*{0.5cm}2.b.1 {EMS} removes the pop up and cancels the action.\\
+\hspace*{0.5cm}\textbf{procedure has stopped and can be restarted at 7.}
 }
 \end{lyxlist}
 \hrule

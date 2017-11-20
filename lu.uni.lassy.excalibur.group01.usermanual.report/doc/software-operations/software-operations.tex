@@ -85,7 +85,7 @@ table.
 
 \label{operation:Accept the request for a new sensor}
 
-The Technician can request a new sensor.
+The Manager can accept a new sensor.
 \begin{description}
 \item \textbf{Parameters:} /
 \item \textbf{Precondition:} The system is bootedup and the Manager has to be
@@ -117,7 +117,6 @@ Temperature1 Sensor. \textbf{System} sends a validation message to the gardener.
 \vspace{0.5cm}
 
 \label{operation:Add a new sensor}
-
 The Technician can add a sensor which has been maid available from the manager.
 \begin{description}
 \item \textbf{Parameters:} SensorName,Value,Room,TechnicianName,UpdateSchedule
@@ -135,7 +134,7 @@ adding the sensor with the other informations added.
 \end{enumerate}
 \end{description}
 
-\subsection{Example of accepting a request}
+\subsection{Example of adding a new sensor}
 \textbf{Technician} complets the given input text fields with the sensor name
 :Temperature1 value 32 degrees and the room: 1 technician name :Bruno and the
 update schedule is 15. \textbf{System} pushes the information to the sensor
@@ -144,6 +143,49 @@ table and displays the new updated table.
 \vspace{0.5cm}
 \hrule
 
+
+
+
+
+
+
+
+
+\section{Remove  requested sensor}
+
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Request a new sensor}
+
+The Technician can remove the requested sensor from the request table.
+\begin{description}
+\item \textbf{Parameters:} /
+\item \textbf{Precondition:} The system is bootedup and the technician has to be
+logged in and be on the technician screen and a request should be in the
+request sensor table.
+\item \textbf{Post-condition:} Removes the requested sensor from the sensor
+request table.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Technician} presses the red button on request sensor table.
+\item System removes sensor from the request table.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of a removing of a sensor}
+\textbf{Technician} presses the red button on the ligne 1 of the table where
+temperature1 and which room = 1. The system removes the sensor from the request
+list.
+
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+\break
 
 
 
@@ -183,7 +225,8 @@ crop table by adding Mango and amount to the table.
 \vspace{0.5cm}
 \hrule
 
-\break
+
+
 \section{Accept a diffrent crop}
 
 \hrule
@@ -203,8 +246,7 @@ inventory table has been updated by adding the requested crop.
 \item \textbf{Triggering:}
 \begin{enumerate}
 \item \textbf{Manager} presses the green button to validated the request.
-\item \textbf{System} adds the crop information to the crop inventory table and
-displays a message of success..
+\item \textbf{System} adds the crop to he request Crop table.
 
 \end{enumerate}
 \end{description}
@@ -216,8 +258,8 @@ crop to the crops inventory table.
 \hfill
 \vspace{0.5cm}
 \hrule
-
-
+ 
+\break
 \section{Remove Crops from Inventory}
 
 \hrule
@@ -251,8 +293,7 @@ updates the changes on the manager request screen and Gardener screen.
 \hrule
 
 
-\break
-\section{Sort request crops}
+\section{Sort request crops by amount ascending order}
 
 \hrule
 \hfill
@@ -283,6 +324,8 @@ the table by amount in ascending order.
 \hfill
 \vspace{0.5cm}
 \hrule
+
+\break
 
 \section{Modify/Retrive crops Amount}
 
@@ -315,6 +358,86 @@ the name Tomatoe.
 \hfill
 \vspace{0.5cm}
 \hrule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Add crop to the inventory}
+
+\hrule
+\hfill
+\vspace{0.5cm}
+
+\label{operation:Accept a diffrent crop}
+
+The Manager can accept the request for a new crop which is not already on the
+crop inventory table.
+\begin{description}
+\item
+\textbf{Parameters:}Name,Amount,ph-Amount,Vegtable(boolean),TemperaturePreference
+\item \textbf{Precondition:} The system is bootedup and the Manager has to be
+logged in and be on the Manager screen and a request has to be accepted by the
+manager.
+\item \textbf{Post-condition:} The invenotry has been updated by adding the
+attributes to the table.
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Manager} complets the formula and presses the add button.
+\item \textbf{System} shows a pop up of the entered values.
+\item \textbf{Manager} accepts the pop up request.
+\item \textbf{System} displays a message of success and adds the values to the
+inventory crop table.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of accepting a request}
+\textbf{Manager} complets the given inputs text field with the
+Name: Coconut and amount 50 and ph value 9 and Vegtable false
+(not coching the crop field) and temperature preference : 34. \textbf{System}
+displays a pop up  what the user has entered in this case Coconut 50 9 (false)
+and 34.Manager accepts the pop up by pressing the green button. System updates
+the crop inventory table by adding the input values from the manager to the
+table.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \break
 

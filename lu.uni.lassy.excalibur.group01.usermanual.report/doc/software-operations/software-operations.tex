@@ -27,7 +27,7 @@ schedule screen
 \item \textbf{Post-condition:} A new task has been added to the schedule and the
 new task has been assigned to the specified gardener and the manager is
 notified that the task has been added.
-\item \textbf{Output messages:} The \textvf{manager} will be notified that the
+\item \textbf{Output messages:} The \textbf{manager} will be notified that the
 task has been created.
 
 \item \textbf{Triggering:}
@@ -41,9 +41,9 @@ the date and clicks on the add button.
 \subsection{Example of adding a task}
 The \textbf{manager} wants to add a watering task to the schedule, so fills out
 the textinputfields as shown in the image and then he clicks on the add button.
-
+ \begin{figure}
 \includegraphics[width=1\textwidth]{images/addingTaskGardener.eps}
-
+ \end{figure}
 
 
 \section{Adding task to technician schedule}
@@ -78,8 +78,6 @@ technician.
 \subsection{Example of adding a task}
 The \textbf{manager} wants to the technician to change sensors, so he fills out
 the requied fields and then presses the add button as shown in the image.
-
-\includegraphics[width=1\textwidth]{images/addTaskTechnichian.eps}
 
 
 
@@ -709,3 +707,330 @@ The system is bootedup and is monitoring the signal of the sensors.
 Now the temperature sensors sends a temperature of 18 degrees celsius. The
 pre-defined range for the temperature is from 20 to 27 degrees. The system will
 add a warning to the alerts database, the temperature is too low.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\break
+
+
+
+\section{Humidty sensor push information}
+
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Humidty sensor push information}
+
+The Humidity Sensor pushes the information to the sensor table.
+\begin{description}
+\item \textbf{Parameters:} 
+\item \textbf{Precondition:} The system is bootedup with the respected
+configurations.
+\item \textbf{Post-condition:} Updated sensor value in sensor table.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Humidity sensor} send digital signal to the system.
+\item System updates the value of the given sensor in the sensor table.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of humidity sensor sending digital signal}
+\textbf{Humidity sensor 1} sends 40 as digital signal. \textbf{System} updates
+the sensor table value from room 1 and humidity sensor1.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+\section{Temperature sensor push information}
+
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Temperature sensor push information}
+
+The Temperature Sensor pushes the information to the sensor table.
+\begin{description}
+\item \textbf{Parameters:} 
+\item \textbf{Precondition:} The system is bootedup with the respected
+configurations.
+\item \textbf{Post-condition:} Updated sensor value in sensor table.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Temperature sensor} sends digital signal to the system.
+\item System updates the value of the given temperature sensor in the sensor
+table.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of humidity sensor sending digital signal}
+\textbf{Temperature sensor 1} sends 24 as digital signal. \textbf{System}
+updates the sensor table value from room 1 and Temperature sensor1 by modifing
+the value to 24.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+\break
+\section{Light sensor push information}
+
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Light sensor push information}
+
+The  Light Sensor pushes the information to the sensor table.
+\begin{description}
+\item \textbf{Parameters:} 
+\item \textbf{Precondition:} The system is bootedup with the respected
+configurations.
+\item \textbf{Post-condition:} Updated Light value in sensor table of the given
+Light sensor.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Light sensor} sends digital signal to the system.
+\item System updates the value of the given sensor in the sensor table.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of humidity sensor sending digital signal}
+\textbf{Light sensor 1} sends 550 nm as digital signal. \textbf{System}
+updates the sensor table value from room 1 and updates the light value to 550nm.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+\section{Motion sensor push information}
+
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Motion sensor push information}
+
+The Motion Sensor pushes the information to the sensor table.
+\begin{description}
+\item \textbf{Parameters:} \
+\item \textbf{Precondition:} The system is bootedup with the respected
+configurations.
+\item \textbf{Post-condition:} The system sends alert to the manager.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Motion sensor} sends digital signal to the system if any movement
+is detected.
+\item System displays an alert to the manager that there might be an intrusion.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of Motion sensor sending digital signal}
+\textbf{Motion sensor 1} sends a digital signal to the system. The system alerts
+the manager of an intrusion.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+\break
+
+
+
+\section{Turn on Heater}
+
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Turn on heater}
+
+In case the Temeprature sensor sends an a value less then 15 degrees the heater
+is switched on.
+\begin{description}
+\item \textbf{Parameters:} temperatureOfSensor
+\item \textbf{Precondition:} The system is bootedup with the respected
+configurations and digital signals comming from the Temperature sensor which is
+less then 15 degrees.
+\item \textbf{Post-condition:} Heater in a given room is on until the
+Temperature sensor sends value heigher than 19.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Temperature sensor} sends digital signal of 14 to the system.
+\item System enables the heater for the given room.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of humidity sensor sending digital signal}
+\textbf{Temperature sensor 1} sends 14 as digital signal. \textbf{System}
+enables the heater to heat the room1 until the temperature sensor sends a value
+heigher than 18.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+\section{Turn on LED}
+
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Turn on LED}
+
+Incase the light sensor pushes a value less than 400 the LEDs qre turned on.
+\begin{description}
+\item \textbf{Parameters:} lightValue,timeTicker
+\item \textbf{Precondition:} The system is bootedup with the respected
+configurations and digital signals comming from the Lightsensor has to be less
+than 400 nm and the ticker has to be 0.
+\item \textbf{Post-condition:} The LEDS for the given room are turned on until
+the outside Lightsensor gives a value more than 400.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Light sensor} sends digital signal of less than 400 nm to the
+system.
+\item System enables the LEDs for the given room if the TimeTicker is 0.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of humidity sensor sending digital signal}
+\textbf{Light sensor 1} sends 399 as digital signal. \textbf{System}
+evaluates if the timeTicker is 0 if it is it turns the LEDs on.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\break
+
+
+
+
+\section{Open Windows}
+
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Open Windows}
+
+Incase the temperature sensor inside has a value higher than the value allowed.
+\begin{description}
+\item \textbf{Parameters:} Temperature,room,TemperatureSHouldBE
+\item \textbf{Precondition:} The system is bootedup with the respected
+configurations and digital signals comming from the Temperature sensor has to be
+more than a given value.
+\item \textbf{Post-condition:} The Windows for that given room are opend.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Temperature sensor} sends digital signal of more than a given
+value degrees to the system.
+\item System opens the windows unitl the temperature decreeces to the requested
+temperature.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of humidity sensor sending digital signal}
+\textbf{Temperature sensor 1} sends 45 (degree) as digital signal.
+\textbf{System} checks if the temperature is acceding the temperature should be
+than the windows are opening.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\section{Turn on LED}
+
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Turn on LED}
+
+Incase the light sensor pushes a value less than 400 the LEDs qre turned on.
+\begin{description}
+\item \textbf{Parameters:} lightValue,timeTicker
+\item \textbf{Precondition:} The system is bootedup with the respected
+configurations and digital signals comming from the Lightsensor has to be less
+than 400 nm and the ticker has to be 0.
+\item \textbf{Post-condition:} The LEDS for the given room are turned on until
+the outside Lightsensor gives a value more than 400.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Light sensor} sends digital signal of less than 400 nm to the
+system.
+\item System enables the LEDs for the given room if the TimeTicker is 0.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of humidity sensor sending digital signal}
+\textbf{Light sensor 1} sends 399 as digital signal. \textbf{System}
+evaluates if the timeTicker is 0 if it is it turns the LEDs on.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+\break
+
+
+\section{Turn on watering}
+
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Turn on watering}
+
+Incase the humidty sensor gives a value below the requested value watering is
+turned on.
+\begin{description}
+\item \textbf{Parameters:} humidityLevel,Room
+\item \textbf{Precondition:} The system is bootedup with the respected
+configurations and digital signals comming from the humidty sensor has to be
+less than a given level.
+\item \textbf{Post-condition:} The watering is turned on for the given room.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Humidty sensor} sends digital signal of less than the accepted
+amount to the system.
+\item System enables the watering for a given room until the humidty level is
+as the room humidtyi accepts it.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of Enabling wateringl}
+\textbf{Humidity sensor 1} sends a value of 10 since the humidity sensor is in
+room1.
+\textbf{System} enables the watering for the room1 until the humidity level is
+40 so that the plants have enough water.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+

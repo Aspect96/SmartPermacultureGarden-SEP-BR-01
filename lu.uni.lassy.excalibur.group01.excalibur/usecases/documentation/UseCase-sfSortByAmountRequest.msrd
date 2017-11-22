@@ -8,14 +8,19 @@
 @description ""
 @protocolCondition
 "
+kneppchen disablen. also knopf auschalten.
+The system has to be running and the manager be on the manager request screen and there should be a request of
+crops in the table.
 "
 @endProtocolConditions
 @preCondition
 "
+n a aps des sense wenn keiene liste da ist. du kanns kliken knepchen aber bringt rien.
 "
 @endPreConditions
 @postCondition
 "
+The request crops table is ordered by ascending order.
 "
 @endPostConditions
 @additionalInformation

@@ -80,5 +80,11 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			output interface outactMotionSensor {
 			}
 		}
+	actor actAdministrator role rnactAdministrator cardinality[0 .. *] {
+			input interface inactAdministrator {
+			}
+			output interface outactAdministrator {
+			}
+		}
 	}
 }

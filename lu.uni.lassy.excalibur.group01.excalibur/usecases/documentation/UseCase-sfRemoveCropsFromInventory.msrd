@@ -12,10 +12,12 @@
 @endProtocolConditions
 @preCondition
 "
+System needs to be running and the manager needs to be on the main manager screen and there should be at least one crop.
 "
 @endPreConditions
 @postCondition
 "
+The table gets updated with the removed crop selected.
 "
 @endPostConditions
 @additionalInformation

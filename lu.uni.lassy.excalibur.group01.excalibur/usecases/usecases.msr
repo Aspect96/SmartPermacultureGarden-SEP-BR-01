@@ -15,7 +15,7 @@ import lu.uni.lassy.messir.libraries.string
 		
 	use case system subfunction sfcheckSensor() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
-			
+			 
 		}
 	use case system subfunction sfplating() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
@@ -157,40 +157,80 @@ import lu.uni.lassy.messir.libraries.string
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
 		}
 		
+		use case system subfunction oeCreateSystemAndEnvironment() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
+		}
+		
 		
 	use case system usergoal ugAddANewSensor() {
-		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[secondary, active]
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
 		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[secondary, active]
 		
+		reuse oeCreateSystemAndEnvironment[1..1]
 		reuse sfRequestANewSensor[1..*]
 		reuse sfAcceptRequestForNewSensor[1..*]
 		reuse sfAddANewSensor[1..*]
 		reuse sfRemoveSensorFromSensorList[1..*]
 		
 		step a:lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		executes oeCreateSystemAndEnvironment()
+		step b:lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
 		executes sfRequestANewSensor()
-		step b:lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		step c:lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
 		executes sfAcceptRequestForNewSensor()
-		step c:lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		step d:lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
 		executes sfAddANewSensor()
-		step d: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		step e: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
 		executes sfRemoveSensorFromSensorList()
+			
+		
+		ordering constraint
+		"step a must always be the first step"
+		ordering constraint
+		"step b must come after a"
+		ordering constraint
+		"step c must come after b"
+		ordering constraint
+		"step d must come after c"
+		ordering constraint
+		"step e must come after d"
 		
 		
 		}
 	use case system usergoal ugAskForDiffrentCrop() {
+		
 		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary,active]
 		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[secondary,active]
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[secondary,active]
+		
+		reuse oeCreateSystemAndEnvironment[1..1]
 		reuse sfAskForANewCrop[0..*]
 		reuse sfAcceptDiffrentCrop[0..*]
 		reuse sfAddCropToInventory[0..*]
 		
-		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
+		step a:lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		executes oeCreateSystemAndEnvironment
+		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
 		executes sfAskForANewCrop()
-		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
-		executes sfAcceptDiffrentCrop()
 		step c: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfAcceptDiffrentCrop()
+		step d: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
 		executes sfAddCropToInventory()
+		
+		
+		
+		ordering constraint
+		"step a must always be the first step"
+		ordering constraint
+		"step b must come after a"
+		ordering constraint
+		"step c must come after b"
+		ordering constraint
+		"step d must come after c"
+		
+		}
+	
+	use case system summary sutest() {
 		
 		}
 	}

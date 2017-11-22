@@ -12,10 +12,12 @@
 @endProtocolConditions
 @preCondition
 "
+System needs to be running and the technician needs to be logged in.
 "
 @endPreConditions
 @postCondition
 "
+The sensor table gets filtered by sensor type selected.
 "
 @endPostConditions
 @additionalInformation

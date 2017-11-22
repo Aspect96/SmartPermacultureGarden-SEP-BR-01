@@ -10,9 +10,13 @@ package usecases.uciugAddANewSensor {
 			}
 			use case steps {
 				theTechnician
+				executed instanceof subfunction oeCreateSystemAndEnvironment()
+				
+				
+				theTechnician
 				executed instanceof subfunction
 				oeLogin("Technician","Password")
-				
+				 
 				theManager 
 				executed instanceof subfunction 
 				oeLogin("Manager","123456") 
@@ -52,8 +56,6 @@ package usecases.uciugAddANewSensor {
 					
 
 
-
-			
 					
 
 				

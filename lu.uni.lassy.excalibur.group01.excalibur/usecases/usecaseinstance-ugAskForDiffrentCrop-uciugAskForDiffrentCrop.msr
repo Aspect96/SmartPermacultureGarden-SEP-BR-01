@@ -5,10 +5,15 @@ package usecases.uciugAskForDiffrentCrop {
 
 		use case instance uciugAskForDiffrentCrop : ugAskForDiffrentCrop{
 			actors {
+				theTechnician: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
 				theGardener: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
 				theManager: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
 			}
 			use case steps {
+				
+				theTechnician
+				executed instanceof subfunction oeCreateSystemAndEnvironment()
+				
 				theGardener
 				executed instanceof subfunction
 				oeLogin("Gardener","Password")

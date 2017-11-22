@@ -8,14 +8,17 @@
 @description ""
 @protocolCondition
 "
+The system is booted up and the Technician needs to be logged in and be on the technician home screen.
 "
 @endProtocolConditions
 @preCondition
 "
+
 "
 @endPreConditions
 @postCondition
 "
+The request has been send to the manager.
 "
 @endPostConditions
 @additionalInformation

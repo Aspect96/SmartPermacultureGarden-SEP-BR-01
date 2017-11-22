@@ -12,10 +12,12 @@
 @endProtocolConditions
 @preCondition
 "
+The system is booted up and running the technician has to be logged in and be on he's home screen.
 "
 @endPreConditions
 @postCondition
 "
+The selected sensor is removed from the sensor table.
 "
 @endPostConditions
 @additionalInformation

@@ -5,9 +5,11 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfAddCropToInventory
-@description ""
+@description "The manager can add seeds to the inventory,in case if the GARDENER has send a request for a seed he needs 
+ to ACCEPT the request before adding the seed."
 @protocolCondition
 "
+The system is booted up and the manager needs to be on he's home screen.
 "
 @endProtocolConditions
 @preCondition
@@ -16,9 +18,12 @@
 @endPreConditions
 @postCondition
 "
+The storage/ inventory  table of seeds is updated with the new seed with the additional informations entered by the 
+manager.
 "
 @endPostConditions
 @additionalInformation
 "
-none
+The manager can add seeds even without the gardener request. In case the gardener has send the request for a new seed
+the manager can not simply added the seed to the inventory he needs to accept the request and after wards add the seed.
 "

@@ -5,12 +5,14 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfSortByAmountRequest
-@description ""
+@description "The sorting for the amount on the request  there needs to be a request inside 
+the request seed table. Also by executing the function by pressing the arrow button the 
+values are sorted by ascending order by amount."
 @protocolCondition
 "
 kneppchen disablen. also knopf auschalten.
 The system has to be running and the manager be on the manager request screen and there should be a request of
-crops in the table.
+seed in the table.
 "
 @endProtocolConditions
 @preCondition
@@ -20,7 +22,7 @@ n a aps des sense wenn keiene liste da ist. du kanns kliken knepchen aber bringt
 @endPreConditions
 @postCondition
 "
-The request crops table is ordered by ascending order.
+The request seed table is ordered by ascending order and displayed.
 "
 @endPostConditions
 @additionalInformation

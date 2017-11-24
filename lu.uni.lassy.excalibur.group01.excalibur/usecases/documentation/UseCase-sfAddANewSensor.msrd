@@ -5,17 +5,22 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfAddANewSensor
-@description ""
+@description "The technician has the ability to add a new sensor to the sensors table.
+This action can only be executed if there is already an accepted sensor inside the accept sensor table from the technician."
 @protocolCondition
 "
+The system is booted up and the technician needs to be logged in and be on  he's home screen. There also needs to be an entry 
+inside the accept sensor table.
 "
 @endProtocolConditions
 @preCondition
 "
+none
 "
 @endPreConditions
 @postCondition
 "
+The sensor is added to the table with the given input values from the technician.
 "
 @endPostConditions
 @additionalInformation

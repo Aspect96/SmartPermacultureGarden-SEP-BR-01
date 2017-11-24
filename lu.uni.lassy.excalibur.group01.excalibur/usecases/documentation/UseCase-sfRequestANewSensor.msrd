@@ -5,23 +5,24 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfRequestANewSensor
-@description ""
+@description "The technician can request a new sensor of a given type to the manager."
 @protocolCondition
 "
 The system is booted up and the Technician needs to be logged in and be on the technician home screen.
+The input values needs to be completed correctly.
 "
 @endProtocolConditions
 @preCondition
 "
-
 "
 @endPreConditions
 @postCondition
 "
-The request has been send to the manager.
+The request has been send to the manager by adding the sensor to the sensor request table from the manager.
+The system sets the (status) request on pending. On the technician request sensor table.
 "
 @endPostConditions
 @additionalInformation
 "
-none
+This action is the first action which needs to be taken to successfully add a new sensor.
 "

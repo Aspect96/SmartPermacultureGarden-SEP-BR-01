@@ -5,17 +5,23 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugAddANewSensor
-@description ""
+@description "The add a new Sensor can only be executed if a request for a sensor has already be done and accepted by the
+manager in addition the sensor request needs to be on true to successfully add a new sensor to the sensor list.
+Which will be the result if you enter the correct values in the text fields inputs."
 @protocolCondition
 "
+The system needs to be booted up and the technician has to be on the technician home screen.
+Inside the request sensor list there needs to be a sensor in which is on  request true (not on PENDING).
 "
 @endProtocolConditions
 @preCondition
 "
+none
 "
 @endPreConditions
 @postCondition
 "
+The sensor is added to the sensor list.
 "
 @endPostConditions
 @additionalInformation

@@ -5,14 +5,19 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfRemoveSensorFromSensorList
-@description ""
+@description "The technician has the ability to remove a sensor from the sensor table. The sensor can
+ only be deleted by the technician. In addition the technician has no constraints by doing it t can be for any reason. 
+One reason might be for the re-installation of the sensor to an other room.
+"
 @protocolCondition
 "
+The system is booted up and running the technician has to be logged in and be on he's home screen. There needs also to be
+a sensor inside the sensor table.
 "
 @endProtocolConditions
 @preCondition
 "
-The system is booted up and running the technician has to be logged in and be on he's home screen.
+none
 "
 @endPreConditions
 @postCondition
@@ -22,5 +27,6 @@ The selected sensor is removed from the sensor table.
 @endPostConditions
 @additionalInformation
 "
-none
+In case a request for a sensor has been made for a new sensor which is broken then 
+this will be the last step after adding the sensor .The after adding the new one he can delete the old one.
 "

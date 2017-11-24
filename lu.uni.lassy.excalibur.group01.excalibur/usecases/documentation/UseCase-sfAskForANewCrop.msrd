@@ -5,20 +5,26 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfAskForANewCrop
-@description ""
+@description "The manager can accept or decline a request from the gardener or the system for 
+a given requested seed inside the request a seed the able. By accepting the request the request will
+be set on true on the gardener request table (which was before on pending)."
 @protocolCondition
 "
+The system needs to be booted up and the manager has to be logged in and be on the manager 
+request and there needs to be at least one request inside the request seed table.
 "
 @endProtocolConditions
 @preCondition
 "
+none
 "
 @endPreConditions
 @postCondition
 "
+The requested seed table from the gardener is now updated and set on true for the given seed.
 "
 @endPostConditions
 @additionalInformation
 "
-none
+In case the manager accepts a request from the system the system refills the inventory automatically.
 "

@@ -5,14 +5,16 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfFilterBySensorName
-@description ""
+@description "The technician can filter the sensors by type , this allows him to check if there is a sensor which gives as out
+put the wrong values. "
 @protocolCondition
 "
+The system is booted up the technician needs to be on he's home screen and there needs to be at least 2 different sensor types. 
 "
 @endProtocolConditions
 @preCondition
 "
-System needs to be running and the technician needs to be logged in.
+none
 "
 @endPreConditions
 @postCondition
@@ -22,5 +24,5 @@ The sensor table gets filtered by sensor type selected.
 @endPostConditions
 @additionalInformation
 "
-none
+In case there is no sensor of a given selected type the displayed table will be empty since there are no sensors of the selected type.
 "

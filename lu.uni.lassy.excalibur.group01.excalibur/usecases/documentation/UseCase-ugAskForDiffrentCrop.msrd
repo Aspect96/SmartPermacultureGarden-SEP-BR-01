@@ -5,9 +5,14 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugAskForDiffrentCrop
-@description ""
+@description "The gardener has the opportunity to request a different seed which isn't 
+already in the seed inventory table.
+"
 @protocolCondition
 "
+The system needs to be booted up and the gardener needs to be on the gardener home screen.
+
+The different inputs have to be correctly completed.
 "
 @endProtocolConditions
 @preCondition
@@ -16,6 +21,7 @@
 @endPreConditions
 @postCondition
 "
+The request has been send to the manager by adding a the values to the request seeds table.
 "
 @endPostConditions
 @additionalInformation

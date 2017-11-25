@@ -101,27 +101,42 @@ sensor.
 \item [\textbf{Main~Success~Scenario}]:\\
 1. \emph{Technician} complets the diffrent input textfields and instructs the
 \emph{RMS} to push a request for a sensor by pressing Push to the manager Button.
-\begin{figure}
+\begin{figure}[h]
 \includegraphics[width=1\textwidth]{images/AskForNewSensor.eps}
 \end{figure} \\
 2.\emph{RMS} displays a popup with the information entered by the Technician.\\
+ \begin{figure}[h]
+\includegraphics[width=1\textwidth]{images/AskForANewSensorPopUp.eps}
+\end{figure}\\
+
 3.\emph{Technician} accepts the information.\\
+
 4.\emph{RMS} displays a message of validation and selects the values entered
 from the \emph{Technician} and pushes them to the Manager request table.\\
- \begin{figure}
-\includegraphics[width=1\textwidth]{images/RequestAskForNewSensor.eps}
-\end{figure}
+
 5. \emph{Manager} accepts the request and instructs the \emph{RMS} to send a
 confirmation to the Technician.\\
-7. \emph{RMS} sets the value on the request sensor table from pending to true.
-6. \emph{Technician} complets the fromular and presses add.\\
+
+6. \emph{RMS} sets the value on the request sensor table from pending to true.\\
+ \begin{figure}[h]
+\includegraphics[width=1\textwidth]{images/AskForANewSensorTrue.eps}
+\end{figure}\\
+
+7. \emph{Technician} complets the fromular and presses add.\\
+ \begin{figure}[h]
+\includegraphics[width=1\textwidth]{images/AddANewSensorTechnician.eps}
+\end{figure}\\
+
 8. \emph{RMS} adds the sensor to the sensor table.\\
+
 9.\emph{Technician} removes the sensor from the request sensor table by
 pressing the red button.\\
-10.\emph{RMS} displays a message of succesfully removed the sensor.
- \begin{figure}
-\includegraphics[width=1\textwidth]{images/AddANewSensor.eps}
-\end{figure} 
+
+ \begin{figure}[h]
+\includegraphics[width=1\textwidth]{images/RemoveSensorFromSensorRequestListTechnician.eps}
+\end{figure}
+
+10.\emph{RMS} displays a message of succesfully removed the sensor.\\
 \item [\textbf{Extensions}]:\\
 2.a Technician enters wrong input\\
 \hspace*{0.5cm} 2.a.1 (5)-(8)\emph{EMS} displays the message error (5)-(8).
@@ -132,7 +147,6 @@ Action canceled.\\
 2.c Manager declines request\\
 \hspace*{0.5cm} 2.b.1 \emph{RMS} informs \emph{Technician} that the request
 has been declined.\\
-c
 }
 \end{lyxlist}
 \hrule
@@ -141,36 +155,57 @@ c
 \break
 
 
-\subsection{Request a different crop}
+\subsection{Request a different seed}
 \vspace{0.5cm}
 \hrule
 \hfill
 \begin{lyxlist}{PC1}
 \small{
-\item [\textbf{Procedure:}] Request a diffrent Crops
+\item [\textbf{Procedure:}] Request a diffrent seed
 \item [\textbf{Scope:}] Request Management System(\emph{RMS})
 \item [\textbf{Primary Actor}:] Gardener
 \item [\textbf{Secondary Actor(s)}:] Manager,\\
 Error Management System
 \item [\textbf{Goal:}] The intention that the Gardener can request a new
-non already existing crop.
+non already existing seed.
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Gardener} complets the input text fields and presses the ask new crop
+1. \emph{Gardener} complets the input text fields and presses the ask new seed
 button.\\
+\item 
+\begin{figure}[H]
+\includegraphics[width=1\textwidth]{images/AskForANonExistingVegtable.eps}
+\end{figure}
 2. \emph{RMS} displays a pop to show the input to the \emph{Gardener}\\
+ \begin{figure}[H]
+\includegraphics[width=1\textwidth]{images/AskForANonExistingVegtablePopUp.eps}
+\end{figure}
+
 3.\emph{Gardener} accepts the intput and instructs the \emph{RMS} to send
 request.\\
-4.\emph{RMS} pushes the input values to the manager request crops table.\\
+4.\emph{RMS} pushes the input values to the manager request seed table.\\
 5.\emph{Manager} accepts the request and instructs the \emph{RMS} to go on
-the manager home screen.\\
+the manager home screen.
+ \begin{figure}[H]
+\includegraphics[width=1\textwidth]{images/AcceptRequestedCropManager.eps}
+\end{figure}
+
 6. \emph{Manager} complets the formula adding item to inventory and presses
 add.\\
+ \begin{figure}[H]
+\includegraphics[width=1\textwidth]{images/AddingSeedToTheInventoryManager.eps}
+\end{figure}
+
 7. \emph{RMS} displays a pop up with the information written by the Manager.\\
 8.\emph{Manager} validates the input and instructs the \emph{RMS} to update the
 inventory.\\
+ \begin{figure}[H]
+\includegraphics[width=1\textwidth]{images/AddingSeedToTheInventoryPopUp.eps}
+\end{figure}
+
 9. \emph{RMS} adds the given information to the crop invenotry table and
-updates all the inventory tables.
+updates all the inventory tables.\\
+
 \item [\textbf{Extensions}]:\\
 2.a Gardener cancels the request\\
 \hspace*{0.5cm} 2.a.1 {EMS} removes the pop up. Action canceled.\\
@@ -185,7 +220,10 @@ updates all the inventory tables.
 
 
 \break
-
+ 
+ 
+ 
+ 
 
 \subsection{Sign In}
 \vspace{0.5cm}

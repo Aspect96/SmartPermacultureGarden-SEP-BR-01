@@ -981,7 +981,7 @@ temperature.
 \textbf{Temperature sensor 1} sends 45 (degree) as digital signal.
 \textbf{System} checks if the temperature is acceding the temperature should be
 than the windows are opening.
-\item \begin{figure}[H]
+\begin{figure}[H]
 \includegraphics[width=1\textwidth]{images/OpenWindows.eps}
 \end{figure}
 \hfill
@@ -1026,7 +1026,7 @@ as the room humidtyi accepts it.
 room1.
 \textbf{System} enables the watering for the room1 until the humidity level is
 40 so that the plants have enough water.
-\item \begin{figure}[H]
+\begin{figure}[H]
 \includegraphics[width=1\textwidth]{images/WateringOn.eps}
 \end{figure}
 \hfill
@@ -1072,3 +1072,442 @@ apple seeds amount and displays the message: Successfully refilled storage.
 \hrule
 
 
+
+
+
+\section{Add new security camera}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Add new security camera}
+
+The manager can add a new security camera to the system.
+
+\begin{description}
+
+\item \textbf{Parameters:} ID, Description, Indoor
+\item \textbf{Precondition:} The system is bootedup and the Manager has to be
+logged in and be on the Settings pop-up screen.
+\item \textbf{Post-condition:} The new security camera has been added to the security camera database.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{Manager} fills in the different input text fields and presses
+the add security camera button.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of adding a new security camera}
+\textbf{Manager} fills in the identifier (ID = 10), the description (Description = 'Camera 10 Entrance') and if the camera is indoor (Indoor = true). 
+Now the \textbf{Manager} presses the 'Add Camera' button to add a new entry into the security camera database.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+\section{Delete security camera}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Delete security camera}
+
+The manager can delete a security camera from the system.
+
+\begin{description}
+
+\item \textbf{Parameters:} ID
+\item \textbf{Precondition:} The system is bootedup and the Manager has to be
+logged in and be on the Settings pop-up screen.
+\item \textbf{Post-condition:} The choosen security camera has been removed from the security camera database.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{Manager} clicks on the remove button on the security camera to be deleted.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of deleting security camera}
+The \textbf{Manager} looks for the needless security camera and click on the red remove button to delete the security camera from the system.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+\section{Show single security camera view}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Show single security camera view}
+
+The manager can choose a single security camera to be viewed instead of the 4 view perspective.
+
+\begin{description}
+
+\item \textbf{Parameters:} ID
+\item \textbf{Precondition:} The system is bootedup and the Manager has to be
+logged in and be on the Security Camera pop-up screen.
+\item \textbf{Post-condition:} The choosen security camera is shown in fullscreen.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{Manager} selects a security camera from the select list and presses 'View Camera'.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of showing a single security camera view}
+The \textbf{Manager} chooses a security camera from the select list which he wants the view in fullscreen. To change the view  the \textbf{Manager} clicks on the button 'View Camera'.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\section{Show multiple security camera view}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Show multiple security camera view}
+
+The manager can choose to view 4 security cameras at the same time.
+
+\begin{description}
+
+\item \textbf{Parameters:} 
+\item \textbf{Precondition:} The system is bootedup and the Manager has to be
+logged in and be on the Security Camera pop-up screen.
+\item \textbf{Post-condition:} The security camera screen now shows 4 views of up to 4 different security cameras.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{Manager} clicks on the button '4 Camera View'.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of showing a multiple security camera view}
+The \textbf{Manager} clicks on the '4 Camera View' button to display more security cameras at the same time.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\section{Add a new crop to the CropsDatabase}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Add a new crop the CropsDatabase}
+
+The manager can add a new crops to the crops database.
+
+\begin{description}
+
+\item \textbf{Parameters:} ID, DatePlanted, DateHarvested, Room, Plant, Weight, NumberOfPlants
+\item \textbf{Precondition:} The system is bootedup and the Manager has to be
+logged in and be on the Crops Manager pop-up screen.
+\item \textbf{Post-condition:} The new crop is added to the crops database.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{Manager} fills out the input text fields and clicks on the button 'Add new Crop'.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of adding a new crop to the CropsDatabase}
+The \textbf{Manager} fills out the input text fields with the corresponding data and then adds a new crops to the database by pressing the 'Add new crop' button.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\section{Delete a crop from the CropsDatabase}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Delete a crop from the CropsDatabase}
+
+The manager can delete a crop from the crops database.
+
+\begin{description}
+
+\item \textbf{Parameters:} ID
+\item \textbf{Precondition:} The system is bootedup and the Manager has to be
+logged in and be on the Crops Manager pop-up screen.
+\item \textbf{Post-condition:} The choosen crop is deleted from the crops database.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{Manager} clicks on the remove button next to the crop to be deleted from the crops database.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of deleting a crop from the CropsDatabase}
+The \textbf{Manager} looks for the crops he wants to remove from the crops database. And to remove the crop, the \textbf{Manager} clicks on the red remove button next to the crop.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+\section{View crop}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:View crop}
+
+The User can view the details from the crop entry inside the crops database.
+
+\begin{description}
+
+\item \textbf{Parameters:} ID, CompareCheckBox
+\item \textbf{Precondition:} The system is bootedup and the User has to be
+logged in and be on the Statistics screen.
+\item \textbf{Post-condition:} The choosen crop is shown inside the regular panel is the checkbox is false (not ticked), otherwise the crops is loaded inside the compare panel.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{User} clicks on any crop to be viewed.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of viewing a crop}
+The \textbf{User} wants to see the details of a crop and compare the first crop with a second crop. For the first crop the be loaded into the regular panel the compare checkbox has to be empty. 
+For the second crop, the \textbf{User} ticks the compare checkbox and clicks on the second crop the be loaded inside the compare panel.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\section{Calulate crop statistics}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Calculate crop statistics}
+
+The User will be able to see some calculated statistics inside the regular and the compare panel.
+
+\begin{description}
+
+\item \textbf{Parameters:} DatePlanted, DateHarvested, TotalWeight, NumberOfPlants
+\item \textbf{Precondition:} The system is bootedup and the User has to be
+logged in and be on the Statistics screen.
+\item \textbf{Post-condition:} The choosen crop is shown inside the panel with 3 calculated statistics, Days until harvest, Average weight per plant and Growth per day.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{User} clicks on any crop to be viewed.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of calculating crops statistics}
+The \textbf{User} wants to see the details of a crop. The system will now calculate the Days until harvest, Average weight per plant and Growth per day.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\section{Switch room for temperature diagram}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Switch room for temperature diagram}
+
+The User can switch between the rooms to show their temperature over time.
+
+\begin{description}
+
+\item \textbf{Parameters:} Room
+\item \textbf{Precondition:} The system is bootedup and the User has to be
+logged in and be on the Statistics screen.
+\item \textbf{Post-condition:} The temperature diagram for the choosen room is shown.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{User} clicks on the select list and chooses a different room.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of switchting room for the temperature diagram}
+The \textbf{User} wants to see the temperature of Room 3. The \textbf{User} clicks on the select list and selects the room 'Room 3'. The temperature diagram will instantly be loaded.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\section{Switch room for water consumption vs. luminosity level diagram}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Switch room for water consumption vs. luminosity level diagram}
+
+The User can switch between the rooms to show their water consumption vs. luminosity level over time.
+
+\begin{description}
+
+\item \textbf{Parameters:} Room
+\item \textbf{Precondition:} The system is bootedup and the User has to be
+logged in and be on the Statistics screen.
+\item \textbf{Post-condition:} The water consumption vs. luminosity level diagram for the choosen room is shown.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{User} clicks on the select list and chooses a different room.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of switchting room for the water consumption vs. luminosity level diagram}
+The \textbf{User} wants to see the water consumption vs. luminosity level of Room 2. The \textbf{User} clicks on the select list and selects the room 'Room 2'. 
+The water consumption vs. luminosity level diagram will instantly be loaded.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\section{Show projections for watering}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Show projections for watering}
+
+The System calculates the next planned watering for each room, calculated from the humidity data.
+
+\begin{description}
+
+\item \textbf{Parameters:} LogOfHumidity
+\item \textbf{Precondition:} The system is bootedup and the User has to be
+logged in.
+\item \textbf{Post-condition:} The \textbf{User} can see the next watering displayed on the screen.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{User} navigates to the projections screen.
+\item \textbf{User} navigates to the home screen.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of showing projections for watering}
+The \textbf{Manager} wants to manage the schedule for the \textbf{Gardener}. The projections for the next planned watering are displayed on the home screen (short version) 
+and on the projections screen (long version). The \textbf{Manager} can use these projections to plan the schedule for the \textbf{Gardeners}.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\section{Show projections for harvesting}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Show projections for harvesting}
+
+The System calculates the planned harvest date for each room.
+
+\begin{description}
+
+\item \textbf{Parameters:} datePlanted, Plant
+\item \textbf{Precondition:} The system is bootedup and the User has to be
+logged in.
+\item \textbf{Post-condition:} The \textbf{User} can see the planned harvest displayed on the screen.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{User} navigates to the projections screen.
+\item \textbf{User} navigates to the home screen.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of showing projections for harvesting}
+The \textbf{Manager} wants to manage the schedule for the \textbf{Gardener}. The projections for the next planned harvest are displayed on the projections screen. 
+The \textbf{Manager} can use these projections to plan the schedule for the \textbf{Gardeners}.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\section{Add a new room}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Add a new room}
+
+The Manager can add a new room to the room database.
+
+\begin{description}
+
+\item \textbf{Parameters:} ID, RoomName, Width, Length, SoilHeight
+\item \textbf{Precondition:} The system is bootedup and the Manager has to be
+logged in and be on the Settings pop-up screen.
+\item \textbf{Post-condition:} The new room has been added to the room database.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{Manager} fills out the input text fields and clicks on the 'Add Room' button.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of adding a new room}
+The \textbf{Manager} fills in the identifier (ID = 2), the room name (RoomName = 'Room 2'), the width (Width = 5), the length (Length = 3) and the soil height (SoilHeight = 0,5).
+Now the \textbf{Manager} clicks on the 'Add Room' button to add a new room to the room database.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\section{Delete a room}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Delete a room}
+
+The Manager can delete a room from the room database.
+
+\begin{description}
+
+\item \textbf{Parameters:} ID
+\item \textbf{Precondition:} The system is bootedup and the Manager has to be
+logged in and be on the Settings pop-up screen.
+\item \textbf{Post-condition:} The selected room has been removed from the room database.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{Manager} clicks on the red remove button next to the room to be deleted.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of deleting a room}
+The \textbf{Manager} looks for the room that is no longer needed and clicks on the red remove button next to the entry.
+\hfill
+\vspace{0.5cm}
+\hrule

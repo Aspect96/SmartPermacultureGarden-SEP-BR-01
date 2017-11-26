@@ -1,0 +1,28 @@
+/*
+@author Gaetan1991
+@date Sun Nov 26 16:12:27 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfHumiditySensorPushValue
+@description "The humidity sensor has the ability to send the humidity level from the environment to the system. The system 
+will update the value for the given sensor inside the sensor List."
+@protocolCondition
+"
+The system needs to be booted up , the humidity sensor needs to be installed and functional.
+"
+@endProtocolConditions
+@preCondition
+"
+none
+"
+@endPreConditions
+@postCondition
+"
+The system updates the value from the given humidity sensor  inside the sensor list.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

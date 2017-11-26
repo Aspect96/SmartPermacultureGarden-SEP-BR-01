@@ -1,0 +1,28 @@
+/*
+@author Gaetan1991
+@date Sun Nov 26 16:05:58 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfTemperatureSensorPushValue
+@description "The temperature sensor has the ability to send the information from the environment this case the temperature 
+to the system and the system updates the list with the new value."
+@protocolCondition
+"
+The system needs to be booted up, and there needs to be an temperature sensor installed and functional.
+"
+@endProtocolConditions
+@preCondition
+"
+none
+"
+@endPreConditions
+@postCondition
+"
+The system has updated the list with the new value of the given temperature sensor.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

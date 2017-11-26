@@ -1,0 +1,28 @@
+/*
+@author Gaetan1991
+@date Sun Nov 26 15:40:44 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfOpenWindows
+@description "In case the temperature level/value is higher than the expected maximum value allowed for the temperature
+the system will open the windows to cool down the temperature of the given room."
+@protocolCondition
+"
+The system needs to be booted up, there needs to be a temperature sensor in the room which is sending a digital signal to
+the sensor list and the value has to be over the allowed temperature for this room.
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+The windows are open until the temperature value is as expected for the room.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

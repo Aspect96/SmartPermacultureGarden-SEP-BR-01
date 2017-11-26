@@ -230,8 +230,28 @@ import lu.uni.lassy.messir.libraries.string
 		
 		}
 	
-	use case system summary sutest() {
-		
+	use case system summary sutest() {	
+		}
+	use case system subfunction sfTurnOnWatering() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actHumiditySensor[primary, active]
+		}
+	use case system subfunction sfOpenWindows() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTemperatureSensor[primary, active]
+		}
+	use case system subfunction sfTurnOnLED() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actLightSensor[primary, active]
+		}
+	use case system subfunction sfTurnOnHeater() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTemperatureSensor[primary, active]
+		}
+	use case system subfunction sfLightSensorPushValue() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actLightSensor[primary, active]
+		}
+	use case system subfunction sfTemperatureSensorPushValue() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTemperatureSensor[primary, active]
+		}
+	use case system subfunction sfHumiditySensorPushValue() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actHumiditySensor[primary, active]
 		}
 	}
 

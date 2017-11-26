@@ -1,0 +1,30 @@
+/*
+@author Gaetan1991
+@date Sun Nov 26 15:46:01 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfTurnOnLED
+@description "In case the luminosity value is less than what the plants in a given room need and if there time ticker
+is 0 the system will turn on the LEDs. Until the the ticker is 0 or the Luminosity value from the sensor has the value as the
+expected one in the room."
+@protocolCondition
+"
+The system needs to be booted up, there need to be a luminosity sensor which sends values , in addition the ticker needs to be
+higher than 0 and the LEDs needs to be off.
+"
+@endProtocolConditions
+@preCondition
+"
+none
+"
+@endPreConditions
+@postCondition
+"
+The LEDs are turned on until the value of the luminosity sensor is the same as the expected one from the System.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

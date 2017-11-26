@@ -1,0 +1,28 @@
+/*
+@author Gaetan1991
+@date Sun Nov 26 15:54:51 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfTurnOnHeater
+@description "In case the temperature sensor from a given room sends a value less than the expected one the system 
+will turn on the heater for that given room. "
+@protocolCondition
+"
+The system needs to be booted up and there needs to be a temperature sensor for that given room ,the temperature sensor
+needs to send a value below the expected value expected and the heater isn't already turned on.
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+The system enables the heating for that given room.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

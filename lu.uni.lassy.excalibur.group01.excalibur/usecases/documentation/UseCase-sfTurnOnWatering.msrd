@@ -1,0 +1,29 @@
+/*
+@author Gaetan1991
+@date Sun Nov 26 15:35:27 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfTurnOnWatering
+@description "In case the Humidity sensor sends a value of less than the accepted humidity level in the given room
+the system enables the watering system to  the given room. "
+@protocolCondition
+"
+The system is booted up, there needs to be an humidity sensor in a room and the value of the digital signal has to be less than
+the accepted humidity value of the room.The watering system needs to be offline.
+"
+@endProtocolConditions
+@preCondition
+"
+none
+"
+@endPreConditions
+@postCondition
+"
+The watering is turned on until the humidity level/value is the expected value.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

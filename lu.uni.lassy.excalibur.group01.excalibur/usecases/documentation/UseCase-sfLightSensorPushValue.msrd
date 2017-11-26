@@ -1,0 +1,27 @@
+/*
+@author Gaetan1991
+@date Sun Nov 26 16:01:44 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfLightSensorPushValue
+@description "The Light sensor has the ability to send the information from the environment this case the luminosity level
+to the system and the system stores the value inside a table."
+@protocolCondition
+"
+The system needs to be booted up and there needs to be a luminosity sensor installed inside a room.
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+The system adds the send value to a list and updates the value inside the list.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

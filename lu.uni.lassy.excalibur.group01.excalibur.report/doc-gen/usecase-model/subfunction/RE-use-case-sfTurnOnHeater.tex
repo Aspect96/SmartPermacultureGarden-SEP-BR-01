@@ -1,0 +1,47 @@
+\subsubsection{subfunction-sfTurnOnHeater}
+
+\label{RE-use-case-sfTurnOnHeater}
+
+
+In case the temperature sensor from a given room sends a value less than the expected one the system 
+will turn on the heater for that given room. 		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfTurnOnHeater}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actTemperatureSensor[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{In case the temperature sensor from a given room sends a value less than the expected one the system 
+will turn on the heater for that given room. }
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system needs to be booted up and there needs to be a temperature sensor for that given room ,the temperature sensor
+needs to send a value below the expected value expected and the heater isn't already turned on.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The system enables the heating for that given room.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+none
+}
+
+\end{usecase} 
+

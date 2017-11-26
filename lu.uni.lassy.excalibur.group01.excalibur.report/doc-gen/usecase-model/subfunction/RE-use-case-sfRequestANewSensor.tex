@@ -1,0 +1,46 @@
+\subsubsection{subfunction-sfRequestANewSensor}
+
+\label{RE-use-case-sfRequestANewSensor}
+
+
+The technician can request a new sensor of a given type to the manager.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfRequestANewSensor}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actTechnician[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The technician can request a new sensor of a given type to the manager.}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system is booted up and the Technician needs to be logged in and be on the technician home screen.
+The input values needs to be completed correctly.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The request has been send to the manager by adding the sensor to the sensor request table from the manager.
+The system sets the (status) request on pending. On the technician request sensor table.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+This action is the first action which needs to be taken to successfully add a new sensor.
+}
+
+\end{usecase} 
+

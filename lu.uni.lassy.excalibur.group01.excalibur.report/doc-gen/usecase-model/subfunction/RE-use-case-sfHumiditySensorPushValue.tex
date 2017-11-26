@@ -1,0 +1,47 @@
+\subsubsection{subfunction-sfHumiditySensorPushValue}
+
+\label{RE-use-case-sfHumiditySensorPushValue}
+
+
+The humidity sensor has the ability to send the humidity level from the environment to the system. The system 
+will update the value for the given sensor inside the sensor List.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfHumiditySensorPushValue}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actHumiditySensor[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The humidity sensor has the ability to send the humidity level from the environment to the system. The system 
+will update the value for the given sensor inside the sensor List.}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system needs to be booted up , the humidity sensor needs to be installed and functional.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+none
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The system updates the value from the given humidity sensor  inside the sensor list.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+none
+}
+
+\end{usecase} 
+

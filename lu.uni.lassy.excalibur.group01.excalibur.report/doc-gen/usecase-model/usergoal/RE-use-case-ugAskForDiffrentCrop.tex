@@ -1,0 +1,85 @@
+\subsubsection{usergoal-ugAskForDiffrentCrop}
+
+\label{RE-use-case-ugAskForDiffrentCrop}
+
+
+The gardener has the opportunity to request a different seed which isn't 
+already in the seed inventory table.
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{ugAskForDiffrentCrop}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{usergoal}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actGardener[active]}}
+
+
+\addrowheading{Secondary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actManager[active]}}
+\addnumberedsinglerow{}{\msrcode{actTechnician[active]}}
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The gardener has the opportunity to request a different seed which isn't 
+already in the seed inventory table.
+}
+
+\addrowheading{Reuse}
+\addnumberedsinglerow{}{\msrucname{oeCreateSystemAndEnvironment [1..1]}}
+\addnumberedsinglerow{}{\msrucname{sfAskForANewCrop [0..*]}}
+\addnumberedsinglerow{}{\msrucname{sfAcceptDiffrentCrop [0..*]}}
+\addnumberedsinglerow{}{\msrucname{sfAddCropToInventory [0..*]}}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system needs to be booted up and the gardener needs to be on the gardener home screen.
+
+The different inputs have to be correctly completed.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The request has been send to the manager by adding a the values to the request seeds table.
+}
+
+\addrowheading{Main Steps}
+\addalphanumberedsinglerow{}{the actor \msrcode{actTechnician} executes the \msrucname{oeCreateSystemAndEnvironment} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actGardener} executes the \msrucname{sfAskForANewCrop} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actManager} executes the \msrucname{sfAcceptDiffrentCrop} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actManager} executes the \msrucname{sfAddCropToInventory} use case}
+\addrowheading{Steps Ordering Constraints}
+\addnumberedsinglerow{}{step a must always be the first step}
+\addnumberedsinglerow{}{step b must come after a}
+\addnumberedsinglerow{}{step c must come after b}
+\addnumberedsinglerow{}{step d must come after c}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+none
+}
+
+\end{usecase} 
+
+
+Figure \ref{fig:lu.uni.lassy.excalibur.group01.excalibur-RE-UCD-ugAskForDiffrentCrop}
+The Gardener can do a request for a new crop. The manager has to accept the 
+request and adds the requested crop to the table.
+
+\begin{figure}[htbp]
+\begin{center}
+
+\includegraphics[
+angle=0
+]{./images-report-gen/usecase-model/usergoal/ugAskForDiffrentCrop.eps}
+\end{center}
+\caption[lu.uni.lassy.excalibur.group01.excalibur Use Case Diagram: ugAskForDiffrentCrop]{The process of adding a new non existing crop.}
+\label{fig:lu.uni.lassy.excalibur.group01.excalibur-RE-UCD-ugAskForDiffrentCrop}
+\end{figure}
+\vspace{0.5cm}

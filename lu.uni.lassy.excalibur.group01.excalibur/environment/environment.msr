@@ -16,8 +16,19 @@ Environment Model {
 			
 actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			input interface inactTechnician {
+			operation ieMessageWithTheRequestPulledToManager():ptBoolean
+			operation ieSuccessfullyAddedTheSensorToTheSensorList():ptBoolean
+			operation ieSuccessfullyDeletedTheRequestSensor():ptBoolean
+			operation ieDisplaySensorByCategory():ptBoolean
 			}
 			output interface outactTechnician {
+			operation sfRequestANewSensor():ptBoolean
+			operation sfAddANewSensor():ptBoolean
+			operation sfRemoveSensorFromSensorList():ptBoolean
+			operation sfFilterBySensorName():ptBoolean
+			operation oeCreateSystemAndEnvironment():ptBoolean
+			operation oeLogin():ptBoolean
+			operation oeLogout():ptBoolean
 			}
 		}
 	actor actGardener role rnactGardener cardinality[0 .. *] {
@@ -48,18 +59,22 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			input interface inactTemperatureSensor {
 			}
 			output interface outactTemperatureSensor {
+			operation sfTemperatureSensorPushValue():ptBoolean
 			}
 		}
 	actor actHumiditySensor role rnactHumiditySensor cardinality[0 .. *] {
 			input interface inactHumiditySensor {
 			}
 			output interface outactHumiditySensor {
+			operation oeSendHumidityValue():ptBoolean
+			operation sfHumiditySensorPushValue():ptBoolean
 			}
 		}
 	actor actLightSensor role rnactLightSensor cardinality[0 .. *] {
 			input interface inactLightSensor {
 			}
 			output interface outactLightSensor {
+			operation sfLightSensorPushValue():ptBoolean
 			}
 		}
 	actor actPhMeter role rnactPhMeter cardinality[0 .. *] {

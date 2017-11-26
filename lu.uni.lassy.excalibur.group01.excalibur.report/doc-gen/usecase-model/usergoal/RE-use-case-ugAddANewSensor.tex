@@ -1,0 +1,88 @@
+\subsubsection{usergoal-ugAddANewSensor}
+
+\label{RE-use-case-ugAddANewSensor}
+
+
+The add a new Sensor can only be executed if a request for a sensor has already be done and accepted by the
+manager in addition the sensor request needs to be on true to successfully add a new sensor to the sensor list.
+Which will be the result if you enter the correct values in the text fields inputs.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{ugAddANewSensor}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{usergoal}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actTechnician[active]}}
+
+
+\addrowheading{Secondary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actManager[active]}}
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The add a new Sensor can only be executed if a request for a sensor has already be done and accepted by the
+manager in addition the sensor request needs to be on true to successfully add a new sensor to the sensor list.
+Which will be the result if you enter the correct values in the text fields inputs.}
+
+\addrowheading{Reuse}
+\addnumberedsinglerow{}{\msrucname{oeCreateSystemAndEnvironment [1..1]}}
+\addnumberedsinglerow{}{\msrucname{sfRequestANewSensor [1..*]}}
+\addnumberedsinglerow{}{\msrucname{sfAcceptRequestForNewSensor [1..*]}}
+\addnumberedsinglerow{}{\msrucname{sfAddANewSensor [1..*]}}
+\addnumberedsinglerow{}{\msrucname{sfRemoveSensorFromSensorList [1..*]}}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system needs to be booted up and the technician has to be on the technician home screen.
+Inside the request sensor list there needs to be a sensor in which is on  request true (not on PENDING).
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+none
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The sensor is added to the sensor list.
+}
+
+\addrowheading{Main Steps}
+\addalphanumberedsinglerow{}{the actor \msrcode{actTechnician} executes the \msrucname{oeCreateSystemAndEnvironment} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actTechnician} executes the \msrucname{sfRequestANewSensor} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actManager} executes the \msrucname{sfAcceptRequestForNewSensor} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actTechnician} executes the \msrucname{sfAddANewSensor} use case}
+\addalphanumberedsinglerow{}{the actor \msrcode{actTechnician} executes the \msrucname{sfRemoveSensorFromSensorList} use case}
+\addrowheading{Steps Ordering Constraints}
+\addnumberedsinglerow{}{step a must always be the first step}
+\addnumberedsinglerow{}{step b must come after a}
+\addnumberedsinglerow{}{step c must come after b}
+\addnumberedsinglerow{}{step d must come after c}
+\addnumberedsinglerow{}{step e must come after d}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+none
+}
+
+\end{usecase} 
+
+
+Figure \ref{fig:lu.uni.lassy.excalibur.group01.excalibur-RE-UCD-ugAddANewSensor}
+The Technician can request a new sensor to the manager the manager is the
+ person who allows the request and the technician adds the sensor after validation of the request
+
+\begin{figure}[htbp]
+\begin{center}
+
+\includegraphics[
+angle=0
+]{./images-report-gen/usecase-model/usergoal/ugAddANewSensor.eps}
+\end{center}
+\caption[lu.uni.lassy.excalibur.group01.excalibur Use Case Diagram: ugAddANewSensor]{Procedure for adding a new sensor}
+\label{fig:lu.uni.lassy.excalibur.group01.excalibur-RE-UCD-ugAddANewSensor}
+\end{figure}
+\vspace{0.5cm}

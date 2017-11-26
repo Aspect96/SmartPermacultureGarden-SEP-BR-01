@@ -1,0 +1,52 @@
+\subsubsection{subfunction-sfRemoveSensorFromSensorList}
+
+\label{RE-use-case-sfRemoveSensorFromSensorList}
+
+
+The technician has the ability to remove a sensor from the sensor table. The sensor can
+ only be deleted by the technician. In addition the technician has no constraints by doing it t can be for any reason. 
+One reason might be for the re-installation of the sensor to an other room.
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfRemoveSensorFromSensorList}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actTechnician[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The technician has the ability to remove a sensor from the sensor table. The sensor can
+ only be deleted by the technician. In addition the technician has no constraints by doing it t can be for any reason. 
+One reason might be for the re-installation of the sensor to an other room.
+}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system is booted up and running the technician has to be logged in and be on he's home screen. There needs also to be
+a sensor inside the sensor table.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+none
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The selected sensor is removed from the sensor table.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+In case a request for a sensor has been made for a new sensor which is broken then 
+this will be the last step after adding the sensor .The after adding the new one he can delete the old one.
+}
+
+\end{usecase} 
+

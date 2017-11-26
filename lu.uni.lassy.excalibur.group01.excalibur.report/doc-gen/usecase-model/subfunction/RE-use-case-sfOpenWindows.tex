@@ -1,0 +1,47 @@
+\subsubsection{subfunction-sfOpenWindows}
+
+\label{RE-use-case-sfOpenWindows}
+
+
+In case the temperature level/value is higher than the expected maximum value allowed for the temperature
+the system will open the windows to cool down the temperature of the given room.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfOpenWindows}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actTemperatureSensor[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{In case the temperature level/value is higher than the expected maximum value allowed for the temperature
+the system will open the windows to cool down the temperature of the given room.}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system needs to be booted up, there needs to be a temperature sensor in the room which is sending a digital signal to
+the sensor list and the value has to be over the allowed temperature for this room.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The windows are open until the temperature value is as expected for the room.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+none
+}
+
+\end{usecase} 
+

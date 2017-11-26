@@ -1,0 +1,48 @@
+\subsubsection{subfunction-sfTurnOnWatering}
+
+\label{RE-use-case-sfTurnOnWatering}
+
+
+In case the Humidity sensor sends a value of less than the accepted humidity level in the given room
+the system enables the watering system to  the given room. 		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfTurnOnWatering}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actHumiditySensor[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{In case the Humidity sensor sends a value of less than the accepted humidity level in the given room
+the system enables the watering system to  the given room. }
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system is booted up, there needs to be an humidity sensor in a room and the value of the digital signal has to be less than
+the accepted humidity value of the room.The watering system needs to be offline.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+none
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The watering is turned on until the humidity level/value is the expected value.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+none
+}
+
+\end{usecase} 
+

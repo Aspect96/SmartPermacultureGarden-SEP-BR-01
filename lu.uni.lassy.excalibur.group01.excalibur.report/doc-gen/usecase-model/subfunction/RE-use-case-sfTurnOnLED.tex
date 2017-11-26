@@ -1,0 +1,50 @@
+\subsubsection{subfunction-sfTurnOnLED}
+
+\label{RE-use-case-sfTurnOnLED}
+
+
+In case the luminosity value is less than what the plants in a given room need and if there time ticker
+is 0 the system will turn on the LEDs. Until the the ticker is 0 or the Luminosity value from the sensor has the value as the
+expected one in the room.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfTurnOnLED}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actLightSensor[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{In case the luminosity value is less than what the plants in a given room need and if there time ticker
+is 0 the system will turn on the LEDs. Until the the ticker is 0 or the Luminosity value from the sensor has the value as the
+expected one in the room.}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system needs to be booted up, there need to be a luminosity sensor which sends values , in addition the ticker needs to be
+higher than 0 and the LEDs needs to be off.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+none
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The LEDs are turned on until the value of the luminosity sensor is the same as the expected one from the System.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+none
+}
+
+\end{usecase} 
+

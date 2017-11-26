@@ -1,0 +1,47 @@
+\subsubsection{subfunction-sfAcceptRequestForNewSensor}
+
+\label{RE-use-case-sfAcceptRequestForNewSensor}
+
+
+The manager can accept a request from the technician for a sensor. The expedition happens on the request sensor
+table on the request screen from the manager. The manager accepts the request and the system tells the technician that he can now replace the sensor.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfAcceptRequestForNewSensor}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actManager[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The manager can accept a request from the technician for a sensor. The expedition happens on the request sensor
+table on the request screen from the manager. The manager accepts the request and the system tells the technician that he can now replace the sensor.}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system is booted up and the manager needs to be on the request screen and there needs to be an available request for a sensor.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+none
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The system inserts the value to the sensor accepted table from the technician.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+In case of a decline no action happens that means no value added to the accepted sensor table from the technician.
+}
+
+\end{usecase} 
+

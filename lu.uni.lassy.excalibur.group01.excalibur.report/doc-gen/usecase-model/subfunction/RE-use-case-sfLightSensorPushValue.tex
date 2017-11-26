@@ -1,0 +1,46 @@
+\subsubsection{subfunction-sfLightSensorPushValue}
+
+\label{RE-use-case-sfLightSensorPushValue}
+
+
+The Light sensor has the ability to send the information from the environment this case the luminosity level
+to the system and the system stores the value inside a table.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfLightSensorPushValue}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actLightSensor[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The Light sensor has the ability to send the information from the environment this case the luminosity level
+to the system and the system stores the value inside a table.}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system needs to be booted up and there needs to be a luminosity sensor installed inside a room.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The system adds the send value to a list and updates the value inside the list.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+none
+}
+
+\end{usecase} 
+

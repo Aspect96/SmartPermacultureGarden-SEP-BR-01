@@ -1,0 +1,24 @@
+/*
+@author Gaetan1991
+@date Sun Nov 26 16:19:10 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.oeCreateSystemAndEnvironment
+@description ""
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

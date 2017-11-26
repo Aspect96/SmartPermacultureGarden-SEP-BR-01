@@ -1,0 +1,50 @@
+\subsubsection{subfunction-sfAskForANewCrop}
+
+\label{RE-use-case-sfAskForANewCrop}
+
+
+The manager can accept or decline a request from the gardener or the system for 
+a given requested seed inside the request a seed the able. By accepting the request the request will
+be set on true on the gardener request table (which was before on pending).		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfAskForANewCrop}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actGardener[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The manager can accept or decline a request from the gardener or the system for 
+a given requested seed inside the request a seed the able. By accepting the request the request will
+be set on true on the gardener request table (which was before on pending).}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system needs to be booted up and the manager has to be logged in and be on the manager 
+request and there needs to be at least one request inside the request seed table.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+none
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The requested seed table from the gardener is now updated and set on true for the given seed.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+In case the manager accepts a request from the system the system refills the inventory automatically.
+}
+
+\end{usecase} 
+

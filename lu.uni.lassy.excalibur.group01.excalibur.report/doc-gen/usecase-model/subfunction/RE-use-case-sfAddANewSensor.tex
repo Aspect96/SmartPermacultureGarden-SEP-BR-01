@@ -1,0 +1,48 @@
+\subsubsection{subfunction-sfAddANewSensor}
+
+\label{RE-use-case-sfAddANewSensor}
+
+
+The technician has the ability to add a new sensor to the sensors table.
+This action can only be executed if there is already an accepted sensor inside the accept sensor table from the technician.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfAddANewSensor}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actTechnician[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The technician has the ability to add a new sensor to the sensors table.
+This action can only be executed if there is already an accepted sensor inside the accept sensor table from the technician.}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system is booted up and the technician needs to be logged in and be on  he's home screen. There also needs to be an entry 
+inside the accept sensor table.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+none
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The sensor is added to the table with the given input values from the technician.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+none
+}
+
+\end{usecase} 
+

@@ -1,0 +1,48 @@
+\subsubsection{subfunction-sfAddCropToInventory}
+
+\label{RE-use-case-sfAddCropToInventory}
+
+
+The manager can add seeds to the inventory,in case if the GARDENER has send a request for a seed he needs 
+ to ACCEPT the request before adding the seed.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfAddCropToInventory}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actManager[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The manager can add seeds to the inventory,in case if the GARDENER has send a request for a seed he needs 
+ to ACCEPT the request before adding the seed.}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system is booted up and the manager needs to be on he's home screen.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The storage/ inventory  table of seeds is updated with the new seed with the additional informations entered by the 
+manager.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+The manager can add seeds even without the gardener request. In case the gardener has send the request for a new seed
+the manager can not simply added the seed to the inventory he needs to accept the request and after wards add the seed.
+}
+
+\end{usecase} 
+

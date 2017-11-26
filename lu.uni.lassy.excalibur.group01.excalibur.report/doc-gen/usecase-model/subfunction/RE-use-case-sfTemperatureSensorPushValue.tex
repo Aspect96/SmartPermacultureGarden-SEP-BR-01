@@ -1,0 +1,47 @@
+\subsubsection{subfunction-sfTemperatureSensorPushValue}
+
+\label{RE-use-case-sfTemperatureSensorPushValue}
+
+
+The temperature sensor has the ability to send the information from the environment this case the temperature 
+to the system and the system updates the list with the new value.		  
+
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{sfTemperatureSensorPushValue}
+  \addsingletwocolumnrow{Scope}{system}
+  \addsingletwocolumnrow{Level}{subfunction}
+  
+
+\addrowheading{Primary actor(s)}
+\addnumberedsinglerow{}{\msrcode{actTemperatureSensor[active]}}
+
+
+
+\addrowheading{Goal(s) description}
+\addsinglerow{The temperature sensor has the ability to send the information from the environment this case the temperature 
+to the system and the system updates the list with the new value.}
+
+\addrowheading{Protocol condition(s)}
+\addnumberedsinglerow{}{
+The system needs to be booted up, and there needs to be an temperature sensor installed and functional.
+}
+
+\addrowheading{Pre-condition(s)}
+\addnumberedsinglerow{}{
+none
+}
+
+\addrowheading{Main post-condition(s)}
+\addnumberedsinglerow{}{
+The system has updated the list with the new value of the given temperature sensor.
+}
+
+\addrowheading{Additional Information}
+\addsinglerow{
+none
+}
+
+\end{usecase} 
+

@@ -1,0 +1,27 @@
+/*
+@author Jerome
+@date Sun Nov 26 21:06:52 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfDeleteCrop
+@description "The Manager can delete crops from the crop list"
+@protocolCondition
+"
+The system is booted-up and the Manager is logged in. The Manager needs to be on the Manage Crop Statistics pop-up window.
+The Manager clicks on the crop he wants to remove from the system.
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+The Crop is removed from the crops database.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

@@ -1,0 +1,10 @@
+/*
+@author Jerome
+@date Sun Nov 26 22:03:02 CET 2017
+*/
+
+
+@@view ugViewCrops
+@model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugViewCrops 
+@description ""
+@caption ""

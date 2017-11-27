@@ -47,6 +47,9 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			input interface inactManager {
 			}
 			output interface outactManager {
+				operation oeCreateSystemAndEnvironment():ptBoolean
+				operation sfAddCrop():ptBoolean
+				operation sfDelteCrop():ptBoolean
 			}
 		}
 	actor actUser role rnactUser cardinality[0 .. *] {

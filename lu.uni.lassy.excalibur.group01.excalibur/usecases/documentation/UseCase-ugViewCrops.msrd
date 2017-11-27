@@ -1,0 +1,26 @@
+/*
+@author Jerome
+@date Sun Nov 26 21:42:00 CET 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugViewCrops
+@description "The Manager can view the crops from the crop database."
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+The Manager or the gardener is logged in.
+"
+@endPreConditions
+@postCondition
+"
+The needed crops are retrieved from the crop database.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

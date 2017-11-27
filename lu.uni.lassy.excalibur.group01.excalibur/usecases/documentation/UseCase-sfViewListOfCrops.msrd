@@ -1,0 +1,26 @@
+/*
+@author Jerome
+@date Sun Nov 26 21:10:31 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfViewListOfCrops
+@description "The Manager can retrieve the list of all crops inside the crop database."
+@protocolCondition
+"
+The system is booted-up and the Manager is logged in.
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+The Manager gets a list of all crops inside the crop database.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

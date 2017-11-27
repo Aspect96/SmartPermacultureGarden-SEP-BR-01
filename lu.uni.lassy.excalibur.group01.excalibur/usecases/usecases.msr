@@ -253,6 +253,61 @@ import lu.uni.lassy.messir.libraries.string
 	use case system subfunction sfHumiditySensorPushValue() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actHumiditySensor[primary, active]
 		}
+	use case system subfunction sfAddCrop() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system subfunction sfDeleteCrop() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system subfunction sfViewListOfCrops() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system subfunction sfLoadDataFromCrop() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system usergoal ugManageCrops() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+			
+			reuse sfAddCrop[0..*]
+			reuse sfDeleteCrop[0..*]
+			
+			step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+			executes sfAddCrop()
+			step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+			executes sfDeleteCrop()
+		}
+	use case system usergoal ugViewCrops() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[secondary, active]
+			
+			reuse sfViewListOfCrops[1..1]
+			reuse sfLoadDataFromCrop[0..*]
+			
+			step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+			executes sfViewListOfCrops()
+			step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+			executes sfLoadDataFromCrop()
+			
+			ordering constraint
+			"step a must always be the first step"
+			ordering constraint
+			"step b must come after a"
+		}
+	use case system summary suManageCropStatistics() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+			
+			reuse ugManageCrops[0..*]
+			reuse ugViewCrops[1..*]
+			
+			step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+			executes ugViewCrops()
+			step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+			executes ugManageCrops()
+			
+			ordering constraint
+			"step (a) and (b) can be excuted multiple times."
+			
+		}
 	}
 
 }

@@ -1,0 +1,27 @@
+/*
+@author Jerome
+@date Sun Nov 26 20:58:27 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfAddCrop
+@description "The Manager can add a new Crop for the Crops Statistics."
+@protocolCondition
+"
+The system is booted-up and the Manager is logged in. The Manager needs to be on the Manage Crop Statistics pop-up window.
+The input fields need to be filled correctly.
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+The new crop is added to the crops database.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

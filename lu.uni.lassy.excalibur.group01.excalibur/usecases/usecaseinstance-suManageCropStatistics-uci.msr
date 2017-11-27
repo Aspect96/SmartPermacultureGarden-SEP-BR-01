@@ -1,0 +1,42 @@
+package usecases.uciManageCropsStatistics {
+	import lu.uni.lassy.excalibur.group01.excalibur.usecases
+
+	Use Case Model {
+
+		use case instance uciManageCropsStatistics : suManageCropStatistics{
+			actors {
+				theManager: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+				theGardener: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
+			}
+			use case steps {
+				theManager
+				executed instanceof subfunction
+				oeCreateSystemAndEnvironment()
+				
+				theManager
+				executed instanceof subfunction
+				sfAddCrop("3", "10/11/2017", "08/15/2017", "Tomato", "50", "208.45") {
+					ieMessage("Successfully added!") returned to theManager
+				}
+				
+				theManager
+				executed instanceof subfunction
+				sfDeleteCrop("2") {
+					ieMessage("Crop with ID 2 removed!") returned to theManager
+				}
+				
+				theGardener
+				executed instanceof subfunction
+				sfViewListOfCrops()
+				
+				theGardener
+				executed instanceof subfunction
+				sfLoadDataFromCrop("3", "False")
+				
+				theGardener
+				executed instanceof subfunction
+				sfLoadDataFromCrop("2", "True")
+			}
+		}
+	}
+}

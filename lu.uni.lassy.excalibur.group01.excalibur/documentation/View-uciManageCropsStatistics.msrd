@@ -1,0 +1,10 @@
+/*
+@author Jerome
+@date Sun Nov 26 22:31:46 CET 2017
+*/
+
+
+@@view uciManageCropsStatistics
+@instance Use-Case usecases.uciManageCropsStatistics.uciManageCropsStatistics 
+@description "This is a use case instance which shows the Manager adding a new crop to the crop database and deleting one crop no longer needed. The Gardener now retrieves the list of all crops and chooses to compare the crop 3 with 2."
+@caption "Usecase Instance of ManagingCropStatistics"

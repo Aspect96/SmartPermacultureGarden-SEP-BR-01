@@ -26,6 +26,7 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			operation sfAddANewSensor():ptBoolean
 			operation sfRemoveSensorFromSensorList():ptBoolean
 			operation sfFilterBySensorName():ptBoolean
+			operation oeLoadTaskTechnician():ptBoolean
 			operation oeCreateSystemAndEnvironment():ptBoolean
 			operation oeLogin():ptBoolean
 			operation oeLogout():ptBoolean
@@ -33,8 +34,10 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 		}
 	actor actGardener role rnactGardener cardinality[0 .. *] {
 			input interface inactGardener {
+				operation ieLoadedTask():ptBoolean
 			}
 			output interface outactGardener {
+				operation oeLoadTaskGardener():ptBoolean
 			}
 		}
 	actor actSystem role rnactSystem cardinality[0 .. *] {
@@ -50,6 +53,8 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 				operation oeCreateSystemAndEnvironment():ptBoolean
 				operation sfAddCrop():ptBoolean
 				operation sfDelteCrop():ptBoolean
+				operation sfAddTask():ptBoolean
+				operation sfRemoveTask():ptBoolean
 			}
 		}
 	actor actUser role rnactUser cardinality[0 .. *] {

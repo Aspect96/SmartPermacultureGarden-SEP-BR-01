@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:messir="http://www.uni.lu/lassy/excalibur/dsl/messir/Messir" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/diagram/sequence/description/2.0.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:messir="http://www.uni.lu/lassy/excalibur/dsl/messir/Messir" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:sequence="http://www.eclipse.org/sirius/diagram/sequence/2.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/sequence/description/2.0.0 http://www.eclipse.org/sirius/diagram/sequence/2.0.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis xmi:id="_LNKNoK6BEee9TrVpFqnNQA" selectedViews="_LNZeMK6BEee9TrVpFqnNQA" version="12.0.0.201704271200">
     <semanticResources>concepts/primarytypes-associations/primarytypes-associations.msr</semanticResources>
     <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/calendar.msr</semanticResources>
@@ -234,6 +234,11 @@
     <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtExecussion.msrd</semanticResources>
     <semanticResources>usecases/documentation/UseCase-sfplating.msrd</semanticResources>
     <semanticResources>documentation/View-uc-sfplating.msrd</semanticResources>
+    <semanticResources>documentation/View-suManageSchedule.msrd</semanticResources>
+    <semanticResources>usecases/documentation/UseCase-sfLoadTask.msrd</semanticResources>
+    <semanticResources>documentation/View-ugManageGardenerSchedule.msrd</semanticResources>
+    <semanticResources>usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr</semanticResources>
+    <semanticResources>documentation/View-uciugManageGardenerSchedule.msrd</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_LNZeMK6BEee9TrVpFqnNQA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_erHJNa6DEeeJYYudb3pOlA" name="Marc" repPath="#_erHJMK6DEeeJYYudb3pOlA">
@@ -243,6 +248,18 @@
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_Tt-vcK6SEeeLt7JC4tBe9A" name="uc-sfplating" repPath="#_Tt0-cK6SEeeLt7JC4tBe9A">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']"/>
         <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfplating"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_6ALlANOzEeeElfLsRnM1rQ" name="suManageSchedule" repPath="#_5_zKgNOzEeeElfLsRnM1rQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']"/>
+        <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_oY0lYNO2EeeElfLsRnM1rQ" name="ugManageGardenerSchedule" repPath="#_oYzXQNO2EeeElfLsRnM1rQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']"/>
+        <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_cLYdtdPJEeeElfLsRnM1rQ" name="uciugManageGardenerSchedule" repPath="#_cLYdgNPJEeeElfLsRnM1rQ">
+        <description xmi:type="description_2:SequenceDiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']"/>
+        <target xmi:type="messir:UseCaseInstance" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -274,7 +291,7 @@
             <styles xmi:type="notation:ShapeStyle" xmi:id="_T43Jwa6SEeeLt7JC4tBe9A" fontName="Segoe UI"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T43Jwq6SEeeLt7JC4tBe9A"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_TvnuMa6SEeeLt7JC4tBe9A" fontName="Segoe UI" fontHeight="14"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_TvnuMa6SEeeLt7JC4tBe9A" fontName="Lucida Sans Unicode" fontHeight="14"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TvnuMq6SEeeLt7JC4tBe9A" y="-4" width="40" height="70"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_T4tYwK6SEeeLt7JC4tBe9A" type="2002" element="_Tt0-dq6SEeeLt7JC4tBe9A">
@@ -288,13 +305,13 @@
                 <styles xmi:type="notation:ShapeStyle" xmi:id="_T43Jya6SEeeLt7JC4tBe9A" fontName="Segoe UI"/>
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T43Jyq6SEeeLt7JC4tBe9A"/>
               </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_T43JxK6SEeeLt7JC4tBe9A" fontName="Segoe UI" fontHeight="14"/>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_T43JxK6SEeeLt7JC4tBe9A" fontName="Lucida Sans Unicode" fontHeight="14"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T43Jxa6SEeeLt7JC4tBe9A" x="30" y="28" width="150" height="50"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_T4tYxa6SEeeLt7JC4tBe9A"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_T4tYxq6SEeeLt7JC4tBe9A"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_T4tYwa6SEeeLt7JC4tBe9A" fontName="Segoe UI" fontHeight="14"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_T4tYwa6SEeeLt7JC4tBe9A" fontName="Lucida Sans Unicode" fontHeight="14"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T4tYwq6SEeeLt7JC4tBe9A" x="100" y="-2"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_TvBRQq6SEeeLt7JC4tBe9A"/>
@@ -309,7 +326,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T5mwqa6SEeeLt7JC4tBe9A" y="10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_T5mwoa6SEeeLt7JC4tBe9A"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_T5mwoq6SEeeLt7JC4tBe9A" fontName="Segoe UI" fontHeight="14"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_T5mwoq6SEeeLt7JC4tBe9A" fontName="Lucida Sans Unicode" fontHeight="8"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_T5mwo66SEeeLt7JC4tBe9A" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_T55rkK6SEeeLt7JC4tBe9A" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_T55rka6SEeeLt7JC4tBe9A" id="(0.5,0.5)"/>
@@ -319,7 +336,7 @@
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_Tt0-dK6SEeeLt7JC4tBe9A" name="actGardener" incomingEdges="_Tt0-eq6SEeeLt7JC4tBe9A" width="4" height="4" resizeKind="NSEW">
       <target xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener"/>
       <semanticElements xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_Tt0-da6SEeeLt7JC4tBe9A" labelSize="14" showIcon="false" workspacePath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/big_actor.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_Tt0-da6SEeeLt7JC4tBe9A" showIcon="false" workspacePath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/big_actor.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']"/>
@@ -327,14 +344,14 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_Tt0-dq6SEeeLt7JC4tBe9A" name="use case system subfunction sfplating()">
       <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfplating"/>
       <semanticElements xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfplating"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Tt0-d66SEeeLt7JC4tBe9A" labelSize="14" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="114,159,207" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Tt0-d66SEeeLt7JC4tBe9A" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="114,159,207" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']"/>
       <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_Tt0-eK6SEeeLt7JC4tBe9A" name="sfplating" outgoingEdges="_Tt0-eq6SEeeLt7JC4tBe9A" width="15" height="5" resizeKind="NSEW">
         <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfplating"/>
         <semanticElements xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfplating"/>
-        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_Tt0-ea6SEeeLt7JC4tBe9A" labelSize="14" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_Tt0-ea6SEeeLt7JC4tBe9A" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
           <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
@@ -345,7 +362,9 @@
       <semanticElements xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.1/@useCaseActors.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_Tt0-e66SEeeLt7JC4tBe9A" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_Tt0-fK6SEeeLt7JC4tBe9A" labelSize="14" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_Tt0-fK6SEeeLt7JC4tBe9A" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
     </ownedDiagramElements>
@@ -354,4 +373,1512 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer"/>
     <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfplating"/>
   </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_5_zKgNOzEeeElfLsRnM1rQ" name="suManageSchedule">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_5_zKgdOzEeeElfLsRnM1rQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_5_zKgtOzEeeElfLsRnM1rQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_6Az3INOzEeeElfLsRnM1rQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_6Az3IdOzEeeElfLsRnM1rQ" type="Sirius" element="_5_zKgNOzEeeElfLsRnM1rQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_6BIAMNOzEeeElfLsRnM1rQ" type="2001" element="_5_zKhNOzEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_6BYe4NOzEeeElfLsRnM1rQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_6BYe4dOzEeeElfLsRnM1rQ" x="-5" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6I9Gg9OzEeeElfLsRnM1rQ" type="3005" element="_5_zKhdOzEeeElfLsRnM1rQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_6I9GhNOzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6I9GhdOzEeeElfLsRnM1rQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_6BIAMdOzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6BIAMtOzEeeElfLsRnM1rQ" x="95" y="531" width="40" height="70"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_6I1KsNOzEeeElfLsRnM1rQ" type="2001" element="_5_zKhtOzEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_6I1xwNOzEeeElfLsRnM1rQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_6I1xwdOzEeeElfLsRnM1rQ" x="-5" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6JBX8NOzEeeElfLsRnM1rQ" type="3005" element="_5_zKh9OzEeeElfLsRnM1rQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_6JBX8dOzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6JBX8tOzEeeElfLsRnM1rQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_6I1KsdOzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6I1KstOzEeeElfLsRnM1rQ" x="56" y="270" width="40" height="70"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_6I2_4NOzEeeElfLsRnM1rQ" type="2001" element="_5_zKiNOzEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_6I2_49OzEeeElfLsRnM1rQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_6I2_5NOzEeeElfLsRnM1rQ" x="-5" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6JB_ANOzEeeElfLsRnM1rQ" type="3005" element="_5_zKidOzEeeElfLsRnM1rQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_6JB_AdOzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6JB_AtOzEeeElfLsRnM1rQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_6I2_4dOzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6I2_4tOzEeeElfLsRnM1rQ" x="65" y="65" width="40" height="70"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_6I6qQNOzEeeElfLsRnM1rQ" type="2002" element="_5_zKitOzEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_6I8fcNOzEeeElfLsRnM1rQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_6I9GgNOzEeeElfLsRnM1rQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_6JDNINOzEeeElfLsRnM1rQ" type="3007" element="_5_zKjNOzEeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_6JM-INOzEeeElfLsRnM1rQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_6JM-IdOzEeeElfLsRnM1rQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_6JggINOzEeeElfLsRnM1rQ" type="3016" element="_5_zKjdOzEeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_6JggIdOzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6JggItOzEeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_6JDNIdOzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6JDNItOzEeeElfLsRnM1rQ" x="115" y="254" width="150" height="50"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_6JM-ItOzEeeElfLsRnM1rQ" type="3007" element="_5_zKjtOzEeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_6JWvINOzEeeElfLsRnM1rQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_6JWvIdOzEeeElfLsRnM1rQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_6JhHMNOzEeeElfLsRnM1rQ" type="3016" element="_5_zKj9OzEeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_6JhHMdOzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6JhHMtOzEeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_6JM-I9OzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6JM-JNOzEeeElfLsRnM1rQ" x="190" y="414" width="150" height="50"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_6JWvItOzEeeElfLsRnM1rQ" type="3007" element="_5_zKkNOzEeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_6JWvJdOzEeeElfLsRnM1rQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_6JWvJtOzEeeElfLsRnM1rQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_6JhHM9OzEeeElfLsRnM1rQ" type="3016" element="_5_zKkdOzEeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_6JhHNNOzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6JhHNdOzEeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_6JWvI9OzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6JWvJNOzEeeElfLsRnM1rQ" x="175" y="89" width="150" height="50"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_vH1wMNO4EeeElfLsRnM1rQ" type="3007" element="_vHpi8NO4EeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_vH2XQNO4EeeElfLsRnM1rQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_vH2XQdO4EeeElfLsRnM1rQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_vH2-WtO4EeeElfLsRnM1rQ" type="3016" element="_vHqKANO4EeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_vH2-W9O4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH2-XNO4EeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_vH1wMdO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH1wMtO4EeeElfLsRnM1rQ" x="550" y="199" width="150" height="50"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_vH2-UNO4EeeElfLsRnM1rQ" type="3007" element="_vHqxENO4EeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_vH2-U9O4EeeElfLsRnM1rQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_vH2-VNO4EeeElfLsRnM1rQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_vH2-XdO4EeeElfLsRnM1rQ" type="3016" element="_vHqxEdO4EeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_vH2-XtO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH2-X9O4EeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_vH2-UdO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH2-UtO4EeeElfLsRnM1rQ" x="560" y="334" width="150" height="50"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_vH2-VdO4EeeElfLsRnM1rQ" type="3007" element="_vHrYINO4EeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_vH2-WNO4EeeElfLsRnM1rQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_vH2-WdO4EeeElfLsRnM1rQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_vH2-YNO4EeeElfLsRnM1rQ" type="3016" element="_vHr_MNO4EeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_vH2-YdO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH2-YtO4EeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_vH2-VtO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH2-V9O4EeeElfLsRnM1rQ" x="565" y="479" width="150" height="50"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_JxFqQNO6EeeElfLsRnM1rQ" type="3007" element="_Jw6rINO6EeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_JxHfcNO6EeeElfLsRnM1rQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_JxHfcdO6EeeElfLsRnM1rQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_JxIGgNO6EeeElfLsRnM1rQ" type="3016" element="_Jw75QNO6EeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_JxIGgdO6EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxIGgtO6EeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_JxFqQdO6EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxFqQtO6EeeElfLsRnM1rQ" x="555" y="109" width="150" height="50"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_6I9GgdOzEeeElfLsRnM1rQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_6I9GgtOzEeeElfLsRnM1rQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_6I6qQdOzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6I6qQtOzEeeElfLsRnM1rQ" x="215" y="20" width="788" height="583"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_6Az3ItOzEeeElfLsRnM1rQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_6KA2cNOzEeeElfLsRnM1rQ" type="4001" element="_5_zKktOzEeeElfLsRnM1rQ" source="_6JDNINOzEeeElfLsRnM1rQ" target="_6JM-ItOzEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_6KA2dNOzEeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6KA2ddOzEeeElfLsRnM1rQ" x="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6KA2dtOzEeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6KA2d9OzEeeElfLsRnM1rQ" x="9" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6KA2eNOzEeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6KA2edOzEeeElfLsRnM1rQ" x="9" y="2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_6KA2cdOzEeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_6KA2ctOzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6KA2c9OzEeeElfLsRnM1rQ" points="[0, 3, -2, -133]$[1, 113, -1, -23]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6KUYcNOzEeeElfLsRnM1rQ" id="(0.5133333333333333,0.94)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6KUYcdOzEeeElfLsRnM1rQ" id="(0.02666666666666667,0.46)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_6KUYctOzEeeElfLsRnM1rQ" type="4001" element="_5_zKltOzEeeElfLsRnM1rQ" source="_6JDNINOzEeeElfLsRnM1rQ" target="_6JWvItOzEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_6KUYdtOzEeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6KUYd9OzEeeElfLsRnM1rQ" x="36" y="-61"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6KW0sNOzEeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6KW0sdOzEeeElfLsRnM1rQ" x="-15" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6KW0stOzEeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6KW0s9OzEeeElfLsRnM1rQ" x="-4" y="37"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_6KUYc9OzEeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_6KUYdNOzEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6KUYddOzEeeElfLsRnM1rQ" points="[-2, -8, -7, 145]$[-2, -38, -7, 115]$[-2, -123, -7, 30]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6KXbwNOzEeeElfLsRnM1rQ" id="(0.41333333333333333,0.16)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6KXbwdOzEeeElfLsRnM1rQ" id="(0.04666666666666667,0.4)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_PviX8NO1EeeElfLsRnM1rQ" type="4001" element="_PvX_4NO1EeeElfLsRnM1rQ" source="_6JDNINOzEeeElfLsRnM1rQ" target="_6I1KsNOzEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_Pvi_ANO1EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pvi_AdO1EeeElfLsRnM1rQ" x="59" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pvi_AtO1EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pvi_A9O1EeeElfLsRnM1rQ" x="95" y="14"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pvi_BNO1EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pvi_BdO1EeeElfLsRnM1rQ" x="14" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_PviX8dO1EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_PviX8tO1EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PviX89O1EeeElfLsRnM1rQ" points="[-75, 0, 259, 0]$[-334, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pvi_BtO1EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pvi_B9O1EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vH7PwNO4EeeElfLsRnM1rQ" type="4001" element="_vHsmQNO4EeeElfLsRnM1rQ" source="_6JDNINOzEeeElfLsRnM1rQ" target="_vH1wMNO4EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_vH720NO4EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH720dO4EeeElfLsRnM1rQ" x="-32" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vH8d4NO4EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH8d4dO4EeeElfLsRnM1rQ" x="18" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vH8d4tO4EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH8d49O4EeeElfLsRnM1rQ" x="-43" y="22"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vH7PwdO4EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vH7PwtO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vH7Pw9O4EeeElfLsRnM1rQ" points="[75, -10, -360, 45]$[360, -48, -75, 7]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vH-TENO4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vH-TEdO4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vH-TEtO4EeeElfLsRnM1rQ" type="4001" element="_vHsmRNO4EeeElfLsRnM1rQ" source="_6JDNINOzEeeElfLsRnM1rQ" target="_vH2-UNO4EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_vH-6INO4EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH-6IdO4EeeElfLsRnM1rQ" x="-1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vH-6ItO4EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH-6I9O4EeeElfLsRnM1rQ" x="1" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vH-6JNO4EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH-6JdO4EeeElfLsRnM1rQ" x="-5" y="-23"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vH-TE9O4EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vH-TFNO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vH-TFdO4EeeElfLsRnM1rQ" points="[23, 3, -300, -43]$[318, 45, -5, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vH-6JtO4EeeElfLsRnM1rQ" id="(0.8466666666666667,0.9)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vH-6J9O4EeeElfLsRnM1rQ" id="(0.03333333333333333,0.22)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vH-6KNO4EeeElfLsRnM1rQ" type="4001" element="_vHtNUNO4EeeElfLsRnM1rQ" source="_6JDNINOzEeeElfLsRnM1rQ" target="_vH2-VdO4EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_vH-6LNO4EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH-6LdO4EeeElfLsRnM1rQ" x="-50" y="-25"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vH-6LtO4EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH-6L9O4EeeElfLsRnM1rQ" x="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vH-6MNO4EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH-6MdO4EeeElfLsRnM1rQ" x="-322" y="18"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vH-6KdO4EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vH-6KtO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vH-6K9O4EeeElfLsRnM1rQ" points="[-15, 0, -525, -207]$[-75, 0, -585, -207]$[-75, 202, -585, -5]$[435, 202, -75, -5]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vH-6MtO4EeeElfLsRnM1rQ" id="(0.1,0.86)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vH-6M9O4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vH-6NNO4EeeElfLsRnM1rQ" type="4001" element="_vHtNVNO4EeeElfLsRnM1rQ" source="_6JM-ItOzEeeElfLsRnM1rQ" target="_vH1wMNO4EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_vH-6ONO4EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH-6OdO4EeeElfLsRnM1rQ" x="35" y="-24"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vH-6OtO4EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH-6O9O4EeeElfLsRnM1rQ" x="-6" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vH-6PNO4EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH-6PdO4EeeElfLsRnM1rQ" x="-144" y="-38"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vH-6NdO4EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vH-6NtO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vH-6N9O4EeeElfLsRnM1rQ" points="[75, 0, -343, 202]$[495, 0, 77, 202]$[495, -160, 77, 42]$[435, -193, 17, 9]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vH-6PtO4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vH-6P9O4EeeElfLsRnM1rQ" id="(0.8866666666666667,0.76)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vH-6QNO4EeeElfLsRnM1rQ" type="4001" element="_vHtNWNO4EeeElfLsRnM1rQ" source="_6JM-ItOzEeeElfLsRnM1rQ" target="_vH2-UNO4EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_vH-6RNO4EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH-6RdO4EeeElfLsRnM1rQ" x="-103" y="-19"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vH-6RtO4EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH-6R9O4EeeElfLsRnM1rQ" x="-2" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vH-6SNO4EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vH-6SdO4EeeElfLsRnM1rQ" x="-125" y="-21"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vH-6QdO4EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vH-6QtO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vH-6Q9O4EeeElfLsRnM1rQ" points="[28, 0, -295, 65]$[323, 5, 0, 70]$[323, -40, 0, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vH-6StO4EeeElfLsRnM1rQ" id="(0.8133333333333334,0.2)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vH-6S9O4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vH-6TNO4EeeElfLsRnM1rQ" type="4001" element="_vHt0Y9O4EeeElfLsRnM1rQ" source="_6JM-ItOzEeeElfLsRnM1rQ" target="_vH2-VdO4EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_vIB9cNO4EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIB9cdO4EeeElfLsRnM1rQ" x="-9" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vIB9ctO4EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIB9c9O4EeeElfLsRnM1rQ" x="-19" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vIB9dNO4EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIB9ddO4EeeElfLsRnM1rQ" x="-19" y="-15"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vH-6TdO4EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vH-6TtO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vH-6T9O4EeeElfLsRnM1rQ" points="[-3, 4, -245, -24]$[-3, 29, -245, 1]$[232, 29, -10, 1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vIB9dtO4EeeElfLsRnM1rQ" id="(0.9533333333333334,0.92)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vIB9d9O4EeeElfLsRnM1rQ" id="(0.06666666666666667,0.18)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vIB9eNO4EeeElfLsRnM1rQ" type="4001" element="_vHubcNO4EeeElfLsRnM1rQ" source="_6JWvItOzEeeElfLsRnM1rQ" target="_vH1wMNO4EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_vIB9fNO4EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIB9fdO4EeeElfLsRnM1rQ" x="-74" y="18"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vIB9ftO4EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIB9f9O4EeeElfLsRnM1rQ" x="17" y="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vIB9gNO4EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIB9gdO4EeeElfLsRnM1rQ" x="-94" y="20"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vIB9edO4EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vIB9etO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vIB9e9O4EeeElfLsRnM1rQ" points="[7, 1, -312, -85]$[244, 65, -75, -21]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vICkgNO4EeeElfLsRnM1rQ" id="(0.8733333333333333,0.98)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vICkgdO4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vICkgtO4EeeElfLsRnM1rQ" type="4001" element="_vHubdNO4EeeElfLsRnM1rQ" source="_6JWvItOzEeeElfLsRnM1rQ" target="_vH2-UNO4EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_vICkhtO4EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vICkh9O4EeeElfLsRnM1rQ" x="94" y="-30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vICkiNO4EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vICkidO4EeeElfLsRnM1rQ" x="-19" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vICkitO4EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vICki9O4EeeElfLsRnM1rQ" x="-91" y="-3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vICkg9O4EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vICkhNO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vICkhdO4EeeElfLsRnM1rQ" points="[75, 13, -310, -232]$[420, 75, 35, -170]$[490, 75, 105, -170]$[490, 245, 105, 0]$[460, 245, 75, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vIDLkNO4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vIDLkdO4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vIDLktO4EeeElfLsRnM1rQ" type="4001" element="_vHwQoNO4EeeElfLsRnM1rQ" source="_vH1wMNO4EeeElfLsRnM1rQ" target="_6I1KsNOzEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_vIDLltO4EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIDLl9O4EeeElfLsRnM1rQ" x="275" y="32"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vIDLmNO4EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIDLmdO4EeeElfLsRnM1rQ" x="9" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vIDLmtO4EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIDLm9O4EeeElfLsRnM1rQ" x="41" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vIDLk9O4EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vIDLlNO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vIDLldO4EeeElfLsRnM1rQ" points="[-75, -1, 694, -56]$[-775, -10, -6, -65]$[-775, 24, -6, -31]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vIDLnNO4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vIDLndO4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vIDLntO4EeeElfLsRnM1rQ" type="4001" element="_vHwQo9O4EeeElfLsRnM1rQ" source="_vH2-UNO4EeeElfLsRnM1rQ" target="_6I1KsNOzEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_vIDLotO4EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIDLo9O4EeeElfLsRnM1rQ" x="264" y="-27"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vIDLpNO4EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIDLpdO4EeeElfLsRnM1rQ" x="16" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vIDLptO4EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIDLp9O4EeeElfLsRnM1rQ" x="52" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vIDLn9O4EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vIDLoNO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vIDLodO4EeeElfLsRnM1rQ" points="[-75, -1, 704, 79]$[-779, -10, 0, 70]$[-779, -62, 0, 18]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vIDLqNO4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vIDLqdO4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vIDLqtO4EeeElfLsRnM1rQ" type="4001" element="_vHw3stO4EeeElfLsRnM1rQ" source="_vH2-VdO4EeeElfLsRnM1rQ" target="_6BIAMNOzEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_vIDLrtO4EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIDLr9O4EeeElfLsRnM1rQ" x="-48" y="16"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vIDLsNO4EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIDLsdO4EeeElfLsRnM1rQ" x="-88" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vIDLstO4EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vIDLs9O4EeeElfLsRnM1rQ" x="-12" y="-4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vIDLq9O4EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vIDLrNO4EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vIDLrdO4EeeElfLsRnM1rQ" points="[0, 25, 745, -11]$[0, 45, 745, 9]$[-745, 45, 0, 9]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vIDLtNO4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vIDLtdO4EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_JxJUoNO6EeeElfLsRnM1rQ" type="4001" element="_Jw-8kNO6EeeElfLsRnM1rQ" source="_6JDNINOzEeeElfLsRnM1rQ" target="_JxFqQNO6EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_JxJUpNO6EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxJUpdO6EeeElfLsRnM1rQ" x="-106" y="14"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JxJUptO6EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxJUp9O6EeeElfLsRnM1rQ" x="-75" y="50"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JxJUqNO6EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxJUqdO6EeeElfLsRnM1rQ" x="-427" y="34"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_JxJUodO6EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_JxJUotO6EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JxJUo9O6EeeElfLsRnM1rQ" points="[-1, 4, -474, 155]$[-61, 4, -534, 155]$[-61, -196, -534, -45]$[474, -196, 1, -45]$[474, -151, 1, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JxJUqtO6EeeElfLsRnM1rQ" id="(0.006666666666666667,0.12)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JxKiwNO6EeeElfLsRnM1rQ" id="(0.22666666666666666,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_JxKiwdO6EeeElfLsRnM1rQ" type="4001" element="_JxAKsNO6EeeElfLsRnM1rQ" source="_6JWvItOzEeeElfLsRnM1rQ" target="_JxFqQNO6EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_JxKixdO6EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxKixtO6EeeElfLsRnM1rQ" x="-1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JxLJ0NO6EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxLJ0dO6EeeElfLsRnM1rQ" x="1" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JxLJ0tO6EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxLJ09O6EeeElfLsRnM1rQ" x="-51" y="16"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_JxKiwtO6EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_JxKiw9O6EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JxKixNO6EeeElfLsRnM1rQ" points="[11, 1, -305, -43]$[241, 33, -75, -11]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JxLJ1NO6EeeElfLsRnM1rQ" id="(0.9266666666666666,0.02)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JxLJ1dO6EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_JxLJ1tO6EeeElfLsRnM1rQ" type="4001" element="_JxB_4NO6EeeElfLsRnM1rQ" source="_JxFqQNO6EeeElfLsRnM1rQ" target="_6I2_4NOzEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_JxLJ2tO6EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxLJ29O6EeeElfLsRnM1rQ" x="-406" y="17"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JxLJ3NO6EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxLJ3dO6EeeElfLsRnM1rQ" x="2" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JxLJ3tO6EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxLJ39O6EeeElfLsRnM1rQ" x="1" y="-9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_JxLJ19O6EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_JxLJ2NO6EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JxLJ2dO6EeeElfLsRnM1rQ" points="[0, -25, 763, 58]$[0, -85, 763, -2]$[-745, -84, 18, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JxLJ4NO6EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JxLJ4dO6EeeElfLsRnM1rQ" id="(0.55,0.17142857142857143)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_5_zKhtOzEeeElfLsRnM1rQ" name="actManager" incomingEdges="_PvX_4NO1EeeElfLsRnM1rQ _vHwQoNO4EeeElfLsRnM1rQ _vHwQo9O4EeeElfLsRnM1rQ" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group01.excalibur.environment.actManager"/>
+      <semanticElements xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group01.excalibur.environment.actManager"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_5_zKh9OzEeeElfLsRnM1rQ" showIcon="false" workspacePath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/big_actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_5_zKhNOzEeeElfLsRnM1rQ" name="actGardener" incomingEdges="_vHw3stO4EeeElfLsRnM1rQ" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener"/>
+      <semanticElements xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_5_zKhdOzEeeElfLsRnM1rQ" showIcon="false" workspacePath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/big_actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_5_zKiNOzEeeElfLsRnM1rQ" name="actTechnician" incomingEdges="_JxB_4NO6EeeElfLsRnM1rQ" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician"/>
+      <semanticElements xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_5_zKidOzEeeElfLsRnM1rQ" showIcon="false" workspacePath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/big_actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_5_zKitOzEeeElfLsRnM1rQ" name="use case system summary suManageSchedule()">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule"/>
+      <semanticElements xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_5_zKi9OzEeeElfLsRnM1rQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="114,159,207" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_5_zKjNOzEeeElfLsRnM1rQ" name="suManageSchedule" outgoingEdges="_5_zKktOzEeeElfLsRnM1rQ _5_zKltOzEeeElfLsRnM1rQ _PvX_4NO1EeeElfLsRnM1rQ _vHsmQNO4EeeElfLsRnM1rQ _vHsmRNO4EeeElfLsRnM1rQ _vHtNUNO4EeeElfLsRnM1rQ _Jw-8kNO6EeeElfLsRnM1rQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule"/>
+        <semanticElements xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_5_zKjdOzEeeElfLsRnM1rQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_5_zKjtOzEeeElfLsRnM1rQ" name="ugManageGardenerSchedule" outgoingEdges="_vHtNVNO4EeeElfLsRnM1rQ _vHtNWNO4EeeElfLsRnM1rQ _vHt0Y9O4EeeElfLsRnM1rQ" incomingEdges="_5_zKktOzEeeElfLsRnM1rQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+        <semanticElements xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_5_zKj9OzEeeElfLsRnM1rQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_5_zKkNOzEeeElfLsRnM1rQ" name="ugManageTechnicianSchedule" outgoingEdges="_vHubcNO4EeeElfLsRnM1rQ _vHubdNO4EeeElfLsRnM1rQ _JxAKsNO6EeeElfLsRnM1rQ" incomingEdges="_5_zKltOzEeeElfLsRnM1rQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageTechnicianSchedule"/>
+        <semanticElements xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageTechnicianSchedule"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_5_zKkdOzEeeElfLsRnM1rQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_vHpi8NO4EeeElfLsRnM1rQ" name="sfAddTask" outgoingEdges="_vHwQoNO4EeeElfLsRnM1rQ" incomingEdges="_vHsmQNO4EeeElfLsRnM1rQ _vHtNVNO4EeeElfLsRnM1rQ _vHubcNO4EeeElfLsRnM1rQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfAddTask"/>
+        <semanticElements xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfAddTask"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_vHqKANO4EeeElfLsRnM1rQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_vHqxENO4EeeElfLsRnM1rQ" name="sfRemoveTask" outgoingEdges="_vHwQo9O4EeeElfLsRnM1rQ" incomingEdges="_vHsmRNO4EeeElfLsRnM1rQ _vHtNWNO4EeeElfLsRnM1rQ _vHubdNO4EeeElfLsRnM1rQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfRemoveTask"/>
+        <semanticElements xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfRemoveTask"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_vHqxEdO4EeeElfLsRnM1rQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_vHrYINO4EeeElfLsRnM1rQ" name="sfLoadTaskGardener" outgoingEdges="_vHw3stO4EeeElfLsRnM1rQ" incomingEdges="_vHtNUNO4EeeElfLsRnM1rQ _vHt0Y9O4EeeElfLsRnM1rQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfLoadTaskGardener"/>
+        <semanticElements xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfLoadTaskGardener"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_vHr_MNO4EeeElfLsRnM1rQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_Jw6rINO6EeeElfLsRnM1rQ" name="sfLoadTaskTechnician" outgoingEdges="_JxB_4NO6EeeElfLsRnM1rQ" incomingEdges="_Jw-8kNO6EeeElfLsRnM1rQ _JxAKsNO6EeeElfLsRnM1rQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfLoadTaskTechnician"/>
+        <semanticElements xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfLoadTaskTechnician"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_Jw75QNO6EeeElfLsRnM1rQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_5_zKktOzEeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_5_zKjNOzEeeElfLsRnM1rQ" targetNode="_5_zKjtOzEeeElfLsRnM1rQ" endLabel="[0..*]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_5_zKk9OzEeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_5_zKlNOzEeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_5_zKldOzEeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_5_zKltOzEeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_5_zKjNOzEeeElfLsRnM1rQ" targetNode="_5_zKkNOzEeeElfLsRnM1rQ" endLabel="[0..*]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_5_zKl9OzEeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_5_zKmNOzEeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_5_zKmdOzEeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_PvX_4NO1EeeElfLsRnM1rQ" name="&lt;&lt;primary>>&#xA;&lt;&lt;active>>&#xA;" sourceNode="_5_zKjNOzEeeElfLsRnM1rQ" targetNode="_5_zKhtOzEeeElfLsRnM1rQ">
+      <target xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.48/@useCaseActors.0"/>
+      <semanticElements xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.48/@useCaseActors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_PvYm8NO1EeeElfLsRnM1rQ" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_PvYm8dO1EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vHsmQNO4EeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_5_zKjNOzEeeElfLsRnM1rQ" targetNode="_vHpi8NO4EeeElfLsRnM1rQ" endLabel="[0..*]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_vHsmQdO4EeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_vHsmQtO4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_vHsmQ9O4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vHsmRNO4EeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_5_zKjNOzEeeElfLsRnM1rQ" targetNode="_vHqxENO4EeeElfLsRnM1rQ" endLabel="[0..*]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_vHsmRdO4EeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_vHsmRtO4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_vHsmR9O4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vHtNUNO4EeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_5_zKjNOzEeeElfLsRnM1rQ" targetNode="_vHrYINO4EeeElfLsRnM1rQ" endLabel="[0..*]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_vHtNUdO4EeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_vHtNUtO4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_vHtNU9O4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vHtNVNO4EeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_5_zKjtOzEeeElfLsRnM1rQ" targetNode="_vHpi8NO4EeeElfLsRnM1rQ" endLabel="[1..1]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_vHtNVdO4EeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_vHtNVtO4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_vHtNV9O4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vHtNWNO4EeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_5_zKjtOzEeeElfLsRnM1rQ" targetNode="_vHqxENO4EeeElfLsRnM1rQ" endLabel="[1..1]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_vHt0YNO4EeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_vHt0YdO4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_vHt0YtO4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vHt0Y9O4EeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_5_zKjtOzEeeElfLsRnM1rQ" targetNode="_vHrYINO4EeeElfLsRnM1rQ" endLabel="[1..*]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_vHt0ZNO4EeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_vHt0ZdO4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_vHt0ZtO4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vHubcNO4EeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_5_zKkNOzEeeElfLsRnM1rQ" targetNode="_vHpi8NO4EeeElfLsRnM1rQ" endLabel="[1..1]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageTechnicianSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_vHubcdO4EeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_vHubctO4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_vHubc9O4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vHubdNO4EeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_5_zKkNOzEeeElfLsRnM1rQ" targetNode="_vHqxENO4EeeElfLsRnM1rQ" endLabel="[1..1]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageTechnicianSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_vHubddO4EeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_vHubdtO4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_vHubd9O4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vHwQoNO4EeeElfLsRnM1rQ" name="&lt;&lt;primary>>&#xA;&lt;&lt;active>>&#xA;" sourceNode="_vHpi8NO4EeeElfLsRnM1rQ" targetNode="_5_zKhtOzEeeElfLsRnM1rQ">
+      <target xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.50/@useCaseActors.0"/>
+      <semanticElements xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.50/@useCaseActors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_vHwQodO4EeeElfLsRnM1rQ" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_vHwQotO4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vHwQo9O4EeeElfLsRnM1rQ" name="&lt;&lt;primary>>&#xA;&lt;&lt;active>>&#xA;" sourceNode="_vHqxENO4EeeElfLsRnM1rQ" targetNode="_5_zKhtOzEeeElfLsRnM1rQ">
+      <target xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.51/@useCaseActors.0"/>
+      <semanticElements xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.51/@useCaseActors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_vHw3sNO4EeeElfLsRnM1rQ" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_vHw3sdO4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vHw3stO4EeeElfLsRnM1rQ" name="&lt;&lt;primary>>&#xA;&lt;&lt;active>>&#xA;" sourceNode="_vHrYINO4EeeElfLsRnM1rQ" targetNode="_5_zKhNOzEeeElfLsRnM1rQ">
+      <target xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.52/@useCaseActors.0"/>
+      <semanticElements xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.52/@useCaseActors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_vHw3s9O4EeeElfLsRnM1rQ" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_vHw3tNO4EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Jw-8kNO6EeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_5_zKjNOzEeeElfLsRnM1rQ" targetNode="_Jw6rINO6EeeElfLsRnM1rQ" endLabel="[0..*]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_Jw_joNO6EeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_Jw_jodO6EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_Jw_jotO6EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_JxAKsNO6EeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_5_zKkNOzEeeElfLsRnM1rQ" targetNode="_Jw6rINO6EeeElfLsRnM1rQ" endLabel="[1..*]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageTechnicianSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_JxAKsdO6EeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_JxAKstO6EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_JxAKs9O6EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_JxB_4NO6EeeElfLsRnM1rQ" name="&lt;&lt;primary>>&#xA;&lt;&lt;active>>&#xA;" sourceNode="_Jw6rINO6EeeElfLsRnM1rQ" targetNode="_5_zKiNOzEeeElfLsRnM1rQ">
+      <target xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.54/@useCaseActors.0"/>
+      <semanticElements xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.54/@useCaseActors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_JxCm8NO6EeeElfLsRnM1rQ" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_JxCm8dO6EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_5_zKo9OzEeeElfLsRnM1rQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer"/>
+    <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_oYzXQNO2EeeElfLsRnM1rQ" name="ugManageGardenerSchedule">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_oYz-UNO2EeeElfLsRnM1rQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_oYz-UdO2EeeElfLsRnM1rQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_oY1McNO2EeeElfLsRnM1rQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_oY1McdO2EeeElfLsRnM1rQ" type="Sirius" element="_oYzXQNO2EeeElfLsRnM1rQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_oY1zgNO2EeeElfLsRnM1rQ" type="2001" element="_oYz-U9O2EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_oY3BoNO2EeeElfLsRnM1rQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_oY3BodO2EeeElfLsRnM1rQ" x="-5" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oY-9cNO2EeeElfLsRnM1rQ" type="3005" element="_oYz-VNO2EeeElfLsRnM1rQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_oY-9cdO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oY-9ctO2EeeElfLsRnM1rQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_oY1zgdO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oY1zgtO2EeeElfLsRnM1rQ" x="55" y="140" width="40" height="70"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_oY6E8NO2EeeElfLsRnM1rQ" type="2001" element="_oYz-VdO2EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_oY6sANO2EeeElfLsRnM1rQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_oY6sAdO2EeeElfLsRnM1rQ" x="-5" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oY_kgNO2EeeElfLsRnM1rQ" type="3005" element="_oYz-VtO2EeeElfLsRnM1rQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_oY_kgdO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oY_kgtO2EeeElfLsRnM1rQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_oY6E8dO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oY6E8tO2EeeElfLsRnM1rQ" x="55" y="315" width="40" height="70"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_oY9vUNO2EeeElfLsRnM1rQ" type="2002" element="_oYz-V9O2EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_oY-WYNO2EeeElfLsRnM1rQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_oY-WYdO2EeeElfLsRnM1rQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_oZALkNO2EeeElfLsRnM1rQ" type="3007" element="_oYz-WdO2EeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_oZAyoNO2EeeElfLsRnM1rQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oZAyodO2EeeElfLsRnM1rQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_oZCn2tO2EeeElfLsRnM1rQ" type="3016" element="_oYz-WtO2EeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_oZCn29O2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZCn3NO2EeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_oZALkdO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZALktO2EeeElfLsRnM1rQ" x="180" y="139" width="150" height="50"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_oZBZsNO2EeeElfLsRnM1rQ" type="3007" element="_oYz-W9O2EeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_oZCAwNO2EeeElfLsRnM1rQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oZCAwdO2EeeElfLsRnM1rQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_oZCn3dO2EeeElfLsRnM1rQ" type="3016" element="_oYz-XNO2EeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_oZCn3tO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZCn39O2EeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_oZBZsdO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZBZstO2EeeElfLsRnM1rQ" x="235" y="34" width="150" height="50"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_oZCn0NO2EeeElfLsRnM1rQ" type="3007" element="_oYz-XdO2EeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_oZCn09O2EeeElfLsRnM1rQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oZCn1NO2EeeElfLsRnM1rQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_oZCn4NO2EeeElfLsRnM1rQ" type="3016" element="_oYz-XtO2EeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_oZCn4dO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZCn4tO2EeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_oZCn0dO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZCn0tO2EeeElfLsRnM1rQ" x="360" y="229" width="150" height="50"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_oZCn1dO2EeeElfLsRnM1rQ" type="3007" element="_oYz-X9O2EeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_oZCn2NO2EeeElfLsRnM1rQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oZCn2dO2EeeElfLsRnM1rQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_oZCn49O2EeeElfLsRnM1rQ" type="3016" element="_oYz-YNO2EeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_oZCn5NO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZCn5dO2EeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_oZCn1tO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZCn19O2EeeElfLsRnM1rQ" x="470" y="34" width="150" height="50"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_oY-WYtO2EeeElfLsRnM1rQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_oY-WY9O2EeeElfLsRnM1rQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_oY9vUdO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oY9vUtO2EeeElfLsRnM1rQ" x="160" y="25" width="638" height="362"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_oY1MctO2EeeElfLsRnM1rQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_oZCn5tO2EeeElfLsRnM1rQ" type="4001" element="_oYz-YdO2EeeElfLsRnM1rQ" source="_oZALkNO2EeeElfLsRnM1rQ" target="_oZBZsNO2EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_oZMY0NO2EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZMY0dO2EeeElfLsRnM1rQ" x="-40" y="-64"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oZMY0tO2EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZMY09O2EeeElfLsRnM1rQ" x="24" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oZMY1NO2EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZMY1dO2EeeElfLsRnM1rQ" x="-76" y="-36"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_oZCn59O2EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_oZCn6NO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oZCn6dO2EeeElfLsRnM1rQ" points="[0, 0, -55, 55]$[55, -55, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oZMY1tO2EeeElfLsRnM1rQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oZMY19O2EeeElfLsRnM1rQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_oZOOANO2EeeElfLsRnM1rQ" type="4001" element="_oYz-ZdO2EeeElfLsRnM1rQ" source="_oZALkNO2EeeElfLsRnM1rQ" target="_oZCn0NO2EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_oZO1ENO2EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZO1EdO2EeeElfLsRnM1rQ" x="-27" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oZO1EtO2EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZO1E9O2EeeElfLsRnM1rQ" x="103" y="41"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oZO1FNO2EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZO1FdO2EeeElfLsRnM1rQ" x="-42" y="26"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_oZOOAdO2EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_oZOOAtO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oZOOA9O2EeeElfLsRnM1rQ" points="[58, 50, -122, -90]$[106, 90, -74, -50]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oZQqQNO2EeeElfLsRnM1rQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oZQqQdO2EeeElfLsRnM1rQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_oZQqQtO2EeeElfLsRnM1rQ" type="4001" element="_oYz-adO2EeeElfLsRnM1rQ" source="_oZALkNO2EeeElfLsRnM1rQ" target="_oZCn1dO2EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_oZQqRtO2EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZQqR9O2EeeElfLsRnM1rQ" x="1" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oZQqSNO2EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZQqSdO2EeeElfLsRnM1rQ" x="-4" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oZQqStO2EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZQqS9O2EeeElfLsRnM1rQ" x="-74" y="19"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_oZQqQ9O2EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_oZQqRNO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oZQqRdO2EeeElfLsRnM1rQ" points="[7, -3, -201, 81]$[191, -78, -17, 6]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oZQqTNO2EeeElfLsRnM1rQ" id="(0.9533333333333334,0.46)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oZQqTdO2EeeElfLsRnM1rQ" id="(0.4066666666666667,0.88)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_oZQqTtO2EeeElfLsRnM1rQ" type="4001" element="_oYz-bdO2EeeElfLsRnM1rQ" source="_oZBZsNO2EeeElfLsRnM1rQ" target="_oY1zgNO2EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_oZQqUtO2EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZQqU9O2EeeElfLsRnM1rQ" x="-27" y="-28"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oZQqVNO2EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZQqVdO2EeeElfLsRnM1rQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oZQqVtO2EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZQqV9O2EeeElfLsRnM1rQ" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_oZQqT9O2EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_oZQqUNO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oZQqUdO2EeeElfLsRnM1rQ" points="[-75, 0, 325, -85]$[-400, 0, 0, -85]$[-400, 52, 0, -33]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oZQqWNO2EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oZQqWdO2EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_oZQqWtO2EeeElfLsRnM1rQ" type="4001" element="_oYz-cNO2EeeElfLsRnM1rQ" source="_oZCn0NO2EeeElfLsRnM1rQ" target="_oY1zgNO2EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_oZQqXtO2EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZQqX9O2EeeElfLsRnM1rQ" x="-4" y="-18"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oZQqYNO2EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZQqYdO2EeeElfLsRnM1rQ" x="59" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oZQqYtO2EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZQqY9O2EeeElfLsRnM1rQ" x="15" y="-8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_oZQqW9O2EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_oZQqXNO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oZQqXdO2EeeElfLsRnM1rQ" points="[-75, 0, 450, 110]$[-525, 0, 0, 110]$[-525, -92, 0, 18]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oZQqZNO2EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oZQqZdO2EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_oZQqZtO2EeeElfLsRnM1rQ" type="4001" element="_oYz-c9O2EeeElfLsRnM1rQ" source="_oZCn1dO2EeeElfLsRnM1rQ" target="_oY6E8NO2EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_oZQqatO2EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZQqa9O2EeeElfLsRnM1rQ" x="67" y="27"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oZQqbNO2EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZQqbdO2EeeElfLsRnM1rQ" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oZXX8NO2EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZXX8dO2EeeElfLsRnM1rQ" x="25" y="-6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_oZQqZ9O2EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_oZQqaNO2EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oZQqadO2EeeElfLsRnM1rQ" points="[0, 25, 635, -235]$[0, 260, 635, 0]$[-635, 260, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oZXX8tO2EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oZXX89O2EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_u4jzgNO3EeeElfLsRnM1rQ" type="4001" element="_u4PDYNO3EeeElfLsRnM1rQ" source="_oZALkNO2EeeElfLsRnM1rQ" target="_oY1zgNO2EeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_u4jzhNO3EeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u4jzhdO3EeeElfLsRnM1rQ" x="20" y="-31"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_u4jzhtO3EeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u4jzh9O3EeeElfLsRnM1rQ" x="-2" y="13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_u4jziNO3EeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u4jzidO3EeeElfLsRnM1rQ" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_u4jzgdO3EeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_u4jzgtO3EeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_u4jzg9O3EeeElfLsRnM1rQ" points="[-75, -5, 270, 15]$[-345, -19, 0, 1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_u4jzitO3EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_u4jzi9O3EeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_oYz-U9O2EeeElfLsRnM1rQ" name="actManager" incomingEdges="_oYz-bdO2EeeElfLsRnM1rQ _oYz-cNO2EeeElfLsRnM1rQ _u4PDYNO3EeeElfLsRnM1rQ" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group01.excalibur.environment.actManager"/>
+      <semanticElements xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group01.excalibur.environment.actManager"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_oYz-VNO2EeeElfLsRnM1rQ" showIcon="false" workspacePath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/big_actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_oYz-VdO2EeeElfLsRnM1rQ" name="actGardener" incomingEdges="_oYz-c9O2EeeElfLsRnM1rQ" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener"/>
+      <semanticElements xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_oYz-VtO2EeeElfLsRnM1rQ" showIcon="false" workspacePath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/big_actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_oYz-V9O2EeeElfLsRnM1rQ" name="use case system usergoal ugManageGardenerSchedule()">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+      <semanticElements xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_oYz-WNO2EeeElfLsRnM1rQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="114,159,207" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_oYz-WdO2EeeElfLsRnM1rQ" name="ugManageGardenerSchedule" outgoingEdges="_oYz-YdO2EeeElfLsRnM1rQ _oYz-ZdO2EeeElfLsRnM1rQ _oYz-adO2EeeElfLsRnM1rQ _u4PDYNO3EeeElfLsRnM1rQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+        <semanticElements xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_oYz-WtO2EeeElfLsRnM1rQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_oYz-W9O2EeeElfLsRnM1rQ" name="sfAddTask" outgoingEdges="_oYz-bdO2EeeElfLsRnM1rQ" incomingEdges="_oYz-YdO2EeeElfLsRnM1rQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfAddTask"/>
+        <semanticElements xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfAddTask"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_oYz-XNO2EeeElfLsRnM1rQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_oYz-XdO2EeeElfLsRnM1rQ" name="sfRemoveTask" outgoingEdges="_oYz-cNO2EeeElfLsRnM1rQ" incomingEdges="_oYz-ZdO2EeeElfLsRnM1rQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfRemoveTask"/>
+        <semanticElements xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfRemoveTask"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_oYz-XtO2EeeElfLsRnM1rQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_oYz-X9O2EeeElfLsRnM1rQ" name="sfLoadTaskGardener" outgoingEdges="_oYz-c9O2EeeElfLsRnM1rQ" incomingEdges="_oYz-adO2EeeElfLsRnM1rQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfLoadTaskGardener"/>
+        <semanticElements xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.sfLoadTaskGardener"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_oYz-YNO2EeeElfLsRnM1rQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_oYz-YdO2EeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_oYz-WdO2EeeElfLsRnM1rQ" targetNode="_oYz-W9O2EeeElfLsRnM1rQ" endLabel="[1..1]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_oYz-YtO2EeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_oYz-Y9O2EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_oYz-ZNO2EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_oYz-ZdO2EeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_oYz-WdO2EeeElfLsRnM1rQ" targetNode="_oYz-XdO2EeeElfLsRnM1rQ" endLabel="[1..1]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_oYz-ZtO2EeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_oYz-Z9O2EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_oYz-aNO2EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_oYz-adO2EeeElfLsRnM1rQ" name="&lt;&lt;reuse>>" sourceNode="_oYz-WdO2EeeElfLsRnM1rQ" targetNode="_oYz-X9O2EeeElfLsRnM1rQ" endLabel="[1..*]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_oYz-atO2EeeElfLsRnM1rQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_oYz-a9O2EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_oYz-bNO2EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </endLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_oYz-bdO2EeeElfLsRnM1rQ" name="&lt;&lt;primary>>&#xA;&lt;&lt;active>>&#xA;" sourceNode="_oYz-W9O2EeeElfLsRnM1rQ" targetNode="_oYz-U9O2EeeElfLsRnM1rQ">
+      <target xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.50/@useCaseActors.0"/>
+      <semanticElements xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.50/@useCaseActors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_oYz-btO2EeeElfLsRnM1rQ" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_oYz-b9O2EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_oYz-cNO2EeeElfLsRnM1rQ" name="&lt;&lt;primary>>&#xA;&lt;&lt;active>>&#xA;" sourceNode="_oYz-XdO2EeeElfLsRnM1rQ" targetNode="_oYz-U9O2EeeElfLsRnM1rQ">
+      <target xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.51/@useCaseActors.0"/>
+      <semanticElements xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.51/@useCaseActors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_oYz-cdO2EeeElfLsRnM1rQ" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_oYz-ctO2EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_oYz-c9O2EeeElfLsRnM1rQ" name="&lt;&lt;primary>>&#xA;&lt;&lt;active>>&#xA;" sourceNode="_oYz-X9O2EeeElfLsRnM1rQ" targetNode="_oYz-VdO2EeeElfLsRnM1rQ">
+      <target xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.52/@useCaseActors.0"/>
+      <semanticElements xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.52/@useCaseActors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_oYz-dNO2EeeElfLsRnM1rQ" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_oYz-ddO2EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_u4PDYNO3EeeElfLsRnM1rQ" name="&lt;&lt;primary>>&#xA;&lt;&lt;active>>&#xA;" sourceNode="_oYz-WdO2EeeElfLsRnM1rQ" targetNode="_oYz-U9O2EeeElfLsRnM1rQ">
+      <target xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.49/@useCaseActors.0"/>
+      <semanticElements xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.49/@useCaseActors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_u4PDYdO3EeeElfLsRnM1rQ" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_u4PDYtO3EeeElfLsRnM1rQ" showIcon="false">
+          <customFeatures>labelSize</customFeatures>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_oYz-dtO2EeeElfLsRnM1rQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer"/>
+    <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule"/>
+  </diagram:DSemanticDiagram>
+  <sequence:SequenceDDiagram xmi:id="_cLYdgNPJEeeElfLsRnM1rQ" name="uciugManageGardenerSchedule">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_cLYdgdPJEeeElfLsRnM1rQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_cLYdgtPJEeeElfLsRnM1rQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_cLYdttPJEeeElfLsRnM1rQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_cLYdt9PJEeeElfLsRnM1rQ" type="Sirius" element="_cLYdgNPJEeeElfLsRnM1rQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_cLYdudPJEeeElfLsRnM1rQ" type="2001" element="_cLYdhNPJEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_cLYdvNPJEeeElfLsRnM1rQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cLYdvdPJEeeElfLsRnM1rQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLYdyNPJEeeElfLsRnM1rQ" type="3001" element="_cLYdhdPJEeeElfLsRnM1rQ">
+            <children xmi:type="notation:Node" xmi:id="_cLYdy9PJEeeElfLsRnM1rQ" visible="false" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_cLYdzNPJEeeElfLsRnM1rQ" x="-19"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cLYd0NPJEeeElfLsRnM1rQ" type="3003" element="_cLYdh9PJEeeElfLsRnM1rQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYd0dPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYd0tPJEeeElfLsRnM1rQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYdydPJEeeElfLsRnM1rQ" fontColor="16777215" fontName="Lucida Sans Unicode" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYdytPJEeeElfLsRnM1rQ" y="22" width="10" height="451"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLYdzdPJEeeElfLsRnM1rQ" type="3003" element="_cLYdiNPJEeeElfLsRnM1rQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYdztPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYdz9PJEeeElfLsRnM1rQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYdutPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYdu9PJEeeElfLsRnM1rQ" x="128" y="50" width="70" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cLYdvtPJEeeElfLsRnM1rQ" type="2001" element="_cLYdidPJEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_cLYdwdPJEeeElfLsRnM1rQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cLYdwtPJEeeElfLsRnM1rQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLYd09PJEeeElfLsRnM1rQ" type="3001" element="_cLYditPJEeeElfLsRnM1rQ">
+            <children xmi:type="notation:Node" xmi:id="_cLYd1tPJEeeElfLsRnM1rQ" visible="false" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_cLYd19PJEeeElfLsRnM1rQ" x="-59"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cLYd29PJEeeElfLsRnM1rQ" type="3003" element="_cLYdlNPJEeeElfLsRnM1rQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYd3NPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYd3dPJEeeElfLsRnM1rQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cLYd3tPJEeeElfLsRnM1rQ" type="3001" element="_cLYdjNPJEeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_cLYd4dPJEeeElfLsRnM1rQ" type="5001">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_cLYd4tPJEeeElfLsRnM1rQ" x="21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_cLYd8tPJEeeElfLsRnM1rQ" type="3003" element="_cLYdjdPJEeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYd89PJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYd9NPJEeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYd39PJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYd4NPJEeeElfLsRnM1rQ" x="-68" y="30" width="20" height="40"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cLYd49PJEeeElfLsRnM1rQ" type="3001" element="_cLYdjtPJEeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_cLYd5tPJEeeElfLsRnM1rQ" type="5001">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_cLYd59PJEeeElfLsRnM1rQ" x="21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_cLYd9dPJEeeElfLsRnM1rQ" type="3003" element="_cLYdj9PJEeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYd9tPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYd99PJEeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYd5NPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYd5dPJEeeElfLsRnM1rQ" x="-68" y="150" width="20" height="40"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cLYd6NPJEeeElfLsRnM1rQ" type="3001" element="_cLYdkNPJEeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_cLYd69PJEeeElfLsRnM1rQ" type="5001">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_cLYd7NPJEeeElfLsRnM1rQ" x="21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_cLhncNPJEeeElfLsRnM1rQ" type="3003" element="_cLYdkdPJEeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_cLhncdPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnctPJEeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYd6dPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYd6tPJEeeElfLsRnM1rQ" x="-68" y="90" width="20" height="40"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cLYd7dPJEeeElfLsRnM1rQ" type="3001" element="_cLYdktPJEeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_cLYd8NPJEeeElfLsRnM1rQ" type="5001">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_cLYd8dPJEeeElfLsRnM1rQ" x="21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_cLhnc9PJEeeElfLsRnM1rQ" type="3003" element="_cLYdk9PJEeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_cLhndNPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnddPJEeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYd7tPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYd79PJEeeElfLsRnM1rQ" x="-68" y="210" width="20" height="40"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYd1NPJEeeElfLsRnM1rQ" fontColor="16777215" fontName="Lucida Sans Unicode" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYd1dPJEeeElfLsRnM1rQ" y="42" width="10" height="431"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLYd2NPJEeeElfLsRnM1rQ" type="3003" element="_cLYdldPJEeeElfLsRnM1rQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYd2dPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYd2tPJEeeElfLsRnM1rQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYdv9PJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYdwNPJEeeElfLsRnM1rQ" x="437" y="50" width="150" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cLYdw9PJEeeElfLsRnM1rQ" type="2001" element="_cLYdltPJEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_cLYdxtPJEeeElfLsRnM1rQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cLYdx9PJEeeElfLsRnM1rQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhndtPJEeeElfLsRnM1rQ" type="3001" element="_cLYdl9PJEeeElfLsRnM1rQ">
+            <children xmi:type="notation:Node" xmi:id="_cLhnedPJEeeElfLsRnM1rQ" visible="false" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_cLhnetPJEeeElfLsRnM1rQ" x="-59"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cLhnftPJEeeElfLsRnM1rQ" type="3003" element="_cLYdndPJEeeElfLsRnM1rQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_cLhnf9PJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhngNPJEeeElfLsRnM1rQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cLhngdPJEeeElfLsRnM1rQ" type="3001" element="_cLYdmdPJEeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_cLhnhNPJEeeElfLsRnM1rQ" type="5001">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_cLhnhdPJEeeElfLsRnM1rQ" x="21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_cLhni9PJEeeElfLsRnM1rQ" type="3003" element="_cLYdmtPJEeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_cLhnjNPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnjdPJEeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_cLhngtPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhng9PJEeeElfLsRnM1rQ" x="-68" y="270" width="20" height="40"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cLhnhtPJEeeElfLsRnM1rQ" type="3001" element="_cLYdm9PJEeeElfLsRnM1rQ">
+              <children xmi:type="notation:Node" xmi:id="_cLhnidPJEeeElfLsRnM1rQ" type="5001">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_cLhnitPJEeeElfLsRnM1rQ" x="21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_cLhnjtPJEeeElfLsRnM1rQ" type="3003" element="_cLYdnNPJEeeElfLsRnM1rQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_cLhnj9PJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnkNPJEeeElfLsRnM1rQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_cLhnh9PJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhniNPJEeeElfLsRnM1rQ" x="-68" y="341" width="20" height="40"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cLhnd9PJEeeElfLsRnM1rQ" fontColor="16777215" fontName="Lucida Sans Unicode" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhneNPJEeeElfLsRnM1rQ" y="42" width="10" height="431"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhne9PJEeeElfLsRnM1rQ" type="3003" element="_cLYdntPJEeeElfLsRnM1rQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cLhnfNPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnfdPJEeeElfLsRnM1rQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cLYdxNPJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLYdxdPJEeeElfLsRnM1rQ" x="686" y="50" width="150" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_cLYduNPJEeeElfLsRnM1rQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_cLhnkdPJEeeElfLsRnM1rQ" type="4001" element="_cLYdn9PJEeeElfLsRnM1rQ" source="_cLYd3tPJEeeElfLsRnM1rQ" target="_cLYdyNPJEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_cLhnldPJEeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnltPJEeeElfLsRnM1rQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhnl9PJEeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnmNPJEeeElfLsRnM1rQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhnmdPJEeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnmtPJEeeElfLsRnM1rQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cLhnktPJEeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cLhnk9PJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cLhnlNPJEeeElfLsRnM1rQ" points="[-48, -20, -48, -176]$[0, -20, 0, -176]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLhnm9PJEeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLhnnNPJEeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cLhnndPJEeeElfLsRnM1rQ" type="4001" element="_cLYdotPJEeeElfLsRnM1rQ" source="_cLYd49PJEeeElfLsRnM1rQ" target="_cLYdyNPJEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_cLhnodPJEeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnotPJEeeElfLsRnM1rQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhno9PJEeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnpNPJEeeElfLsRnM1rQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhnpdPJEeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnptPJEeeElfLsRnM1rQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cLhnntPJEeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cLhnn9PJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cLhnoNPJEeeElfLsRnM1rQ" points="[-48, -20, -48, -56]$[0, -20, 0, -56]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLhnp9PJEeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLhnqNPJEeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cLhnqdPJEeeElfLsRnM1rQ" type="4001" element="_cLYdpdPJEeeElfLsRnM1rQ" source="_cLhngdPJEeeElfLsRnM1rQ" target="_cLYdyNPJEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_cLhnrdPJEeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnrtPJEeeElfLsRnM1rQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhnr9PJEeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnsNPJEeeElfLsRnM1rQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhnsdPJEeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnstPJEeeElfLsRnM1rQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cLhnqtPJEeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cLhnq9PJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cLhnrNPJEeeElfLsRnM1rQ" points="[-48, -20, -48, 64]$[0, -20, 0, 64]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLhns9PJEeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLhntNPJEeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cLhntdPJEeeElfLsRnM1rQ" type="4001" element="_cLYdqNPJEeeElfLsRnM1rQ" source="_cLYd6NPJEeeElfLsRnM1rQ" target="_cLYdyNPJEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_cLhnudPJEeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnutPJEeeElfLsRnM1rQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhnu9PJEeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnvNPJEeeElfLsRnM1rQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhnvdPJEeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnvtPJEeeElfLsRnM1rQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cLhnttPJEeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cLhnt9PJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cLhnuNPJEeeElfLsRnM1rQ" points="[-48, -20, -48, -116]$[0, -20, 0, -116]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLhnv9PJEeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLhnwNPJEeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cLhnwdPJEeeElfLsRnM1rQ" type="4001" element="_cLYdq9PJEeeElfLsRnM1rQ" source="_cLYd7dPJEeeElfLsRnM1rQ" target="_cLYdyNPJEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_cLhnxdPJEeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnxtPJEeeElfLsRnM1rQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhnx9PJEeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnyNPJEeeElfLsRnM1rQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhnydPJEeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhnytPJEeeElfLsRnM1rQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cLhnwtPJEeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cLhnw9PJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cLhnxNPJEeeElfLsRnM1rQ" points="[-48, -20, -48, 4]$[0, -20, 0, 4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLhny9PJEeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLhnzNPJEeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_cLhnzdPJEeeElfLsRnM1rQ" type="4001" element="_cLYdrtPJEeeElfLsRnM1rQ" source="_cLhnhtPJEeeElfLsRnM1rQ" target="_cLYdyNPJEeeElfLsRnM1rQ">
+          <children xmi:type="notation:Node" xmi:id="_cLhn0dPJEeeElfLsRnM1rQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhn0tPJEeeElfLsRnM1rQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhn09PJEeeElfLsRnM1rQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhn1NPJEeeElfLsRnM1rQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cLhn1dPJEeeElfLsRnM1rQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cLhn1tPJEeeElfLsRnM1rQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_cLhnztPJEeeElfLsRnM1rQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cLhnz9PJEeeElfLsRnM1rQ" fontName="Lucida Sans Unicode" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cLhn0NPJEeeElfLsRnM1rQ" points="[-48, -20, -48, 135]$[0, -20, 0, 135]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLhn19PJEeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cLhn2NPJEeeElfLsRnM1rQ" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_cLYdhNPJEeeElfLsRnM1rQ" name="System" width="7" height="3" resizeKind="NSEW">
+      <target xmi:type="messir:UseCaseInstance" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule"/>
+      <semanticElements xmi:type="messir:UseCaseInstance" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule"/>
+      <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHfNPJEeeElfLsRnM1rQ" x="128" y="50" height="30" width="70"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_cLYdhdPJEeeElfLsRnM1rQ" name="System" incomingEdges="_cLYdn9PJEeeElfLsRnM1rQ _cLYdotPJEeeElfLsRnM1rQ _cLYdpdPJEeeElfLsRnM1rQ _cLYdqNPJEeeElfLsRnM1rQ _cLYdq9PJEeeElfLsRnM1rQ _cLYdrtPJEeeElfLsRnM1rQ" width="1" height="18" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseInstance" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule"/>
+        <semanticElements xmi:type="messir:UseCaseInstance" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" xmi:id="_cLYdhtPJEeeElfLsRnM1rQ"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_cLYdh9PJEeeElfLsRnM1rQ" showIcon="false" labelColor="255,255,255" hideLabelByDefault="true" width="1" height="18" color="0,0,0">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_System%20Instance%20Role']/@borderedNodeMappings[name='UCI_Lifeline%20SD_System%20%20Execution']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:ExecutionMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_System%20Instance%20Role']/@borderedNodeMappings[name='UCI_Lifeline%20SD_System%20%20Execution']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_cLYdiNPJEeeElfLsRnM1rQ" showIcon="false" labelPosition="node" width="7" height="3" color="238,201,142">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_System%20Instance%20Role']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:InstanceRoleMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_System%20Instance%20Role']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_cLYdidPJEeeElfLsRnM1rQ" name="theManager&#xA;: actManager" width="15" height="5" resizeKind="NSEW">
+      <target xmi:type="messir:UseCaseInstanceActor" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule.theManager"/>
+      <semanticElements xmi:type="messir:UseCaseInstanceActor" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule.theManager"/>
+      <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHfdPJEeeElfLsRnM1rQ" x="437" y="50" height="50" width="150"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_cLYditPJEeeElfLsRnM1rQ" name="uciugManageGardenerSchedule" width="1" height="18" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseInstance" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule"/>
+        <semanticElements xmi:type="messir:UseCaseInstance" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" xmi:id="_cLYdi9PJEeeElfLsRnM1rQ"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_cLYdjNPJEeeElfLsRnM1rQ" name="out01" outgoingEdges="_cLYdn9PJEeeElfLsRnM1rQ" width="2" height="4" resizeKind="NSEW">
+          <target xmi:type="messir:UseCaseInstanceStep" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.0"/>
+          <semanticElements xmi:type="messir:UseCaseInstanceStep" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.0"/>
+          <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHcNPJEeeElfLsRnM1rQ" x="502" y="130" height="40" width="20"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_cLYdjdPJEeeElfLsRnM1rQ" showIcon="false" labelAlignment="RIGHT" borderColor="39,76,114" width="2" height="4" color="39,76,114">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@borderedNodeMappings[name='UCI_SD_Step%20Execution']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:ExecutionMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@borderedNodeMappings[name='UCI_SD_Step%20Execution']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_cLYdjtPJEeeElfLsRnM1rQ" name="out02" outgoingEdges="_cLYdotPJEeeElfLsRnM1rQ" width="2" height="4" resizeKind="NSEW">
+          <target xmi:type="messir:UseCaseInstanceStep" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.1"/>
+          <semanticElements xmi:type="messir:UseCaseInstanceStep" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.1"/>
+          <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHcdPJEeeElfLsRnM1rQ" x="502" y="250" height="40" width="20"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_cLYdj9PJEeeElfLsRnM1rQ" showIcon="false" labelAlignment="RIGHT" borderColor="39,76,114" width="2" height="4" color="39,76,114">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@borderedNodeMappings[name='UCI_SD_Step%20Execution']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:ExecutionMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@borderedNodeMappings[name='UCI_SD_Step%20Execution']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_cLYdkNPJEeeElfLsRnM1rQ" name="in01" outgoingEdges="_cLYdqNPJEeeElfLsRnM1rQ" width="2" height="4" resizeKind="NSEW">
+          <target xmi:type="messir:UseCaseInstanceReturnedMessage" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.0/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0"/>
+          <semanticElements xmi:type="messir:UseCaseInstanceReturnedMessage" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.0/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0"/>
+          <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHctPJEeeElfLsRnM1rQ" x="502" y="190" height="40" width="20"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_cLYdkdPJEeeElfLsRnM1rQ" showIcon="false" labelAlignment="RIGHT" borderColor="194,239,255" width="2" height="4" color="194,239,255">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@borderedNodeMappings[name='UCI_SD_Subfunction_Returned_Message_Execution']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:ExecutionMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@borderedNodeMappings[name='UCI_SD_Subfunction_Returned_Message_Execution']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_cLYdktPJEeeElfLsRnM1rQ" name="in02" outgoingEdges="_cLYdq9PJEeeElfLsRnM1rQ" width="2" height="4" resizeKind="NSEW">
+          <target xmi:type="messir:UseCaseInstanceReturnedMessage" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.1/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0"/>
+          <semanticElements xmi:type="messir:UseCaseInstanceReturnedMessage" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.1/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0"/>
+          <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHc9PJEeeElfLsRnM1rQ" x="502" y="310" height="40" width="20"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_cLYdk9PJEeeElfLsRnM1rQ" showIcon="false" labelAlignment="RIGHT" borderColor="194,239,255" width="2" height="4" color="194,239,255">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@borderedNodeMappings[name='UCI_SD_Subfunction_Returned_Message_Execution']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:ExecutionMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@borderedNodeMappings[name='UCI_SD_Subfunction_Returned_Message_Execution']"/>
+        </ownedBorderedNodes>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_cLYdlNPJEeeElfLsRnM1rQ" showIcon="false" labelColor="255,255,255" hideLabelByDefault="true" width="1" height="18" color="0,0,0">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:ExecutionMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_cLYdldPJEeeElfLsRnM1rQ" showIcon="false" labelPosition="node" width="15" height="5" color="255,245,181">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:InstanceRoleMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_cLYdltPJEeeElfLsRnM1rQ" name="theGardener&#xA;: actGardener" width="15" height="5" resizeKind="NSEW">
+      <target xmi:type="messir:UseCaseInstanceActor" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule.theGardener"/>
+      <semanticElements xmi:type="messir:UseCaseInstanceActor" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule.theGardener"/>
+      <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHftPJEeeElfLsRnM1rQ" x="686" y="50" height="50" width="150"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_cLYdl9PJEeeElfLsRnM1rQ" name="uciugManageGardenerSchedule" width="1" height="18" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseInstance" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule"/>
+        <semanticElements xmi:type="messir:UseCaseInstance" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" xmi:id="_cLYdmNPJEeeElfLsRnM1rQ"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_cLYdmdPJEeeElfLsRnM1rQ" name="out03" outgoingEdges="_cLYdpdPJEeeElfLsRnM1rQ" width="2" height="4" resizeKind="NSEW">
+          <target xmi:type="messir:UseCaseInstanceStep" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.2"/>
+          <semanticElements xmi:type="messir:UseCaseInstanceStep" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.2"/>
+          <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHdNPJEeeElfLsRnM1rQ" x="751" y="370" height="40" width="20"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_cLYdmtPJEeeElfLsRnM1rQ" showIcon="false" labelAlignment="RIGHT" borderColor="39,76,114" width="2" height="4" color="39,76,114">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@borderedNodeMappings[name='UCI_SD_Step%20Execution']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:ExecutionMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@borderedNodeMappings[name='UCI_SD_Step%20Execution']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_cLYdm9PJEeeElfLsRnM1rQ" name="in03" outgoingEdges="_cLYdrtPJEeeElfLsRnM1rQ" width="2" height="4" resizeKind="NSEW">
+          <target xmi:type="messir:UseCaseInstanceReturnedMessage" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.2/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0"/>
+          <semanticElements xmi:type="messir:UseCaseInstanceReturnedMessage" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.2/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0"/>
+          <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHddPJEeeElfLsRnM1rQ" x="751" y="441" height="40" width="20"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_cLYdnNPJEeeElfLsRnM1rQ" showIcon="false" labelAlignment="RIGHT" borderColor="194,239,255" width="2" height="4" color="194,239,255">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@borderedNodeMappings[name='UCI_SD_Subfunction_Returned_Message_Execution']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_2:ExecutionMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@borderedNodeMappings[name='UCI_SD_Subfunction_Returned_Message_Execution']"/>
+        </ownedBorderedNodes>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_cLYdndPJEeeElfLsRnM1rQ" showIcon="false" labelColor="255,255,255" hideLabelByDefault="true" width="1" height="18" color="0,0,0">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:ExecutionMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@borderedNodeMappings[name='UCI_SD_UseCase%20Execution']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_cLYdntPJEeeElfLsRnM1rQ" showIcon="false" labelPosition="node" width="15" height="5" color="255,245,181">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:InstanceRoleMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='UCI_SD_UseCaseActor%20Instance%20Role']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_cLYdn9PJEeeElfLsRnM1rQ" name="sfAddTask(&quot;Watering&quot;,&quot;Rob has to water the carrots in room 1&quot;,&quot;11/11/217&quot;,&quot;true&quot;,&quot;11&quot;,&quot;John&quot;,&quot;Schmit&quot;,&quot;8&quot;,&quot;Steinweg&quot;,&quot;Remich&quot;,&quot;55588844&quot;)" sourceNode="_cLYdjNPJEeeElfLsRnM1rQ" targetNode="_cLYdhdPJEeeElfLsRnM1rQ">
+      <target xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.0/@actor"/>
+      <semanticElements xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.0/@actor"/>
+      <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHdtPJEeeElfLsRnM1rQ" y="130" height="0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_cLYdoNPJEeeElfLsRnM1rQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Executed']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_cLYdodPJEeeElfLsRnM1rQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Executed']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_cLYdotPJEeeElfLsRnM1rQ" name="sfAddTask(&quot;Swap Sensor&quot;,&quot;Steven has to switch ph-Sensor 17 in room 2&quot;,&quot;11/11/217&quot;,&quot;true&quot;,&quot;11&quot;,&quot;Steven&quot;,&quot;Raiisen&quot;,&quot;12&quot;,&quot;Rue Gasper&quot;,&quot;Luxemburg&quot;,&quot;55577744&quot;)" sourceNode="_cLYdjtPJEeeElfLsRnM1rQ" targetNode="_cLYdhdPJEeeElfLsRnM1rQ">
+      <target xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.1/@actor"/>
+      <semanticElements xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.1/@actor"/>
+      <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHd9PJEeeElfLsRnM1rQ" y="250" height="0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_cLYdo9PJEeeElfLsRnM1rQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Executed']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_cLYdpNPJEeeElfLsRnM1rQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Executed']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_cLYdpdPJEeeElfLsRnM1rQ" name="sfLoadTaskGardener(&quot;John&quot;,&quot;Schmit&quot;)" sourceNode="_cLYdmdPJEeeElfLsRnM1rQ" targetNode="_cLYdhdPJEeeElfLsRnM1rQ">
+      <target xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.2/@actor"/>
+      <semanticElements xmi:type="messir:UseCaseInstanceStepActor" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.2/@actor"/>
+      <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHeNPJEeeElfLsRnM1rQ" y="370" height="0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_cLYdptPJEeeElfLsRnM1rQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Executed']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_cLYdp9PJEeeElfLsRnM1rQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Executed']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_cLYdqNPJEeeElfLsRnM1rQ" name="ieMessage(Successfully added!)" sourceNode="_cLYdkNPJEeeElfLsRnM1rQ" targetNode="_cLYdhdPJEeeElfLsRnM1rQ">
+      <target xmi:type="messir:UseCaseInstanceReturnedMessageOperation" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.0/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0/@operation"/>
+      <semanticElements xmi:type="messir:UseCaseInstanceReturnedMessageOperation" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.0/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0/@operation"/>
+      <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHedPJEeeElfLsRnM1rQ" y="190" height="0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_cLYdqdPJEeeElfLsRnM1rQ" lineStyle="dash" sourceArrow="InputArrow" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Subfunction_Return_Message']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_cLYdqtPJEeeElfLsRnM1rQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Subfunction_Return_Message']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_cLYdq9PJEeeElfLsRnM1rQ" name="ieMessage(Successfully added!)" sourceNode="_cLYdktPJEeeElfLsRnM1rQ" targetNode="_cLYdhdPJEeeElfLsRnM1rQ">
+      <target xmi:type="messir:UseCaseInstanceReturnedMessageOperation" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.1/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0/@operation"/>
+      <semanticElements xmi:type="messir:UseCaseInstanceReturnedMessageOperation" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.1/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0/@operation"/>
+      <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHetPJEeeElfLsRnM1rQ" y="310" height="0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_cLYdrNPJEeeElfLsRnM1rQ" lineStyle="dash" sourceArrow="InputArrow" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Subfunction_Return_Message']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_cLYdrdPJEeeElfLsRnM1rQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Subfunction_Return_Message']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_cLYdrtPJEeeElfLsRnM1rQ" name="ieLoadedTask(Swap Sensor,Steven has to switch ph-Sensor 17 in room 2,11/11/217,true,11,Steven,Raiisen,12,Rue Gasper,Luxemburg,55577744)" sourceNode="_cLYdm9PJEeeElfLsRnM1rQ" targetNode="_cLYdhdPJEeeElfLsRnM1rQ">
+      <target xmi:type="messir:UseCaseInstanceReturnedMessageOperation" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.2/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0/@operation"/>
+      <semanticElements xmi:type="messir:UseCaseInstanceReturnedMessageOperation" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#//@usecaseM/@useCaseInstances.0/@useCaseInstanceDefinition/@useCaseInstanceStepsBlock/@useCaseInstanceSteps.2/@execution/@useCaseInstanceDefinition/@useCaseInstanceReturnedMessages.0/@operation"/>
+      <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" xmi:id="_caLHe9PJEeeElfLsRnM1rQ" y="441" height="0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_cLYdr9PJEeeElfLsRnM1rQ" lineStyle="dash" sourceArrow="InputArrow" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Subfunction_Return_Message']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_cLYdsNPJEeeElfLsRnM1rQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='UCI_SD_UC_Subfunction_Return_Message']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_2:SequenceDiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_cLYdsdPJEeeElfLsRnM1rQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use%20Case%20Instance%20Sequence%20Diagram']/@defaultLayer"/>
+    <target xmi:type="messir:UseCaseInstance" href="usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr#usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule"/>
+  </sequence:SequenceDDiagram>
 </xmi:XMI>

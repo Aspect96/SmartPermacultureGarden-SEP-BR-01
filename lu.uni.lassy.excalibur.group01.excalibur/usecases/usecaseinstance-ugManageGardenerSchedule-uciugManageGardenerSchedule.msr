@@ -1,0 +1,32 @@
+package usecases.uciugManageGardenerSchedule {
+	import lu.uni.lassy.excalibur.group01.excalibur.usecases
+
+	Use Case Model {
+
+		use case instance uciugManageGardenerSchedule : ugManageGardenerSchedule{
+			actors {
+				theManager: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+				theGardener: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
+			}
+			use case steps {
+				theManager
+				executed instanceof subfunction
+				sfAddTask("Watering","Rob has to water the carrots in room 1","11/11/217","true","11","John","Schmit","8","Steinweg","Remich","55588844"){
+					ieMessage("Successfully added!") returned to theManager
+				}
+				
+				theManager
+				executed instanceof subfunction
+				sfAddTask("Swap Sensor","Steven has to switch ph-Sensor 17 in room 2","11/11/217","true","11","Steven","Raiisen","12","Rue Gasper","Luxemburg","55577744"){
+					ieMessage("Successfully added!") returned to theManager
+				}
+				
+				theGardener
+				executed instanceof subfunction
+				sfLoadTaskGardener("John","Schmit"){
+					ieLoadedTask("Swap Sensor","Steven has to switch ph-Sensor 17 in room 2","11/11/217","true","11","Steven","Raiisen","12","Rue Gasper","Luxemburg","55577744") returned to theGardener
+				}
+			}
+		}
+	}
+}

@@ -112,7 +112,7 @@ import lu.uni.lassy.messir.libraries.string
 		reuse sfChooseImportance[0..1]
 		
 		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
-		executes sfEnterFields()
+		executes sfFillingTextFields()
 		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
 		executes sfChooseImportance()
 		
@@ -307,6 +307,68 @@ import lu.uni.lassy.messir.libraries.string
 			ordering constraint
 			"step (a) and (b) can be excuted multiple times."
 			
+		}
+	use case system summary suManageSchedule() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary,active]
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[secondary,active]
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[secondary,active]	
+		
+		reuse ugManageGardenerSchedule[0..*]
+		reuse ugManageTechnicianSchedule[0..*]
+		
+		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfAddTask()
+		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfRemoveTask()
+		step c: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
+		executes sfLoadTaskGardener()
+		step d: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		executes sfLoadTaskTechnician()
+		
+		}
+	use case system usergoal ugManageGardenerSchedule() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary,active]
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[secondary,active]
+		
+		reuse sfAddTask[1..1]
+		reuse sfRemoveTask[1..1]
+		reuse sfLoadTaskGardener[1..*]
+		
+		
+		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfAddTask()
+		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfRemoveTask()
+		step c: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
+		executes sfLoadTaskGardener()
+		}
+	use case system subfunction sfAddTask() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system subfunction sfRemoveTask() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system subfunction sfLoadTaskGardener() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
+		}
+	use case system usergoal ugManageTechnicianSchedule() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary,active]
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[secondary,active]
+		
+		reuse sfAddTask[1..1]
+		reuse sfRemoveTask[1..1]
+		reuse sfLoadTaskTechnician[1..*]
+		
+		
+		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfAddTask()
+		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfRemoveTask()
+		step c: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		executes sfLoadTaskTechnician()
+		}
+	use case system subfunction sfLoadTaskTechnician() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
 		}
 	}
 

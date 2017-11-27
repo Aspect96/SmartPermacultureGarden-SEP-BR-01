@@ -1,0 +1,10 @@
+/*
+@author Marc
+@date Mon Nov 27 21:45:31 CET 2017
+*/
+
+
+@@view suManageSchedule
+@model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule 
+@description ""
+@caption ""

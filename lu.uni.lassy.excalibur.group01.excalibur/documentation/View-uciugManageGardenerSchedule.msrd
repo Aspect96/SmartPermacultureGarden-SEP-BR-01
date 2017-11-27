@@ -1,0 +1,10 @@
+/*
+@author Marc
+@date Tue Nov 28 00:19:39 CET 2017
+*/
+
+
+@@view uciugManageGardenerSchedule
+@instance Use-Case usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule 
+@description ""
+@caption ""

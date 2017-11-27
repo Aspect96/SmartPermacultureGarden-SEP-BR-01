@@ -22,6 +22,23 @@ Concept Model {
 	datatype dtExecussion {
 		attribute value : ptInteger
 			}
+	datatype dtTask {
+		attribute taskName : ptString
+		attribute taskDescritpiton : ptString
+		attribute date : dtDate
+		attribute importance: ptBoolean
+		attribute worker : dtEmploye
+			}
+	datatype dtEmploye{
+		attribute id : ptInteger
+		attribute firstName : ptString
+		attribute lastName : ptString
+		attribute houseNumber: ptInteger
+		attribute street : ptString
+		attribute city : ptString
+		attribute phoneNumer : ptInteger
+	}
 		}
+	
 }
 }

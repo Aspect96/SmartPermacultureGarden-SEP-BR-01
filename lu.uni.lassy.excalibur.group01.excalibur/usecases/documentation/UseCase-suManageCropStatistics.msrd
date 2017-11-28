@@ -5,7 +5,7 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageCropStatistics
-@description "The Manager manages and can view the crop database"
+@description "The Manager manages and can view the crop list"
 @protocolCondition
 "
 "
@@ -17,7 +17,7 @@ The User must be logged in as Manager to be able to use the functions.
 @endPreConditions
 @postCondition
 "
-The Manager can freely modify the crop database.
+The Manager can freely modify the crop list.
 "
 @endPostConditions
 @additionalInformation

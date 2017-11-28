@@ -5,7 +5,7 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageCrops
-@description "The Manager is able to add and delete crops from the crop database."
+@description "The Manager is able to add and delete crops from the crop list."
 @protocolCondition
 "
 "
@@ -17,7 +17,7 @@ The Manager needs to be logged in.
 @endPreConditions
 @postCondition
 "
-The Manager successfully edited the crop database.
+The Manager successfully edited the crop list.
 "
 @endPostConditions
 @additionalInformation

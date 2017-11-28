@@ -18,7 +18,7 @@ The Manager clicks on the crop he wants to remove from the system.
 @endPreConditions
 @postCondition
 "
-The Crop is removed from the crops database.
+The Crop is removed from the crops list.
 "
 @endPostConditions
 @additionalInformation

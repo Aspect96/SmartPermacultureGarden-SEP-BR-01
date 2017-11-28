@@ -5,7 +5,7 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugViewCrops
-@description "The Manager can view the crops from the crop database."
+@description "The Manager can view the crops from the crop list."
 @protocolCondition
 "
 "
@@ -17,7 +17,7 @@ The Manager or the gardener is logged in.
 @endPreConditions
 @postCondition
 "
-The needed crops are retrieved from the crop database.
+The needed crops are retrieved from the crop list.
 "
 @endPostConditions
 @additionalInformation

@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfViewListOfCrops
-@description "The Manager can retrieve the list of all crops inside the crop database."
+@description "The Manager can retrieve the list of all crops inside the crop list."
 @protocolCondition
 "
 The system is booted-up and the Manager is logged in.
@@ -17,7 +17,7 @@ The system is booted-up and the Manager is logged in.
 @endPreConditions
 @postCondition
 "
-The Manager gets a list of all crops inside the crop database.
+The Manager gets a list of all crops inside the crop list.
 "
 @endPostConditions
 @additionalInformation

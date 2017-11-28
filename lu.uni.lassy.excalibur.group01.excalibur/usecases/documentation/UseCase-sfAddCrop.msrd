@@ -18,7 +18,7 @@ The input fields need to be filled correctly.
 @endPreConditions
 @postCondition
 "
-The new crop is added to the crops database.
+The new crop is added to the crops list.
 "
 @endPostConditions
 @additionalInformation

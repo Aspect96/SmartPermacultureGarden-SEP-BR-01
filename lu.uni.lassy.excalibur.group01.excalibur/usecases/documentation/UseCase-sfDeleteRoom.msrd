@@ -1,0 +1,25 @@
+/*
+@author Jerome
+@date Tue Nov 28 20:56:27 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfDeleteRoom
+@description "This function deletes a room from the room list."
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+The Room is deleted from the room list.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

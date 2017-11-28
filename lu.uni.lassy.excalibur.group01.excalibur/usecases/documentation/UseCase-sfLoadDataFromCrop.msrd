@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfLoadDataFromCrop
-@description "The Manager can view the data from a single crop from the crop database."
+@description "The Manager can view the data from a single crop from the crop list."
 @protocolCondition
 "
 The system is booted-up and the Manager is logged in.

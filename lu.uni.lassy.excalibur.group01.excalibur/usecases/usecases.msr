@@ -370,6 +370,21 @@ import lu.uni.lassy.messir.libraries.string
 	use case system subfunction sfLoadTaskTechnician() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
 		}
+	use case system subfunction sfDeleteRoom() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+		}
+	use case system usergoal ugManageRooms() {
+		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary,active]
+		
+		reuse sfAddRoom[0..*]
+		reuse sfDeleteRoom[0..*]
+		
+		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfAddRoom()
+		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
+		executes sfDeleteRoom()
+		
+		}
 	}
 
 }

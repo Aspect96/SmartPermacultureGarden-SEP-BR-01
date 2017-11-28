@@ -1,0 +1,10 @@
+/*
+@author Jerome
+@date Tue Nov 28 21:05:13 CET 2017
+*/
+
+
+@@view ugManageRooms
+@model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageRooms 
+@description ""
+@caption ""

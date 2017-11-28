@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfAddRoom
-@description "This function add the entry into the room database."
+@description "This function add the entry into the room list."
 @protocolCondition
 "
 "
@@ -17,7 +17,7 @@ The input formular needs to be correctly filled.
 @endPreConditions
 @postCondition
 "
-The new room is now inside the room database.
+The new room is now inside the room list.
 "
 @endPostConditions
 @additionalInformation

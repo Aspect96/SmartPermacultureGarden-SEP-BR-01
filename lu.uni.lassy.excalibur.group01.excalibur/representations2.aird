@@ -239,6 +239,9 @@
     <semanticResources>documentation/View-ugManageGardenerSchedule.msrd</semanticResources>
     <semanticResources>usecases/usecaseinstance-ugManageGardenerSchedule-uciugManageGardenerSchedule.msr</semanticResources>
     <semanticResources>documentation/View-uciugManageGardenerSchedule.msrd</semanticResources>
+    <semanticResources>documentation/View-ugManageRooms.msrd</semanticResources>
+    <semanticResources>usecases/documentation/UseCase-sfDeleteRoom.msrd</semanticResources>
+    <semanticResources>usecases/documentation/UseCase-ugManageRooms.msrd</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_LNZeMK6BEee9TrVpFqnNQA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_erHJNa6DEeeJYYudb3pOlA" name="Marc" repPath="#_erHJMK6DEeeJYYudb3pOlA">

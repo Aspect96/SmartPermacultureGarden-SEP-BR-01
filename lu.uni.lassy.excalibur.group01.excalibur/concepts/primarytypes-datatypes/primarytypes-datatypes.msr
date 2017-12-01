@@ -23,6 +23,7 @@ Concept Model {
 		attribute value : ptInteger
 			}
 	datatype dtTask {
+		attribute id: ptInteger
 		attribute taskName : ptString
 		attribute taskDescritpiton : ptString
 		attribute date : dtDate

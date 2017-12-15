@@ -1,0 +1,13 @@
+/*
+@author Gaetan1991
+@date Thu Dec 14 22:42:33 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtPhAmount
+@description "The ph amount is a specific type since the ph value it self has a constrain so that 1-14 are the only available
+choice"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtPhAmount.number
+""
+@endAttributes

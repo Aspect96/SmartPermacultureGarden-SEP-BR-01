@@ -1,0 +1,9 @@
+/*
+@author Gaetan1991
+@date Thu Dec 14 22:42:32 CET 2017
+*/
+
+
+@@Primary Type Enumeration lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorUpdate
+@description "ETSensorUpdate is an enumeration type of integers which describes which time schedule each sensors has to push
+their digital information to the system (sensors list and updates the value)."

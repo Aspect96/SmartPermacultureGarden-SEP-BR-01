@@ -1,0 +1,33 @@
+/*
+@author Gaetan1991
+@date Tue Dec 12 23:12:21 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.sfModifyRetriveSeedAmount
+@description "
+The gardener retrieves a given amount of a specific seed from the seeds inventory.
+ "
+//preProtocol descriptions
+@preP
+" The system is booted up and the gardener needs to be logged in and not logged out. The retrieving amount
+of seeds are less than the amount left of crops.
+"
+@endPreP
+//preFunctional descriptions
+@preF
+" The retrieving seed needs to be inside the seeds inventory."
+@endPreF
+//postFunctional descriptions
+@postF 
+"PF1: The retrieved amount of the selected seed are deducted from the current value of seed.
+PF2: The current value is updated.
+PF3: The request seed table is updated with the amount of seeds previously retrieved."
+@endPostF
+//postProtocol descriptions
+@postP 
+"none"
+@endPostP
+//example
+@example" "

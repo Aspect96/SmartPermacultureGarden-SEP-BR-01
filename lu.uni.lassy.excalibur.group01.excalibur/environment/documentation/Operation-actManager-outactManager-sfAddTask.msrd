@@ -1,0 +1,29 @@
+/*
+@author Gaetan1991
+@date Wed Dec 13 13:35:14 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfAddTask
+@description "
+ "
+//preProtocol descriptions
+@preP
+"The System needs to be booted up and ready. 
+The Manager has to be logged in and navigate to the Crop Managers pop-up Window."
+@endPreP
+//preFunctional descriptions
+@preF
+"The task that is added needs to be of the type Task"
+@endPreF
+//postFunctional descriptions
+@postF 
+" The task is added to the system:"
+@endPostF
+//postProtocol descriptions
+@postP 
+"none"
+@endPostP
+//example
+@example" "

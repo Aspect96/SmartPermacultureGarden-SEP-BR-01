@@ -1,0 +1,25 @@
+/*
+@author Gaetan1991
+@date Thu Dec 14 22:42:25 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.init.id
+""
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.init.roomNumber
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctSensor type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctSensor instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

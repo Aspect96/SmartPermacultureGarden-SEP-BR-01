@@ -1,0 +1,30 @@
+/*
+@author Gaetan1991
+@date Wed Dec 13 00:18:29 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician.outactTechnician.sfRemoveSensorFromSensorList
+@description "The technician can delete a selected sensor from the sensors table.
+ "
+//preProtocol descriptions
+@preP
+" The system is booted up and the technician needs to be on his home screen.
+In addition the technician needs to have done a request for a new sensor and this request should be accepeted
+from the manager"
+@endPreP
+//preFunctional descriptions
+@preF
+" The request for a new sensor has to be accepted."
+@endPreF
+//postFunctional descriptions
+@postF 
+"The sensors table is updated by removing the selected sensor from the sensor table."
+@endPostF
+//postProtocol descriptions
+@postP 
+"None"
+@endPostP
+//example
+@example" "

@@ -1,0 +1,29 @@
+/*
+@author Gaetan1991
+@date Wed Dec 13 00:31:29 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician.outactTechnician.oeCreateSystemAndEnvironment
+@description "The technician is in charge for starting the environment that means the system. So that
+all other actors/users can profit from the functionalities.
+ "
+//preProtocol descriptions
+@preP
+"There needs to be electricity. The sensors installed and switched on and correctly connected to the wifi."
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+"The different actors can now login in and use their functionalities and look up the data send from the sensor."
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

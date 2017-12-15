@@ -1,0 +1,30 @@
+/*
+@author Gaetan1991
+@date Tue Dec 12 23:46:02 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.environment.actTemperatureSensor.outactTemperatureSensor.sfTemperatureSensorPushValue
+@description "The temperature sensor sends a digital value to the sensor table and updates the 
+current value with the new send one in a given time period.
+ "
+//preProtocol descriptions
+@preP
+"The system is started up there needs to be a functional wifi connection and the sensor
+needs to be switched on. "
+@endPreP
+//preFunctional descriptions
+@preF
+" It is supposed that there is no other sensor with the same name/id."
+@endPreF
+//postFunctional descriptions
+@postF 
+" The value of the sensor table of the specific sensor is updated with the new send one."
+@endPostF
+//postProtocol descriptions
+@postP 
+"None"
+@endPostP
+//example
+@example" "

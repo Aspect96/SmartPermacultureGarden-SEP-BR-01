@@ -9,6 +9,7 @@ import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes
 
        
 	Use Case Model {
@@ -20,7 +21,8 @@ import lu.uni.lassy.messir.libraries.string
 	use case system subfunction sfplating() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
 		}
-	use case system subfunction oeLogin() {
+	use case system subfunction oeLogin
+	(name:dtString,password:dtString) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actUser[primary, active]
 			returned messages{
 				ieMessage returned to lu.uni.lassy.excalibur.group01.excalibur.environment.actUser
@@ -34,22 +36,10 @@ import lu.uni.lassy.messir.libraries.string
 			}
 		}   
 			
-	use case system subfunction oeEntersFields() {
-			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
-		
-		}
-	use case system subfunction sfSendsRequest() {
-			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[primary, active]
-			returned messages{
-				
-			}
-		}
-	use case system subfunction sfChecksInputFields() {
-			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[primary, active]
-		}
-	use case system subfunction oeRequestPushedToTable() {
-			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[primary, active]
-		}
+	
+	
+	
+	
 	use case system summary suRequestItem() {
 		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary,active]
 	}
@@ -70,17 +60,17 @@ import lu.uni.lassy.messir.libraries.string
 		
 	use case system usergoal ugAskForSensor() {
 		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary,active]
-		reuse oeEntersFields[1..1]
+		
 		reuse suRequestItem[1..1]
-		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
-		executes oeEntersFields
+		
 		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
 		executes suRequestItem()
 		}
 
 		
 		
-	use case system usergoal ugAskForFruitOrVegtable() {
+	use case system usergoal 
+	ugAskForFruitOrVegtable(name:ptString,value:ptInteger) {
 		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary,active]
 		
 		
@@ -91,70 +81,108 @@ import lu.uni.lassy.messir.libraries.string
 	use case system usergoal ugAddRoom() {
 		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
 		
-		reuse sfEnterFields[0..*]
+		
 		reuse sfAddRoom[0..*]
 		
-		step a:lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
-		executes sfEnterFields()
+	
 		step b:lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
 		executes sfAddRoom()
 		}
 	use case system subfunction sfAddRoom() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
 		}
-	use case system subfunction sfEnterFields() {
-			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
-		}
+	
 	use case system usergoal ugFillingGardnerSchedule() {
 		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary,active]
 		
-		reuse sfFillingTextFields[0..*]
 		reuse sfChooseImportance[0..1]
 		
-		step a: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
-		executes sfFillingTextFields()
+	
 		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
 		executes sfChooseImportance()
 		
 		}
-	use case system subfunction sfFillingTextFields() {
-			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
-		}
+	
 	use case system subfunction sfChooseImportance() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
 		}
-	use case system subfunction sfRequestANewSensor() {
+		
+		
+		
+		
+		
+		
+	use case system subfunction sfRequestANewSensor(name:ptString,room:dtLocation,technicianName:ptString,reason:ptString) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
 		}
-	use case system subfunction sfAcceptRequestForNewSensor() {
+		
+		
+	use case system subfunction sfAcceptRequestForNewSensor(id:dtIDSensor) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+			 returned messages {
+        ieSuccessfullyAcceptedTheRequest() returned to lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
 		}
-	use case system subfunction sfAddANewSensor() {
+		}
+		
+		
+	use case system subfunction sfAddANewSensor(sensorId:dtIDSensor,value:ptInteger,room:ptInteger,technicianName:ptString,updateSchedule:etSensorUpdate) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
+			 returned messages {
+        ieSuccessfullyAddedTheSensorToTheSensoList() returned to lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
 		}
-	use case system subfunction sfReliveRequestSensor() {
-			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actSystem[primary, active]
 		}
-	use case system subfunction sfAskForANewCrop() {
+	
+	use case system subfunction 
+	sfAskForANewCrop(sensor:dtIDSensor,value:ptInteger) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
+			 returned messages {
+        ieRequestHasBeenSend() returned to lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
 		}
-	use case system subfunction sfAcceptDiffrentCrop() {
+		}
+		
+		
+	use case system subfunction 
+	sfAcceptDiffrentCrop(name:ptString) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+			 returned messages {
+        ieRedirectManagerToHomeScreen(AdtPhoneNumber,AdtSMS) returned to lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
 		}
-	use case system subfunction sfAddCropToInventory() {
+		}
+	use case system subfunction 
+	sfAddCropToInventory(name:ptString,amount:ptInteger,phAmount:dtPhAmount,vegtable:ptBoolean,temperaturePref:dtInteger) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+			 returned messages {
+        ieSuccessfullyAddedTheSeed() returned to lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
 		}
-	use case system subfunction sfRemoveCropsFromInventory() {
+		}
+	use case system subfunction 
+	sfRemoveCropsFromInventory(name:ptString) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
+			 returned messages {
+        ieSuccessfullyRemovedItemSeeds() returned to lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
 		}
-	use case system subfunction sfSortByAmountRequest() {
+		}
+	use case system subfunction 
+	sfSortByAmountRequest(amount:ptInteger) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+			 returned messages {
+        ieSortedListByAmount() returned to lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
 		}
-	use case system subfunction sfFilterBySensorName() {
-			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
 		}
-	use case system subfunction sfRemoveSensorFromSensorList() {
+		
+	use case system subfunction 
+	sfFilterBySensorName(type:etSensorType) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
+			 returned messages {
+        ieDisplaySensorByCategory() returned to lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		}
+		}
+	use case system subfunction 
+	sfRemoveSensorFromSensorList(id:dtIDSensor) {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician[primary, active]
+			 returned messages {
+        ieSuccessfullyDeletedTheRequestSensor() returned to lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician
+		}
 		}
 		
 		use case system subfunction oeCreateSystemAndEnvironment() {
@@ -230,34 +258,42 @@ import lu.uni.lassy.messir.libraries.string
 		
 		}
 	
-	use case system summary sutest() {	
-		}
-	use case system subfunction sfTurnOnWatering() {
+	
+	use case system subfunction 
+	sfTurnOnWatering(sensor:dtIDSensor,value:ptInteger) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actHumiditySensor[primary, active]
 		}
-	use case system subfunction sfOpenWindows() {
+	use case system subfunction 
+	sfOpenWindows(sensor:dtIDSensor,value:ptInteger) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTemperatureSensor[primary, active]
 		}
-	use case system subfunction sfTurnOnLED() {
+	use case system subfunction 
+	sfTurnOnLED(sensor:dtIDSensor,value:ptInteger) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actLightSensor[primary, active]
 		}
-	use case system subfunction sfTurnOnHeater() {
+	use case system subfunction 
+	sfTurnOnHeater(sensor:dtIDSensor,value:ptInteger) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTemperatureSensor[primary, active]
 		}
-	use case system subfunction sfLightSensorPushValue() {
+	use case system subfunction 
+	sfLightSensorPushValue(sensor:dtIDSensor,value:ptInteger) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actLightSensor[primary, active]
 		}
-	use case system subfunction sfTemperatureSensorPushValue() {
+	use case system subfunction 
+	sfTemperatureSensorPushValue(sensor:dtIDSensor,value:ptInteger) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actTemperatureSensor[primary, active]
 		}
-	use case system subfunction sfHumiditySensorPushValue() {
+	use case system subfunction 
+	sfHumiditySensorPushValue(sensor:dtIDSensor,value:ptInteger) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actHumiditySensor[primary, active]
 		}
-	use case system subfunction sfAddCrop() {
+	use case system subfunction 
+	sfAddCrop() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
 		}
-	use case system subfunction sfDeleteCrop() {
+	use case system subfunction sfDeleteCrop(name:ptString) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
+			
 		}
 	use case system subfunction sfViewListOfCrops() {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]

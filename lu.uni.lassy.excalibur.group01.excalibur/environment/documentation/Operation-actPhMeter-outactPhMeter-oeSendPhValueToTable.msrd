@@ -1,0 +1,29 @@
+/*
+@author Gaetan1991
+@date Tue Dec 12 23:58:59 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.environment.actPhMeter.outactPhMeter.oeSendPhValueToTable
+@description "The ph sensor pushes a digital signal retrieved from the environment and sends his information
+to the sensor array and updates the value of this specific sensor.
+ "
+//preProtocol descriptions
+@preP
+" The system needs to be booted up and the ph sensor has to be used by the gardener."
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

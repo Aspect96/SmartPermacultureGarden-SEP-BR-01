@@ -1,0 +1,36 @@
+/*
+@author Gaetan1991
+@date Tue Dec 12 22:58:53 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.sfAskForDiffrentSeed
+@description "
+The gardener has the ability to request a new Seed which isn't already in the storage.
+ "
+//preProtocol descriptions
+@preP
+"The system needs to be started up.The gardener needs to be logged in and not logged out!
+The gardener needs to be on he's home screen.
+ "
+@endPreP
+//preFunctional descriptions
+@preF
+"
+it is supposed that the requested/ask seed isn't already in the inventory."
+@endPreF
+//postFunctional descriptions
+
+@postF 
+"PF1: The request has been send and a the request table for seeds 
+have been updated by adding the values of the requested seed. 
+"
+@endPostF
+//postProtocol descriptions
+
+@postP 
+"The manager has now the ability to accept or decline such a request."
+@endPostP
+//example
+@example" "

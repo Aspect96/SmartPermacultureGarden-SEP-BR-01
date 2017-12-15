@@ -19,9 +19,11 @@ Concept Model {
 	datatype dtMessage {
 		attribute value : ptString
 			}
+			
 	datatype dtExecussion {
 		attribute value : ptInteger
 			}
+			
 	datatype dtTask {
 		attribute id: ptInteger
 		attribute taskName : ptString
@@ -38,7 +40,33 @@ Concept Model {
 		attribute street : ptString
 		attribute city : ptString
 		attribute phoneNumer : ptInteger
+		operation is() : ptBoolean
 	}
+	
+	enum etSensorType {
+		constants["Temperature", "Humidity","Luminosity","Movement","EC-Meter","PH-Meter"]
+	}
+	enum etSensorUpdate {
+		constants["1", "2","5","10","20","25"]
+	}
+	datatype dtIDSensor {
+		attribute idNumber : dtInteger
+		attribute idName: dtString
+		operation is() : ptBoolean
+	}
+	
+		
+	datatype dtLocation {
+		attribute Room: ptInteger
+		attribute sector: ptString
+		operation is() : ptBoolean
+	}
+	
+	datatype dtPhAmount {
+		attribute number: ptInteger
+		operation is() : ptBoolean
+	}
+		
 		}
 	
 }

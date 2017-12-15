@@ -4,7 +4,7 @@
 */
 
 package lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes {
-
+import lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes
 import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
@@ -23,7 +23,25 @@ Concept Model {
 			attribute vpStarted: ptBoolean
 
 			operation init(AvpStarted:ptBoolean): ptBoolean
-		}	
+		}
+		 class ctSensor role rnSensors cardinality [0..*]  {
+			attribute id: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtIDSensor
+			attribute type: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorType
+			attribute update:lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorUpdate
+			attribute location:lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtLocation
+			operation init(id:ptString, roomNumber:ptInteger,TechnicianName:ptString,UpdateSchedule:etSensorUpdate) : ptBoolean
+		}
+		
+		 class ctSeed  role rnSeeds cardinality [0..*]   {
+			attribute name: dtString
+			attribute amount: dtInteger
+			attribute phAmount:lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtPhAmount
+			attribute temperaturePreference:dtInteger
+			operation init(name:dtString,amount:dtInteger,phValue:dtPhAmount,vegtable:ptBoolean,temperaturepref:dtInteger) : ptBoolean
+			
+		}
+		
+			
 
 	}
 }

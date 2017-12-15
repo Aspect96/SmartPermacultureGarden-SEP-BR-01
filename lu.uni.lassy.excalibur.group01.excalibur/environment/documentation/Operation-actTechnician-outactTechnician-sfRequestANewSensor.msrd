@@ -7,22 +7,26 @@
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician.outactTechnician.sfRequestANewSensor
 @description "
+The Technician has the ability to request a new sensor to the manager for a given reason.
  "
 //preProtocol descriptions
 @preP
-" "
+" The system needs to be booted up, the technician needs to be logged in and not logged out
+and need's to be on his home screen."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"None"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"PF1:The request has been send to the manager request sensor table by adding the values to the table.
+PF2:The manager has now the possibility to accept or decline such a request."
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"None"
 @endPostP
 //example
-@example" "
+@example"The different input text fields have to be completed:Temperature 1 Broken the manager 
+sees this request inside the request table"

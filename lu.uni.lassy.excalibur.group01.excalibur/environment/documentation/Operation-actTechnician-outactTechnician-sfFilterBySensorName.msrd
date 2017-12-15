@@ -1,0 +1,30 @@
+/*
+@author Gaetan1991
+@date Wed Dec 13 00:22:53 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician.outactTechnician.sfFilterBySensorName
+@description "The technician can categories the sensors by type.
+ "
+//preProtocol descriptions
+@preP
+"The system needs to be booted up the technician needs to be logged in and not logged out.
+In addition the technician needs to be on he's home screen."
+@endPreP
+//preFunctional descriptions
+@preF
+"The sensors table needs to have at least one entry inside the table."
+@endPreF
+//postFunctional descriptions
+@postF 
+"The table is categorized by type.The sensors from the selected type are displayed and the 
+non selected categorized sensor are hidden."
+@endPostF
+//postProtocol descriptions
+@postP 
+"None"
+@endPostP
+//example
+@example" "

@@ -1,0 +1,21 @@
+/*
+@author Gaetan1991
+@date Wed Dec 13 14:16:59 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed
+@description "sfqsdqsd"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.name
+""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.amount
+""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.phAmount
+""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.temperaturePreference
+""
+@endAttributes

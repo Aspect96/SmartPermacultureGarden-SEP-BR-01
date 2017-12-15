@@ -5,4 +5,4 @@
 
 
 @@Instance Use Case usecases.uciugAskForDiffrentCrop.uciugAskForDiffrentCrop
-@description ""
+@description "The gardener has the ability to request a non existing seed to the manager."

@@ -5,4 +5,8 @@
 
 
 @@Instance Use Case usecases.uciugAddANewSensor.uciugAddANewSensor
-@description ""
+@description "Use case instance for adding a new sensor. Different steps needs for this to be done.
+This means first step is that the technician needs to boot up and setup the environment so that the actors Technician and manager can login. 
+Secondly the Technician has to ask for a new sensor with the given input values. In addition the manager needs to accept such a request.
+The technician can now add a new sensor to the sensors array with the given parameters from the input values.
+To finish he needs to delete the sensor which is broken."

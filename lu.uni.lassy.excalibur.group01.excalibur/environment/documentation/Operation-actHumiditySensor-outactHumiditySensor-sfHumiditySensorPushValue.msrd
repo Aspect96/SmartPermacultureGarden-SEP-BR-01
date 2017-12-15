@@ -1,0 +1,31 @@
+/*
+@author Gaetan1991
+@date Fri Dec 15 01:39:16 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.environment.actHumiditySensor.outactHumiditySensor.sfHumiditySensorPushValue
+@description "The humidity sensor pushes every given time a new value to the sensors table by updating the
+current value of the given humidity sensor.
+ "
+//preProtocol descriptions
+@preP
+" The system needs to be booted up and their needs to be a wifi connection functional."
+@endPreP
+//preFunctional descriptions
+@preF
+"The sensors name/id have to be unique."
+@endPreF
+
+//postFunctional descriptions
+@postF 
+" PF1:The value from the sensor table are updated for the specific sensor."
+@endPostF
+
+//postProtocol descriptions
+@postP 
+"None"
+@endPostP
+//example
+@example""

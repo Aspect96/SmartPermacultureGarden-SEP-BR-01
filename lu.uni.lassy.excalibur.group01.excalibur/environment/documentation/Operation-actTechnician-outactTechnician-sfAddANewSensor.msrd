@@ -1,0 +1,29 @@
+/*
+@author Gaetan1991
+@date Sun Dec 10 22:01:30 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician.outactTechnician.sfAddANewSensor
+@description "The technician has the ability to add a new sensor to the sensor list.
+ "
+//preProtocol descriptions
+@preP
+"The system is booted up and the technician is logged in and not logged out.In addition the technician needs to be 
+on his home screen. "
+@endPreP
+//preFunctional descriptions
+@preF
+"The request for a new sensor has to be done and the request need also to be accepted by the manager."
+@endPreF
+//postFunctional descriptions
+@postF 
+"The sensor table is updated with the new sensor with the given values entered by the technician."
+@endPostF
+//postProtocol descriptions
+@postP 
+"None"
+@endPostP
+//example
+@example" "

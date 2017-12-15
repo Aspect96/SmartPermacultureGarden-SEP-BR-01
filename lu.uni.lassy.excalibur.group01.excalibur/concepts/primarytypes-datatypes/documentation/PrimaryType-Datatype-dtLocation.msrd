@@ -1,0 +1,16 @@
+/*
+@author Gaetan1991
+@date Thu Dec 14 21:37:40 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtLocation
+@description "dtLocation consist of two other types of integer. Room and a sector. Normally the room only
+needed but in case of dividing a given room in to sectors the sectors variable of type integer is useful."
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtLocation.Room
+""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtLocation.sector
+""
+@endAttributes

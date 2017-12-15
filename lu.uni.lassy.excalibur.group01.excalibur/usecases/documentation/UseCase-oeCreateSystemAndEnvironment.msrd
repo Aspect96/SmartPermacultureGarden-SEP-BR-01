@@ -5,17 +5,23 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.oeCreateSystemAndEnvironment
-@description ""
+@description "The technician needs to do this function once (if the system is shut down) only if the system is
+on all actors can execute their functionalities and benefit from the software. "
 @protocolCondition
 "
+There needs to be electricity and a working computer.
 "
 @endProtocolConditions
 @preCondition
 "
+none since nothing was existing before.
 "
 @endPreConditions
 @postCondition
 "
+The system is up and running and is fully functional so that all the actors can execute their functionalities
+and look up statistics.
+A system state and system's environment are created.
 "
 @endPostConditions
 @additionalInformation

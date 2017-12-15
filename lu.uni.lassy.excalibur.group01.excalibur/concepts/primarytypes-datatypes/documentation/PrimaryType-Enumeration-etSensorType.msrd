@@ -1,0 +1,9 @@
+/*
+@author Gaetan1991
+@date Thu Dec 14 22:42:30 CET 2017
+*/
+
+
+@@Primary Type Enumeration lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorType
+@description "Is an enumeration type which is used to specify the sensor type an example for this can
+be temperature or humidity in this enumeration all the sensors types are enumerated."

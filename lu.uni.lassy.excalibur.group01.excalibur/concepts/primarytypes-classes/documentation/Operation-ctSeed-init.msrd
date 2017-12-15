@@ -1,0 +1,34 @@
+/*
+@author Gaetan1991
+@date Fri Dec 15 01:50:16 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.name
+""
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.amount
+""
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.phValue
+""
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.vegtable
+""
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.temperaturepref
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctSeed type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctSeed instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

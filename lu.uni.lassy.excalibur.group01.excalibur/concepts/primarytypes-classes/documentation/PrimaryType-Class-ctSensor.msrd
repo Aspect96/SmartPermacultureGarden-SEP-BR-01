@@ -1,0 +1,21 @@
+/*
+@author Gaetan1991
+@date Wed Dec 13 14:25:57 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor
+@description "This class represents all the sensors it is a list."
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.id
+""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.type
+""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.update
+""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.location
+""
+@endAttributes

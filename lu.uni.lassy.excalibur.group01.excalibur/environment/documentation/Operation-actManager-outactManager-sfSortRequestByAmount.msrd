@@ -1,0 +1,29 @@
+/*
+@author Gaetan1991
+@date Wed Dec 13 00:36:01 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfSortRequestByAmount
+@description "The manager has the ability to sort the requested seed by amount.
+ "
+//preProtocol descriptions
+@preP
+" The system is booted up the manager needs to be logged in and not logged out in addition,
+"
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

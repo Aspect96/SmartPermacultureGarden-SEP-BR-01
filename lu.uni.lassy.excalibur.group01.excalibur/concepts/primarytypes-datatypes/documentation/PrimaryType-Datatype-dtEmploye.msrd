@@ -1,0 +1,30 @@
+/*
+@author Gaetan1991
+@date Tue Dec 05 13:20:13 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.id
+""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.firstName
+""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.lastName
+""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.houseNumber
+""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.street
+""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.city
+""
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.phoneNumer
+""
+@endAttributes

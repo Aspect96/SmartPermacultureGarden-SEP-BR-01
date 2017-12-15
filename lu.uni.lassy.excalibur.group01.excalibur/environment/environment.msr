@@ -34,20 +34,24 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 		}
 	actor actGardener role rnactGardener cardinality[0 .. *] {
 			input interface inactGardener {
-				operation ieLoadedTask():ptBoolean
+			operation ieLoadedTask():ptBoolean
+			operation ieRequestHasBeenSend():ptBoolean
+			operation ieSuccessfullyRetrivedSeedsFromInventory():ptBoolean
 			}
 			output interface outactGardener {
-				operation oeLoadTaskGardener():ptBoolean
+			operation oeLoadTaskGardener():ptBoolean
+			operation sfAskForDiffrentSeed():ptBoolean
+			operation sfModifyRetriveSeedAmount():ptBoolean
 			}
 		}
-	actor actSystem role rnactSystem cardinality[0 .. *] {
-			input interface inactSystem {
-			}
-			output interface outactSystem {
-			}
-		}
+	
 	actor actManager role rnactManager cardinality[0 .. *] {
 			input interface inactManager {
+			operation ieRedirectManagerToHomeScreen():ptBoolean
+			operation ieSuccessfullyRemovedItemSeeds():ptBoolean
+			operation ieSuccessfullyAcceptedTheRequest():ptBoolean
+			operation ieSortedListByAmount():ptBoolean
+			operation ieSuccessfullyAddedTheSeed():ptBoolean
 			}
 			output interface outactManager {
 				operation oeCreateSystemAndEnvironment():ptBoolean
@@ -55,6 +59,11 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 				operation sfDelteCrop():ptBoolean
 				operation sfAddTask():ptBoolean
 				operation sfRemoveTask():ptBoolean
+			operation sfAcceptADiffrentSeed():ptBoolean
+			operation sfAddSeedToTheInventory():ptBoolean
+			operation sfSortRequestByAmount():ptBoolean
+			operation sfSortByAmountRequest():ptBoolean
+			operation sfAcceptRequestForNewSensor():ptBoolean
 			}
 		}
 	actor actUser role rnactUser cardinality[0 .. *] {
@@ -74,7 +83,8 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			input interface inactHumiditySensor {
 			}
 			output interface outactHumiditySensor {
-			operation oeSendHumidityValue():ptBoolean
+			
+			
 			operation sfHumiditySensorPushValue():ptBoolean
 			}
 		}
@@ -89,6 +99,7 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			input interface inactPhMeter {
 			}
 			output interface outactPhMeter {
+			operation oeSendPhValueToTable():ptBoolean
 			}
 		}   
 	actor actEcMeter role rnactEcMeter cardinality[0 .. *] {
@@ -103,11 +114,6 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			output interface outactMotionSensor {
 			}
 		}
-	actor actAdministrator role rnactAdministrator cardinality[0 .. *] {
-			input interface inactAdministrator {
-			}
-			output interface outactAdministrator {
-			}
-		}
+	
 	}
 }

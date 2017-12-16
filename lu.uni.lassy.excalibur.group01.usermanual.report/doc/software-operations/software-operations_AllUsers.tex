@@ -1,0 +1,124 @@
+
+
+
+\section{View crop}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:View crop}
+
+The User can view the details from the crop entry inside the crops database.
+
+\begin{description}
+
+\item \textbf{Parameters:} ID, CompareCheckBox
+\item \textbf{Precondition:} The system is bootedup and the User has to be
+logged in and be on the Statistics screen.
+\item \textbf{Post-condition:} The choosen crop is shown inside the regular panel is the checkbox is false (not ticked), otherwise the crops is loaded inside the compare panel.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{User} clicks on any crop to be viewed.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of viewing a crop}
+The \textbf{User} wants to see the details of a crop and compare the first crop with a second crop. For the first crop the be loaded into the regular panel the compare checkbox has to be empty. 
+For the second crop, the \textbf{User} ticks the compare checkbox and clicks on the second crop the be loaded inside the compare panel.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+\section{Calulate crop statistics}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Calculate crop statistics}
+
+The User will be able to see some calculated statistics inside the regular and the compare panel.
+
+\begin{description}
+
+\item \textbf{Parameters:} DatePlanted, DateHarvested, TotalWeight, NumberOfPlants
+\item \textbf{Precondition:} The system is bootedup and the User has to be
+logged in and be on the Statistics screen.
+\item \textbf{Post-condition:} The choosen crop is shown inside the panel with 3 calculated statistics, Days until harvest, Average weight per plant and Growth per day.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{User} clicks on any crop to be viewed.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of calculating crops statistics}
+The \textbf{User} wants to see the details of a crop. The system will now calculate the Days until harvest, Average weight per plant and Growth per day.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\section{Switch room for temperature diagram}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Switch room for temperature diagram}
+
+The User can switch between the rooms to show their temperature over time.
+
+\begin{description}
+
+\item \textbf{Parameters:} Room
+\item \textbf{Precondition:} The system is bootedup and the User has to be
+logged in and be on the Statistics screen.
+\item \textbf{Post-condition:} The temperature diagram for the choosen room is shown.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{User} clicks on the select list and chooses a different room.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of switchting room for the temperature diagram}
+The \textbf{User} wants to see the temperature of Room 3. The \textbf{User} clicks on the select list and selects the room 'Room 3'. The temperature diagram will instantly be loaded.
+\hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+\subsection{Switch room for water consumption vs. luminosity level diagram}
+\hrule
+\hfill
+\vspace{0.5cm}
+\label{operation:Switch room for water consumption vs. luminosity level diagram}
+
+The User can switch between the rooms to show their water consumption vs. luminosity level over time.
+
+\begin{description}
+
+\item \textbf{Parameters:} Room
+\item \textbf{Precondition:} The system is bootedup and the User has to be
+logged in and be on the Statistics screen.
+\item \textbf{Post-condition:} The water consumption vs. luminosity level diagram for the choosen room is shown.
+\item \textbf{Triggering:}
+\begin{enumerate}
+
+\item \textbf{User} clicks on the select list and chooses a different room.
+
+\end{enumerate}
+\end{description}
+
+\subsection{Example of switchting room for the water consumption vs.
+luminosity level diagram} The \textbf{User} wants to see the water consumption vs. luminosity level of Room 2. The \textbf{User} clicks on the select list and selects the room 'Room 2'. 
+The water consumption vs. luminosity level diagram will instantly be loaded.
+\hfill
+\vspace{0.5cm}
+\hrule

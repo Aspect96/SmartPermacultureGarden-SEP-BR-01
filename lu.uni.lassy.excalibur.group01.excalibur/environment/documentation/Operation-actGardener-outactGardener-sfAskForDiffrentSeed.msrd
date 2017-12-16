@@ -18,7 +18,8 @@ The gardener needs to be on he's home screen.
 //preFunctional descriptions
 @preF
 "
-it is supposed that the requested/ask seed isn't already in the inventory."
+It is supposed that the requested/ask seed isn't already in the inventory.
+In addition the asked seed needs to be NOT already in the seeds storage."
 @endPreF
 //postFunctional descriptions
 

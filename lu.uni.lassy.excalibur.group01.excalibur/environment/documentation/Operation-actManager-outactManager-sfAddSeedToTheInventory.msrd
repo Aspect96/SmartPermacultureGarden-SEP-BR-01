@@ -7,22 +7,26 @@
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfAddSeedToTheInventory
 @description "
+The manager has the ability to add a new kind of seed to the inventory of seeds.
  "
 //preProtocol descriptions
 @preP
-" "
+" System needs to be booted up and the manager needs to be logged in and be on his home screen. "
 @endPreP
 //preFunctional descriptions
-@preF
-" "
+@preF"The new Seed has not to be already in the inventory storage. "
+@preF"The amount of seeds can not be 0 or negative. "
+@preF"The ph value needs to be between 1-14."
+@preF"The temperature value needs to be higher than 18 and lower than 40."
+
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+" The inventory storage is updated by adding the new attribute to the array."
 @endPostF
 //postProtocol descriptions
 @postP 
 " "
 @endPostP
 //example
-@example" "
+@example"The manager adds name: banana amount: 35, ph value: 7 ,vegetable: false, temperature preference: 29  and presses the add button."

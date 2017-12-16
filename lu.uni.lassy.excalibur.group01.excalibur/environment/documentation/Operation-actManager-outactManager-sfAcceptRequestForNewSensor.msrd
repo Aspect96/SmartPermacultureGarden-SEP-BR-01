@@ -7,22 +7,24 @@
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfAcceptRequestForNewSensor
 @description "
+The manager has the ability to accept a request for a new sensor asked by the technician.
  "
 //preProtocol descriptions
 @preP
-" "
+" The system is booted up and the manager needs to be logged in and their needs to be a sensor request from the technician."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+" There needs to be a request for a sensor from the technician"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+" On the technician home screen the Replaceable is set from Pending to true."
 @endPostF
 //postProtocol descriptions
 @postP 
 " "
 @endPostP
 //example
-@example" "
+@example"The technician has done a request for a new temperature sensor for room1. In addition now the manager accepts this request and sets 
+the value of the technician request array from replaceable pending to true."

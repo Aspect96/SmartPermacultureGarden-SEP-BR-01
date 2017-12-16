@@ -10,20 +10,20 @@ lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sf
  "
 //preProtocol descriptions
 @preP
-" The system is booted up the manager needs to be logged in and not logged out in addition,
+" The system is booted up the manager needs to be logged in and not logged out in addition there needs to be at least one entry for a requested seed,
 "
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"None"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The values of requested seeds is sorted by ascending order."
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+" None"
 @endPostP
 //example
-@example" "
+@example"None"

@@ -30,7 +30,7 @@ Concept Model {
 			attribute update:lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorUpdate
 			attribute location:lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtLocation
 			operation init(id:ptString, roomNumber:ptInteger,TechnicianName:ptString,UpdateSchedule:etSensorUpdate) : ptBoolean
-		}
+		} 
 		
 		 class ctSeed  role rnSeeds cardinality [0..*]   {
 			attribute name: dtString

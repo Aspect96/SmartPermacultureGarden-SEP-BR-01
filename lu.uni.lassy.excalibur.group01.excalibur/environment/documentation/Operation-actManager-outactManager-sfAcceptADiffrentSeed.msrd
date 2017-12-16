@@ -7,22 +7,25 @@
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfAcceptADiffrentSeed
 @description "
+The manager can accept a requested new seed from the gardener.
  "
 //preProtocol descriptions
 @preP
-" "
+" The system needs to be booted up and the manager needs to be logged in and there needs to be a requested seed from
+the gardener inside the requested seed array."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+" The requested seed is already accepted by the manager."
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The system redirect the manager to his main screen.(Has to add it by himself.) "
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+""
 @endPostP
 //example
-@example" "
+@example"The gardener requests 20 bananas seeds. On the seed array the manager has to press the green button to accept such
+an request. The system redirects now the manager to his home screen."

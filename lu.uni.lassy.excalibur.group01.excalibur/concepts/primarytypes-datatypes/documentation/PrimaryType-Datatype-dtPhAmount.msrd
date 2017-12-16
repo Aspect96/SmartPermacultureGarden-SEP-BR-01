@@ -9,5 +9,10 @@
 choice"
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtPhAmount.number
-""
+"identifies the ph value of a seed"
 @endAttributes
+@operation lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtIDSensor.is
+"
+used to check if the amount is between 1 - 14 .
+"
+@endOperations

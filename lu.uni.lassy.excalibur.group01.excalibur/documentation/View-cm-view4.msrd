@@ -1,0 +1,15 @@
+/*
+@author Gaetan1991
+@date Sat Dec 16 22:13:58 CET 2017
+*/
+
+
+@@view cm-TypesNeededForTheSensors
+@model Concept
+@level Global
+@sublevel Primary Class
+@number 4
+@description "Shows a local view of primary types , datatype types and enumaratin. 
+Since the sensors is a small part of the system ,we can show in this local view, 
+ all the necessary types associated to the sensors."
+@caption "Overview of the types assigned to a sensor."

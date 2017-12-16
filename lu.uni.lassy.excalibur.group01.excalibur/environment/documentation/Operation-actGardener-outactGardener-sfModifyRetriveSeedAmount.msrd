@@ -17,7 +17,8 @@ of seeds are less than the amount left of crops.
 @endPreP
 //preFunctional descriptions
 @preF
-" The retrieving seed needs to be inside the seeds inventory."
+" The retrieving seed needs to be inside the seeds inventory.
+The amount of retrieving seeds can not exceed the available left. "
 @endPreF
 //postFunctional descriptions
 @postF 

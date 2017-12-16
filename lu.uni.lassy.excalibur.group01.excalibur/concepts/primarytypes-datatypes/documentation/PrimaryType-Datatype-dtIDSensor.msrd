@@ -8,8 +8,13 @@
 @description "The id of the sensor is of type Integer and string."
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtIDSensor.idNumber
-""
+"used to specific the room where the sensor is.(Last part of the identification)"
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtIDSensor.idName
-""
+"used to specified the name of the sensor which is the type(first part of the identification)"
 @endAttributes
+@operation lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtIDSensor.is
+"
+used to check if the given types are in correct format.
+"
+@endOperations

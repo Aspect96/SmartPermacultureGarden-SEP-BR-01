@@ -9,8 +9,13 @@
 needed but in case of dividing a given room in to sectors the sectors variable of type integer is useful."
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtLocation.Room
-""
+"used to identifie the room number"
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtLocation.sector
-""
+"used to identifie the sector in a given room"
 @endAttributes
+@operation lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtLocation.is
+"
+used to check if the room exists and if there is a sector.
+"
+@endOperations

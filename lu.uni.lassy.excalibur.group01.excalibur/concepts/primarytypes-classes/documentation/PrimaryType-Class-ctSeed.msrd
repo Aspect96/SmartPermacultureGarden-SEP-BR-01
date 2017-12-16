@@ -5,17 +5,23 @@
 
 
 @@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed
-@description "sfqsdqsd"
+@description "used to represent the seeds used by humans."
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.name
-""
+"identification of the seed"
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.amount
-""
+"used to set a given number of seeds "
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.phAmount
-""
+"a seed has his ph-amount for perfect growing"
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.temperaturePreference
-""
+"is used to set the temperature preference for a given seed."
 @endAttributes
+
+@operation lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init
+"
+the \msrcode{ctSeed} class introduces an operation for instance creation and initialization.
+"
+@endOperations

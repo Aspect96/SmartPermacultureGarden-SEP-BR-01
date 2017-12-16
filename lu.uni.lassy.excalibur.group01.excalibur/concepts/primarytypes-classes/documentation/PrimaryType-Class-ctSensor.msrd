@@ -2,20 +2,26 @@
 @author Gaetan1991
 @date Wed Dec 13 14:25:57 CET 2017
 */
-
+ 
 
 @@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor
-@description "This class represents all the sensors it is a list."
+@description "used to represent s all the sensors (it is a list)." 
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.id
-""
+"sensor identification code" 
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.type
-""
+"used to specific the type of the sensor"
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.update
-""
+"used to send a value every given time"
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.location
-""
+"used to locate the sensor"
 @endAttributes
+@operation lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.init
+"
+the \msrcode{ctSensor} class introduces an operation for instance creation and initialization.
+"
+@endOperations
+

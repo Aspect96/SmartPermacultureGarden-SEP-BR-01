@@ -1,4 +1,61 @@
 \chapter{Technicien}
 \label{chap:appendix_Technicien}
 
+\section{Technician Home Screen}
+\label{sec:appendix_Technician_Home_Screen}
+
+\begin{figure}[H]
+\includegraphics[width=1\textwidth]{images/appendix_images/TechnicianHomeRRR.eps}
+\end{figure}
+
+The Technician home screen is the screen where the technician has all his
+primary functionalities.
+
+
+\subsection{Catagorise sensor by type (TH 01)}
+This drop down menu can be used by the actor to display only the sensors of a
+given type.
+
+
+\subsection{Sensor Overview (TH 2)}
+This is a drop down menu which allows the technician to categorize the sensors
+by type and the system updates the table values.
+
+
+\subsection{Remove Sensor (TH 3)}
+This red button allows the technician to remove the selected sensor from the
+sensors list. This button shall only be used if a request for a sensor has been
+executed (TH 08) and accepted by the manager.
+
+\subsection{Add new sensor formular (TH 5)}
+This input formular is used to add a sensor to the sensors list with the
+specification inserted in the input fields.
+
+\subsection{Add new sensor button (TH 4)}
+This green button allows the technician to add the sensors with the given input
+values from (TH 5). The list gets automatically updated with the new sensor.
+
+\subsection{Requested Sensor Table Pending/true (TH 7)}
+This table displays all the sensors requested to the manager and the response
+inside to column Replacebale can be True or Pending.
+
+\subsection{Requested Sensor remove (TH 6)}
+This red button allows the technician to remove a given sensor from the request
+sensors list for any reason.This could happen due to adding a sensor or a
+declination of the request (Where replacble is set to false).
+
+\subsection{Ask for a new sensor Formular (TH 8)}
+This formular can be used to request a new sensor to the manager.
+The input fields are checked in case of a wrong input an error might be
+shown up.
+
+\subsubsection{Errors 43}
+In case the input formula is wrong completed an error might occur due to the
+wrong input values.
+
+\subsection{Ask for a new sensor Push to the manager (TH 9)}
+This orange button is used to send the input values entered by the technician
+to the manager.
+
+
 

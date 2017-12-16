@@ -570,6 +570,54 @@ System removes the line from the table and reloads the screen to update it.
 
 
 
+
+
+
+
+
+
+\label{operation:AskSystemForASugestion}
+
+The \textbf{Gardener} can ask the system for a sugestion to place the seed in a
+given room.
+\begin{description}
+
+\item \textbf{Parameters:} SeedName
+\item \textbf{Precondition:} The system is bootedup and Gardener has to be
+logged in and be on the Gardener home screen.
+\item \textbf{Post-condition:} A message is returned which displays in which
+room the seed has to be placed.
+\item \textbf{Output messages:} I suggest to Place it in room (1-4).
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item \textbf{Gardener} pressed the ask me button.
+\item System displays a message for the given room where the seed needs to be
+placed.
+\end{enumerate}
+\end{description}
+
+\subsection{Example of Ask the system for a sugestion}
+\textbf{Gardener} Enters in the input field Apple and presses the button ask me.
+As a result the system will display a suggestionwhere the seed needs to be
+placed.In this case the system suggest to place it in room 1.
+
+ \hfill
+\vspace{0.5cm}
+\hrule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \break
 \section{Build Temperature Line Diagram}
 \label{operation:BuildTemperatureDiagram}

@@ -1,0 +1,16 @@
+/*
+@author Jerome
+@date Sun Dec 17 17:08:08 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtCropID
+@description "Crop identifier data type"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtCropID.idCrop
+"unique ID to identify said crop."
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtCropID.is
+"Used determine if the id is valid and does not belong to a crop instance already"
+@endOperations

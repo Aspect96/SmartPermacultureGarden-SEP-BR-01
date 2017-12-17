@@ -6,5 +6,5 @@
 
 @@view ugManageCrops
 @model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageCrops 
-@description ""
-@caption ""
+@description "Shows the functions of the actManager for the Crops"
+@caption "Usergoal ugManageCrops"

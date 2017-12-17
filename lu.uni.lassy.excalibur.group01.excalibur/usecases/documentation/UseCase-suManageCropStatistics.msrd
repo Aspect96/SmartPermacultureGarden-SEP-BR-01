@@ -17,7 +17,7 @@ The User must be logged in as Manager to be able to use the functions.
 @endPreConditions
 @postCondition
 "
-The Manager can freely modify the crop list.
+The Manager can freely modify the relations of the crop instances.
 "
 @endPostConditions
 @additionalInformation

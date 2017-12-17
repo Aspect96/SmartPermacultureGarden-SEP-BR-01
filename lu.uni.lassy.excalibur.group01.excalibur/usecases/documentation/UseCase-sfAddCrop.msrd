@@ -18,7 +18,7 @@ The input fields need to be filled correctly.
 @endPreConditions
 @postCondition
 "
-The new crop is added to the crops list.
+The new crop instance is created and in relation with the ctState and ctCropManager.
 "
 @endPostConditions
 @additionalInformation

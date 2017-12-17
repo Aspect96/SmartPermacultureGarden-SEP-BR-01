@@ -28,7 +28,7 @@ Concept Model {
 		attribute id: ptInteger
 		attribute taskName : ptString
 		attribute taskDescritpiton : ptString
-		attribute date : dtDate
+		attribute date : lu.uni.lassy.messir.libraries.calendar.dtDate
 		attribute importance: ptBoolean
 		attribute worker : dtEmploye
 			}
@@ -67,6 +67,26 @@ Concept Model {
 		operation is() : ptBoolean
 	}
 		
+	datatype dtCropID {
+		attribute idCrop : dtInteger
+		operation is() : ptBoolean
+	}
+
+	datatype dtDate {
+		attribute day : dtInteger
+		attribute month : dtInteger
+		attribute year : dtInteger
+		operation calculateDays(date1:dtDate, date2:dtDate) : dtInteger
+		operation is() :ptBoolean
+	}
+		
+		
+	datatype dtWeight {
+		attribute value : ptReal
+		operation is() : ptBoolean
+	}
+	
+	
 		}
 	
 }

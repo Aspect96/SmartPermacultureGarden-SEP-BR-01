@@ -9,16 +9,16 @@
 @protocolCondition
 "
 The system is booted-up and the Manager is logged in. The Manager needs to be on the Manage Crop Statistics pop-up window.
-The Manager clicks on the crop he wants to remove from the system.
 "
 @endProtocolConditions
 @preCondition
 "
+The Manager must choose a valid crop instance to be deleted.
 "
 @endPreConditions
 @postCondition
 "
-The Crop is removed from the crops list.
+The Crop instance is deleted from the system.
 "
 @endPostConditions
 @additionalInformation

@@ -35,7 +35,7 @@ package usecases.uciManageCropsStatistics {
 				
 				theGardener
 				executed instanceof subfunction
-				sfLoadDataFromCrop("2", "True")
+				sfLoadDataFromCrop("1", "True")
 			}
 		}
 	}

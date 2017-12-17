@@ -6,5 +6,5 @@
 
 @@view ugViewCrops
 @model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugViewCrops 
-@description ""
-@caption ""
+@description "Shows the functions of both Manager and Gardener for the Crops."
+@caption "Usergoal ugViewCrops"

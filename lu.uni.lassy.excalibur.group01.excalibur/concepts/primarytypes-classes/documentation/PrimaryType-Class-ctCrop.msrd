@@ -1,0 +1,31 @@
+/*
+@author Jerome
+@date Sun Dec 17 17:55:18 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCrop
+@description "Used to model a representation of a crop"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCrop.id
+"unique identifier for the crop"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCrop.datePlanted
+"date the plants were planted"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCrop.dateHarvested
+"date the plants were harvested"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCrop.weight
+"the weight of the crop"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCrop.noOfPlants
+"the number of plants that were harvested"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCrop.plantName
+"the plants name that was harvested"
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCrop.init
+"initializes a new instance of a crop"
+@endOperations

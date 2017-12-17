@@ -6,5 +6,5 @@
 
 @@view ugManageRooms
 @model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageRooms 
-@description ""
-@caption ""
+@description "Shows the functions of the actManager for the Rooms"
+@caption "Usergoal ugManageRooms"

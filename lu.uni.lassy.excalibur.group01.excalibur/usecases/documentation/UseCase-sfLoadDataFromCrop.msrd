@@ -17,7 +17,7 @@ The system is booted-up and the Manager is logged in.
 @endPreConditions
 @postCondition
 "
-The Manager gets a list containing detailed information about the selected crop.
+The Manager retrieves a list containing detailed information about the selected crop from the ctCropManager.
 "
 @endPostConditions
 @additionalInformation

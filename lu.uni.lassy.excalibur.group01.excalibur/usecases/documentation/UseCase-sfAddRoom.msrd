@@ -8,16 +8,17 @@
 @description "This function add the entry into the room list."
 @protocolCondition
 "
+The system is booted-up and the Manager is logged in. The Manager needs to be on the Settings pop-up window. 
 "
 @endProtocolConditions
 @preCondition
 "
-The input formular needs to be correctly filled.
+The input formular must be correctly filled.
 "
 @endPreConditions
 @postCondition
 "
-The new room is now inside the room list.
+The new room instance is created and in relation with the ctState and the ctRoomManager.
 "
 @endPostConditions
 @additionalInformation

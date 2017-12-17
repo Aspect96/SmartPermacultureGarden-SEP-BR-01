@@ -1,0 +1,10 @@
+/*
+@author Jerome
+@date Sun Dec 17 18:55:15 CET 2017
+*/
+
+
+@@view operation-scope-outactManager-sfAddCrop
+@model Operation lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfAddCrop 
+@description "Shows the concept model elements in the scope of the sfAddCrop operation"
+@caption "sfAddCrop operation scope"

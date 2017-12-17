@@ -8,15 +8,17 @@
 @description "This function deletes a room from the room list."
 @protocolCondition
 "
+The system is booted-up and the Manager is logged in. The Manager needs to be on the Settings pop-up window. 
 "
 @endProtocolConditions
 @preCondition
 "
+The Manager must choose a valid room instance to be deleted.
 "
 @endPreConditions
 @postCondition
 "
-The Room is deleted from the room list.
+The room instance is deleted from the system.
 "
 @endPostConditions
 @additionalInformation

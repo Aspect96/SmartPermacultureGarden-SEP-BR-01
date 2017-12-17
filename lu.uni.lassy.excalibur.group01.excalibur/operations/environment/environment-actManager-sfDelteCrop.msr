@@ -1,0 +1,45 @@
+package lu.uni.lassy.excalibur.group01.excalibur.environment.operations.actManager.outactManager.sfDelteCrop {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfDelteCrop():ptBoolean{
+		// include below the specification information (pre,post or ocl or prolog)
+			preP {let TheSystem: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState in
+				let TheActor: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager in
+				self.rnActor.rnSystem = TheSystem
+				and self.rnActor = TheActor
+				
+				/* PreP01 */
+				and TheSystem.vpStarted = true
+			}
+			
+			preF{
+				let TheSystem: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState in
+				let TheActor: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager in
+				let AllCrops: Bag(lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCrop) in
+				self.rnActor.rnSystem = TheSystem
+				and self.rnActor = TheActor
+				/* PreF01 */
+				TheSystem.rnCrops->select(id.eq(AdtCropID)) = AllCrops
+				and AllCrops->size().eq(1)
+			}
+			
+			postF {let TheSystem: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState in
+				let TheActor: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager in
+				self.rnActor.rnSystem = TheSystem
+				and self.rnActor = TheActor
+				
+				/* PostF01 */
+				TheSystem.rnCrops->select(id.eq(AdtCropID)) = AllCrops
+				and AllCrops.rnCrops->forAll(msrIsKilled)
+				and AllCrops.msrIsKilled
+				
+			}
+		}
+	}
+}

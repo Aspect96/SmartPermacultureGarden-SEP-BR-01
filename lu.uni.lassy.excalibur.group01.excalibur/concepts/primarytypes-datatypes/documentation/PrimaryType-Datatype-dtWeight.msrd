@@ -1,0 +1,16 @@
+/*
+@author Jerome
+@date Sun Dec 17 17:47:42 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtWeight
+@description "Weight data type for crops"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtWeight.value
+"weight in real number"
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtWeight.is
+"Used to determine if the weight is considered as valid"
+@endOperations

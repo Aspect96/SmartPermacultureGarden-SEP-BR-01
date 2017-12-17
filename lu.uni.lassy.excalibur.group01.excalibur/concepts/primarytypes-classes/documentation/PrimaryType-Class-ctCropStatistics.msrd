@@ -1,0 +1,15 @@
+/*
+@author Jerome
+@date Sun Dec 17 17:58:41 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropStatistics
+@description "Used to calculate the statistics for the user"
+@operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropStatistics.calculateAverageWeight
+"calculates the average weight harvested from a single plant"
+@operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropStatistics.calculateAverageWeightGainPerDay
+"calculates the average weight gain per day during the growing phase"
+@endOperations

@@ -1,0 +1,24 @@
+/*
+@author Jerome
+@date Sun Dec 17 17:08:38 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate
+@description "Date data type"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate.day
+"day of the month"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate.month
+"month of the year"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate.year
+"year"
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate.calculateDays
+"calculates the days between date1 and date1"
+@operation lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate.is
+"Used to determine if the given date is considered as valid"
+@endOperations

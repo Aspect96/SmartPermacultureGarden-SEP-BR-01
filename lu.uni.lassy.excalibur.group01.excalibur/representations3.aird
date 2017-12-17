@@ -346,6 +346,29 @@
     <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtPhAmount-is.msrd</semanticResources>
     <semanticResources>environment/documentation/Operation-actManager-outactManager-sfAcceptRequestForNewSensor.msrd</semanticResources>
     <semanticResources>documentation/View-cm-view4.msrd</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtPhAmount-is.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtLocation-is.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtIDSensor-is.msr</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctGardener.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctManager.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctTechnician.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctHuman.msrd</semanticResources>
+    <semanticResources>operations/environment/environment-actGardener-sfAskForDiffrentSeed.msr</semanticResources>
+    <semanticResources>operations/environment/environment-actGardener-sfModifyRetriveSeedAmount.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-ctSensor-init1.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-etSensorType-is.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-etSensorUpdate-is.msr</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etSensorType-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etSensorType-lookString.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etSensorUpdate-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etSensorUpdate-lookInteder.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctCrop-init.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctCropStatistics-calculateAverageWeight.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctCropStatistics-calculateAverageWeightGainPerDay.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtCropID-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtDate-calculateDays.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtDate-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtWeight-is.msrd</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_LNwqkK6BEee9TrVpFqnNQA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_fSfkNa6BEee9TrVpFqnNQA" name="LionelSchroeder" repPath="#_fSfkMK6BEee9TrVpFqnNQA">

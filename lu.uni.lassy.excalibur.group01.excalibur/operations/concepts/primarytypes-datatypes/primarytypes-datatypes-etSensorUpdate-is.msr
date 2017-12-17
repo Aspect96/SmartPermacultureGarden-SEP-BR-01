@@ -1,0 +1,32 @@
+package lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.operations.datatypes.etSensorUpdate.is {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorUpdate.is():ptBoolean{
+			postF{
+		let TheResult:ptBoolean in
+	    /* Post F01 */
+	    TheResult = true
+	    and result = TheResult}
+	
+			prolog {
+		"src/Operations/concepts/PrimaryTypesDatatypes/PrimaryTypesDatatypes-etSensorUpdate-is.pl"
+	}
+}
+		
+		operation: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorUpdate.lookInteder():dtInteger{
+			postF{
+			    // specification compliant with the Prolog Coding Rules of the Messir Simulator
+			    let TheResult:dtInteger in
+			    /* Post F01 */
+			    TheResult.value = self.oclAsType(ptInteger)
+			    and result = TheResult
+			    }
+		}
+	}
+}

@@ -1,6 +1,6 @@
 /*
 @author Gaetan1991
-@date Fri Dec 15 01:50:16 CET 2017
+@date Mon Dec 18 00:17:21 CET 2017
 */
 
 
@@ -8,19 +8,19 @@
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init
 //parameters
 @parameter
-lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.name
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.AdtName
 ""
 @parameter
-lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.amount
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.AdtNamount
 ""
 @parameter
-lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.phValue
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.AdtPhValue
 ""
 @parameter
-lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.vegtable
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.AdtVegtable
 ""
 @parameter
-lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.temperaturepref
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init.AdtTemperaturepref
 ""
 @endParameters
 

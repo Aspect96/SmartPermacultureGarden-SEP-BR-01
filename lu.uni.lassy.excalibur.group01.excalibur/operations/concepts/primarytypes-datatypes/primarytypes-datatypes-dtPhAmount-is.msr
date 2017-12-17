@@ -1,0 +1,30 @@
+package lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.operations.datatypes.dtPhAmount.is {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtPhAmount.is():ptBoolean{
+				postF{
+      let TheResult:ptBoolean in
+      let MaxNumber:ptInteger in
+      let MinNumber:ptInteger in
+      if
+      (
+      /* Post Functional:*/
+      /* Post F01 */
+      MaxNumber=(14)
+      MinNumber.eq(1)
+      and self.number < MaxNumber and self.number>MinNumber
+      )
+      then (TheResult = true)
+      else (TheResult = false)
+      endif
+      and result = TheResult
+   }
+		}
+	}
+}

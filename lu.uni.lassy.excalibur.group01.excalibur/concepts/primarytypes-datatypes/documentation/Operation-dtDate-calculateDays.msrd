@@ -1,0 +1,25 @@
+/*
+@author Gaetan1991
+@date Mon Dec 18 00:17:27 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate.calculateDays
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate.calculateDays.date1
+""
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate.calculateDays.date2
+""
+@endParameters
+
+@description "
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

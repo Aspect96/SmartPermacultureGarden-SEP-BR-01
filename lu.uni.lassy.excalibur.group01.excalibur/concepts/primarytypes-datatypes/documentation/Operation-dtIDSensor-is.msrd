@@ -7,10 +7,11 @@
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtIDSensor.is
 @description "
+indicates which values are considered of type \msrcode{dtIDSensor}.
  "
 //postFunctional descriptions
 @postF 
-" "
+"a id is considered as a valid value if there is an number over 1 and if there is the a name string of enumeration type etSensorType. "
 @endPostF
 //example
 @example" "

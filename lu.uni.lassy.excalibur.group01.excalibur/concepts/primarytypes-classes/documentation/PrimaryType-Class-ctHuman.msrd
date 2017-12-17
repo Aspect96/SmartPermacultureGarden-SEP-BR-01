@@ -1,0 +1,12 @@
+/*
+@author Gaetan1991
+@date Sun Dec 17 22:34:44 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctHuman
+@description "The ctHuman is the general class where all other classes inherit from."
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctHuman.employe
+""
+@endAttributes

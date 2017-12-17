@@ -45,14 +45,19 @@ Concept Model {
 	
 	enum etSensorType {
 		constants["Temperature", "Humidity","Luminosity","Movement","EC-Meter","PH-Meter"]
+		operation is():ptBoolean
+		operation lookString():dtString
 	}
 	enum etSensorUpdate {
 		constants["1", "2","5","10","20","25"]
+		operation is():ptBoolean
+		operation lookInteder():dtInteger
 	}
 	datatype dtIDSensor {
 		attribute idNumber : dtInteger
-		attribute idName: dtString
+		attribute idName: etSensorType
 		operation is() : ptBoolean
+		
 	}
 	
 		

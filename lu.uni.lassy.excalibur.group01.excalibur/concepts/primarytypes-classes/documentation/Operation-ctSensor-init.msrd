@@ -1,6 +1,6 @@
 /*
 @author Gaetan1991
-@date Thu Dec 14 22:42:25 CET 2017
+@date Mon Dec 18 00:06:06 CET 2017
 */
 
 
@@ -8,11 +8,17 @@
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.init
 //parameters
 @parameter
-lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.init.id
-""
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.init.Adtid
+"is the id of the sensor"
 @parameter
-lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.init.roomNumber
-""
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.init.AdtroomNumber
+"is the room number from the sensor"
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.init.AdtTechnicianName
+"is the name of the technician of type dtString"
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSensor.init.AdtUpdateSchedule
+"is the schedule when the sensors pushes his information  of type dtInteger"
 @endParameters
 
 @description "

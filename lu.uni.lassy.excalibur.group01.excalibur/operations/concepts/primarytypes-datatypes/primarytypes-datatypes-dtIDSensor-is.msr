@@ -1,0 +1,27 @@
+package lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.operations.datatypes.dtIDSensor.is {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtIDSensor.is():ptBoolean{
+		postF{
+      let TheResult:ptBoolean in
+ 
+      if
+      (
+      /* Post Functional:*/
+      /* Post F01 */
+     self.idName.eq(etSensorType) and self.number > 0
+      )
+      then (TheResult = true)
+      else (TheResult = false)
+      endif
+      and result = TheResult
+   }
+		}
+	}
+}

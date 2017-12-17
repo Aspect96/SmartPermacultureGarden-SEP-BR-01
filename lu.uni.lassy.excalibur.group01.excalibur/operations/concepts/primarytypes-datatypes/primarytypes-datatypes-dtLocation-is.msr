@@ -1,0 +1,29 @@
+package lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.operations.datatypes.dtLocation.is {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtLocation.is():ptBoolean{
+					postF{
+      let TheResult:ptBoolean in
+      let Room:ptInteger in
+      let Location:ptInteger in
+      if
+      (
+      /* Post Functional:*/
+      /* Post F01 */
+     
+    		self.Room < 4 and self.Location > 4
+      )
+      then (TheResult = true)
+      else (TheResult = false)
+      endif
+      and result = TheResult
+   }
+		}
+	}
+}

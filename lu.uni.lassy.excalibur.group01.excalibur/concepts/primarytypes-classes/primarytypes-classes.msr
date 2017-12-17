@@ -2,7 +2,7 @@
 * @author Gaetan1991
 * @date Wed Oct 11 14:39:06 CEST 2017
 */
-
+ 
 package lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes {
 import lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes
 import lu.uni.lassy.messir.libraries.calendar
@@ -12,7 +12,7 @@ import lu.uni.lassy.messir.libraries.string
 
 
 
-
+ 
 import lu.uni.lassy.messir.libraries.primitives
 
 Concept Model {
@@ -29,15 +29,16 @@ Concept Model {
 			attribute type: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorType
 			attribute update:lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorUpdate
 			attribute location:lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtLocation
-			operation init(id:ptString, roomNumber:ptInteger,TechnicianName:ptString,UpdateSchedule:etSensorUpdate) : ptBoolean
+			operation init(Adtid:ptString, AdtroomNumber:ptInteger,AdtTechnicianName:ptString,AdtUpdateSchedule:etSensorUpdate) : ptBoolean
 		} 
+			
 		
 		 class ctSeed  role rnSeeds cardinality [0..*]   {
 			attribute name: dtString
 			attribute amount: dtInteger
 			attribute phAmount:lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtPhAmount
 			attribute temperaturePreference:dtInteger
-			operation init(name:dtString,amount:dtInteger,phValue:dtPhAmount,vegtable:ptBoolean,temperaturepref:dtInteger) : ptBoolean
+			operation init(AdtName:dtString,AdtNamount:dtInteger,AdtPhValue:dtPhAmount,AdtVegtable:ptBoolean,AdtTemperaturepref:dtInteger) : ptBoolean
 			
 		}
 		
@@ -55,6 +56,26 @@ Concept Model {
 			operation calculateAverageWeight(noOfPlants:dtInteger, weight:dtWeight) : ptReal
 			operation calculateAverageWeightGainPerDay(days:ptInteger, weight:dtWeight) : ptReal
 		}
+		
+		
+		 class ctHuman role rnHuman cardinality [0..*]  {
+			attribute employe: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye
+		
+		} 
+		
+		class ctManager role rnManager cardinality [1..1] extends ctHuman {
+			attribute caracter: dtString
+		}
+		class ctGardener role rnGardener cardinality [1..1] extends ctHuman {
+			attribute caracter: dtString
+		}
+		class ctTechnician role rnTechnician cardinality [1..1] extends ctHuman {
+			attribute caracter: dtString
+		}
+		
+		
+		
+		
 		
 
 	}

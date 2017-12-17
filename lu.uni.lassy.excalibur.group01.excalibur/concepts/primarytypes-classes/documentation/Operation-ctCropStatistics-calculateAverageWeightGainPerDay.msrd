@@ -1,0 +1,25 @@
+/*
+@author Gaetan1991
+@date Mon Dec 18 00:17:25 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropStatistics.calculateAverageWeightGainPerDay
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropStatistics.calculateAverageWeightGainPerDay.days
+""
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropStatistics.calculateAverageWeightGainPerDay.weight
+""
+@endParameters
+
+@description "
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

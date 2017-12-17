@@ -1,0 +1,12 @@
+/*
+@author Gaetan1991
+@date Sun Dec 17 22:34:19 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTechnician
+@description "The ctTechnician extends from general Human since there are some properties the same like the name."
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTechnician.caracter
+""
+@endAttributes

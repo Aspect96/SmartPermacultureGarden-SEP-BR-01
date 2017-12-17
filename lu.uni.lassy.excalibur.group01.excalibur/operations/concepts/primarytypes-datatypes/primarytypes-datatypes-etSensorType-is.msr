@@ -1,0 +1,30 @@
+package lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.operations.datatypes.etSensorType.is {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorType.is():ptBoolean{
+					 postF{
+		    // specification compliant with the Prolog Coding Rules of the Messir Simulator
+		    let TheResult:ptBoolean in
+		    /* Post F01 */
+		    TheResult = true
+		    and result = TheResult}
+		    prolog{"src/Operations/Concepts/SecondaryTypesDatatypes/SecondaryTypesDatatypes-etHumanKind-is.pl"}
+		    }
+		
+	operation: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorType.lookString():dtString{
+    postF{
+    // specification compliant with the Prolog Coding Rules of the Messir Simulator
+    let TheResult:dtString in
+    /* Post F01 */
+    TheResult.value = self.oclAsType(ptString)
+    and result = TheResult
+    }
+		}
+	}
+}

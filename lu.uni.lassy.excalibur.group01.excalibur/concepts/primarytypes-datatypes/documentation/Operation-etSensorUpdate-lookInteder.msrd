@@ -1,0 +1,17 @@
+/*
+@author Gaetan1991
+@date Mon Dec 18 00:02:15 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorUpdate.lookInteder
+@description "
+specifies the \msrcode{dtInteger} value corresponding to an \msrcode{etSensorUpdate} value.
+ "
+//postFunctional descriptions
+@postF 
+"he \msrcode{value} field of the returned \msrcode{dtInteger} value is equal to the enumeration number converted to a \msrcode{ptInteger} value. "
+@endPostF
+//example
+@example" "

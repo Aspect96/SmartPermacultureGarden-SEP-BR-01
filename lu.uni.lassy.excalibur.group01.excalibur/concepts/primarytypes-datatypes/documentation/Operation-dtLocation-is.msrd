@@ -7,10 +7,11 @@
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtLocation.is
 @description "
+indicates which values are considered of type \msrcode{dtLocation}.
  "
 //postFunctional descriptions
 @postF 
-" "
+" a value is considered as a valid value if the room number is equal or smaller than 4 and location is considered if equal or smaller to 4."
 @endPostF
 //example
 @example" "

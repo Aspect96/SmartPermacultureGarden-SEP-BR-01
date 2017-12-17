@@ -1,0 +1,17 @@
+/*
+@author Gaetan1991
+@date Sun Dec 17 23:58:54 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorType.is
+@description "
+indicates the conditions under which a \msrcode{etSensorType} value is valid.
+ "
+//postFunctional descriptions
+@postF 
+"there is no post condition since this operation will be called only on actual enumeration value. "
+@endPostF
+//example
+@example" "

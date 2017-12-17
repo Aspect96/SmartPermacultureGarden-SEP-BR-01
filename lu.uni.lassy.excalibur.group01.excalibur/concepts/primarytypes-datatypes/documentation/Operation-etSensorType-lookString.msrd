@@ -1,0 +1,17 @@
+/*
+@author Gaetan1991
+@date Sun Dec 17 23:59:58 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.etSensorType.lookString
+@description "
+specifies the \msrcode{dtString} value corresponding to an \msrcode{etSensorType} value.
+ "
+//postFunctional descriptions
+@postF 
+" he \msrcode{value} field of the returned \msrcode{dtString} value is equal to the enumeration literal converted to a \msrcode{ptString} value."
+@endPostF
+//example
+@example" "

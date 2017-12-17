@@ -7,10 +7,11 @@
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtPhAmount.is
 @description "
+indicates which values are considered of type \msrcode{dtPhAmount}.
  "
 //postFunctional descriptions
 @postF 
-" "
+"a value is considered as a valid value if the number is between 1 and 14. "
 @endPostF
 //example
-@example" "
+@example"7"

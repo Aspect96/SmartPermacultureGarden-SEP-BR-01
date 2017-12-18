@@ -7,7 +7,7 @@ import lu.uni.lassy.messir.libraries.calendar
 
 	Operation Model {
 
-		operation: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.sfAskForDiffrentSeed():ptBoolean{
+		operation: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.sfAskForDiffrentSeed(adtName:dtString,adtAmount:dtInteger):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
 		preP{let TheSystem: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState in
 				let TheActor: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener in
@@ -17,34 +17,28 @@ import lu.uni.lassy.messir.libraries.calendar
 				/* PreP01 */
 				and TheSystem.vpStarted = true	
 			}
-			
 			preF{
 				let TheSystem: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState in
 				let TheActor: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager in
 				let AllSeeds: Bag(lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed) in
 				self.rnActor.rnSystem = TheSystem
 				and self.rnActor = TheActor
-				/* PreF01 */
-				and TheSystem.rnSeeds->select(id.eq(AdtSeedNameD)) = AllSeeds
-				and AllSeeds->isEmpty() = true
+				and AllSeeds->exists(self.name <> adtName)
+				and adtAmount>0
+				
 				
 				/* PreF02 */
 				let TheResult:ptBoolean in
-				let amount: dtInteger in
-				if(amount>0)
+			
+				if(adtAmount>0)
 				then (TheResult = true)
       			else (TheResult = false)
       			endif
       			and result = TheResult
 				
-				/* PreF03*/
 				
-				let  name : dtString in
-				if(name.size()=0)
-				then(TheResult=false)
-				else(TheResult=True)
-				endif
-				and result= TheResult
+				
+				
 			}
 			
 			

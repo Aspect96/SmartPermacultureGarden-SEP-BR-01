@@ -51,10 +51,16 @@ Concept Model {
 		operation is() : ptBoolean
 	}
 	
-		
+	datatype dtRoom extends dtInteger{		
+	}
+	
+	datatype dtSector extends dtInteger{		
+	}
+	
+	
 	datatype dtLocation {
-		attribute Room: ptInteger
-		attribute sector: ptString
+		attribute Room: dtRoom
+		attribute sector: dtSector
 		operation is() : ptBoolean
 	}
 	

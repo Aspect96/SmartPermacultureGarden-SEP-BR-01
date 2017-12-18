@@ -1,0 +1,15 @@
+package lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.operations.classes.ctSeed.init {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init(AdtName:dtString, AdtNamount:dtInteger, AdtPhValue:lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtPhAmount, AdtVegtable:ptBoolean, AdtTemperaturepref:dtInteger):ptBoolean{
+	
+		
+		}
+	}
+}

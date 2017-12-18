@@ -1,0 +1,13 @@
+/*
+@author Gaetan1991
+@date Mon Dec 18 13:06:23 CET 2017
+*/
+
+
+@@view ManagingSeed
+@model Concept 
+@level Global
+@sublevel Primary Class
+@number 10
+@description "All related data types for managing the seeds "
+@caption "Data types for managing the seeds"

@@ -92,24 +92,7 @@ import lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
 		}
 	
-	use case system usergoal ugFillingGardnerSchedule() {
-		actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary,active]
-		
-		reuse sfChooseImportance[0..1]
-		
-	
-		step b: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager
-		executes sfChooseImportance()
-		
-		}
-	
-	use case system subfunction sfChooseImportance() {
-			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
-		}
-		
-		
-		
-		
+			
 		
 		
 	use case system subfunction sfRequestANewSensor(name:ptString,room:dtLocation,technicianName:ptString,reason:ptString) {
@@ -378,10 +361,10 @@ import lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes
 		step c: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
 		executes sfLoadTaskGardener()
 		}
-	use case system subfunction sfAddTask() {
+	use case system subfunction sfAddTask(date:lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate, id:ptInteger,importance:ptBoolean,taskDescription:ptString,taskname:ptString,worker:dtEmploye) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
 		}
-	use case system subfunction sfRemoveTask() {
+	use case system subfunction sfRemoveTask(id:ptInteger) {
 			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actManager[primary, active]
 		}
 	use case system subfunction sfLoadTaskGardener() {

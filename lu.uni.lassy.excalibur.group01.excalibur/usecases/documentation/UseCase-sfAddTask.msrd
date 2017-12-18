@@ -5,17 +5,21 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfAddTask
-@description ""
+@description "The function adds a task to the Schedule by creating a new instance of ctTask."
 @protocolCondition
 "
+The system is booted-up and the Manager is logged in. 
+The Manager needs to be on the Manage Technician Schedule or Manage Gardener Schedule screen.
 "
 @endProtocolConditions
 @preCondition
 "
+The manager has to provide a Task with an ID, taskName, taskDescription, date, importance and worker responsible for completing the task.
 "
 @endPreConditions
 @postCondition
 "
+A new instance of Task is created and added to the Schedule.
 "
 @endPostConditions
 @additionalInformation

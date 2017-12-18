@@ -8,14 +8,18 @@
 @description ""
 @protocolCondition
 "
+The system is booted-up and the Manager is logged in. 
+The Manager needs to be on the Manage Technician Schedule or Manage Gardener Schedule screen.
 "
 @endProtocolConditions
 @preCondition
 "
+The Manager has to select a task with a valid ID.
 "
 @endPreConditions
 @postCondition
 "
+The selected task is removed from the Schedule.
 "
 @endPostConditions
 @additionalInformation

@@ -73,11 +73,20 @@ Concept Model {
 			attribute caracter: dtString
 		}
 		
+		class ctTask role rnTask cardinality[0..*] {
+			attribute id: ptInteger
+			attribute taskName : ptString
+			attribute taskDescritpiton : ptString
+			attribute date : lu.uni.lassy.messir.libraries.calendar.dtDate
+			attribute importance: ptBoolean
+			attribute worker : dtEmploye
+			operation init(id:ptInteger, taskName:dtString, taskDescription:ptString, importance:ptBoolean, worker:dtEmploye) : ptBoolean
+		}
 		
-		
-		
-		
-
+		class ctSchedule role rnSchedule cardinality[1..1] {
+			attribute name: dtString
+			operation init(name:dtString) : ptBoolean
+		}	
 	}
 }
 }

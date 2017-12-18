@@ -24,14 +24,6 @@ Concept Model {
 		attribute value : ptInteger
 			}
 			
-	datatype dtTask {
-		attribute id: ptInteger
-		attribute taskName : ptString
-		attribute taskDescritpiton : ptString
-		attribute date : lu.uni.lassy.messir.libraries.calendar.dtDate
-		attribute importance: ptBoolean
-		attribute worker : dtEmploye
-			}
 	datatype dtEmploye{
 		attribute id : ptInteger
 		attribute firstName : ptString
@@ -57,7 +49,6 @@ Concept Model {
 		attribute idNumber : dtInteger
 		attribute idName: etSensorType
 		operation is() : ptBoolean
-		
 	}
 	
 		
@@ -90,9 +81,6 @@ Concept Model {
 		attribute value : ptReal
 		operation is() : ptBoolean
 	}
-	
-	
-		}
-	
+}	
 }
 }

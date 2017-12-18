@@ -11,16 +11,17 @@ lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician.outactTechnic
 //preProtocol descriptions
 @preP
 " The system is booted up and the technician needs to be on his home screen.
-In addition the technician needs to have done a request for a new sensor and this request should be accepeted
-from the manager"
+"
 @endPreP
 //preFunctional descriptions
 @preF
-" The request for a new sensor has to be accepted."
+"The technician needs to have done a request for a new sensor and this request should be accepted
+from the manager.
+The request for a new sensor has to be accepted."
 @endPreF
 //postFunctional descriptions
 @postF 
-"The sensors table is updated by removing the selected sensor from the sensor table."
+"The ctSensor array (rnCtSensors) has the specific sensor entry removed."
 @endPostF
 //postProtocol descriptions
 @postP 

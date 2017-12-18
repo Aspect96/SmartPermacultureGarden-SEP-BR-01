@@ -1,0 +1,8 @@
+/*
+@author Gaetan1991
+@date Mon Dec 18 21:13:01 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtRoom
+@description "used to identify the rooms using a ptInteger value."

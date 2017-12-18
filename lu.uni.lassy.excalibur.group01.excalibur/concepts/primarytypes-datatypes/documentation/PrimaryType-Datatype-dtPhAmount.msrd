@@ -9,7 +9,7 @@
 choice"
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtPhAmount.number
-"identifies the ph value of a seed"
+"used to identify the ph amount using a ptInteger value."
 @endAttributes
 @operation lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtIDSensor.is
 "

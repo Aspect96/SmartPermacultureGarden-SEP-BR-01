@@ -6,16 +6,16 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician.outactTechnician.oeCreateSystemAndEnvironment
-@description "The technician is in charge for starting the environment that means the system. So that
-all other actors/users can profit from the functionalities.
+@description "This is an operation that creates the initial state for the system.
+In addition this has to be satisfied if the different actors want to use the system.
  "
 //preProtocol descriptions
 @preP
-"There needs to be electricity. The sensors installed and switched on and correctly connected to the wifi."
+"no condition possible since this is the first step which needs to be done."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+" none since  it is a special Messir operation and no prefunction needed. "
 @endPreF
 //postFunctional descriptions
 @postF 
@@ -23,7 +23,7 @@ all other actors/users can profit from the functionalities.
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"the system protocol's boolean variable \msrcode{vpStarted} must be equal to true to define the status from which every other operation might be allowed to be called. "
 @endPostP
 //example
 @example" "

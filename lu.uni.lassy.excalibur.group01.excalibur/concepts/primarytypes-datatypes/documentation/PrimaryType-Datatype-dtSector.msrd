@@ -1,0 +1,8 @@
+/*
+@author Gaetan1991
+@date Mon Dec 18 21:15:36 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtSector
+@description "used to identify the Sector using a ptInteger value."

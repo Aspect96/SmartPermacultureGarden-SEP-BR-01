@@ -6,9 +6,10 @@ import lu.uni.lassy.messir.libraries.string
 import lu.uni.lassy.messir.libraries.calendar
 
 	Operation Model {
-
-		operation: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.sfModifyRetriveSeedAmount():ptBoolean{
-		preP {let TheSystem: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState in
+		operation: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.sfModifyRetriveSeedAmount(AdtName: dtString, AdtAmount: dtInteger):ptBoolean{
+		
+		preP {
+			let TheSystem: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState in
 				let TheActor: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener in
 				self.rnActor.rnSystem = TheSystem
 				and self.rnActor = TheActor
@@ -24,8 +25,8 @@ import lu.uni.lassy.messir.libraries.calendar
 	
 				
 				and AllSeeds->exists(self.name=adtName)
-				and adtAmount>0
-				and AllSeeds->any(self.name=adtName).amount>adtAmount
+				and AdtAmount>0
+				and AllSeeds->any(self.name=AdtName).amount>AdtAmount
 				
 				
 			}
@@ -36,7 +37,7 @@ import lu.uni.lassy.messir.libraries.calendar
 				self.rnActor.rnSystem = TheSystem
 				let AllSeed: Set(lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed) in
 				and self.rnActor = TheActor
-				AllSeed->any(self.name=adtName).amount@post = AllSeed->any(self.name=adtName).amount@pre-adtAmount
+				AllSeed->any(self.name=AdtName).amount@post = AllSeed->any(self.name=AdtName).amount@pre-AdtAmount
 				
 			}
 

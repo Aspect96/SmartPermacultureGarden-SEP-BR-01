@@ -5,12 +5,12 @@
 
 
 @@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState
-@description ""
+@description "is used to show the global state variable"
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState.vpStarted
-""
+"a protocol variable indicating if the \msriGreenhouse is started or not which is specific to the \msrmessir simulator. After system creation, there is always only one instance of this class."
 @endAttributes
 @operation
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState.init
-""
+"the \msrcode{all cts (ctCrop,ctSeed,ctSensor)} class introduces an \msrcode{init} operation as all primary class type for instance creation and initialization."
 @endOperations

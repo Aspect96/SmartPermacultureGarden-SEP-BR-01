@@ -1,0 +1,13 @@
+/*
+@author Marc
+@date Mon Dec 18 19:13:41 CET 2017
+*/
+
+
+@@view cm-Task
+@model Concept 
+@level Global
+@sublevel Primary Class
+@number 11
+@description "In this Concept view we show all the classes and datatypes conserning tasks"
+@caption "cm-Task"

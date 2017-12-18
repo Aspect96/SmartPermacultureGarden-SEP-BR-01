@@ -6,7 +6,7 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.oeLoadTaskGardener
-@description "This operations calls an instance of the type ctTask."
+@description "This operations calls an instance of the type ctTask for the gardener."
 //preProtocol descriptions
 @preP
 "The System needs to be booted up and ready. 
@@ -14,15 +14,15 @@ The Gardener has to be logged in and navigate to the Gardener Schedule Window."
 @endPreP
 //preFunctional descriptions
 @preF
-"PF1: An instance of ctTask must exist."
+"PF1: An instance of ctTask containing the Gardener must exist."
 @endPreF
 //postFunctional descriptions
 @postF 
-"The instance of ctTask with relation to the Gardener."
+"The instance of ctTask is provided to the Gardener."
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none"
 @endPostP
 //example
 @example" "

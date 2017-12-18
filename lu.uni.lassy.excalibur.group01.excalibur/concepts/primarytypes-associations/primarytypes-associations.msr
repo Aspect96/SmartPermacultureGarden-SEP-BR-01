@@ -15,7 +15,8 @@ import lu.uni.lassy.messir.libraries.string
 Concept Model {
 	
 	Primary Types {
-	
+		association relass lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSchedule(rnSchedule)[1..1] lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask(rnTask)[0..*]
+		
 	}
 }
 }

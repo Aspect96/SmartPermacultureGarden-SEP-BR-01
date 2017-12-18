@@ -6,23 +6,24 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician.outactTechnician.oeLoadTaskTechnician
-@description "
+@description "This operations calls an instance of the type ctTask for the technician.
  "
 //preProtocol descriptions
 @preP
-" "
+"The System needs to be booted up and ready. 
+The Gardener has to be logged in and navigate to the Gardener Schedule Window."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"PF1: An instance of ctTask related to the Gardener must exist."
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The instance of ctTask with relation to the Gardener."
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none"
 @endPostP
 //example
 @example" "

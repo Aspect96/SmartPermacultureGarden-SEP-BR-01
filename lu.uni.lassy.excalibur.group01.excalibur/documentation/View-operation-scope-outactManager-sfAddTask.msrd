@@ -1,0 +1,10 @@
+/*
+@author Marc
+@date Mon Dec 18 20:24:25 CET 2017
+*/
+
+
+@@view operation-scope-outactManager-sfAddTask
+@model Operation lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfAddTask 
+@description ""
+@caption ""

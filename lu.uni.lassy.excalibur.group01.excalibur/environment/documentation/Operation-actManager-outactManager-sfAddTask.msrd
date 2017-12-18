@@ -20,9 +20,7 @@ The Manager has to be logged in and navigate to the Manage Gardener Schedule or 
 @preF
 "PF3: The taskDescription must be of type dtString."
 @preF
-"PF4: The importance must be true or false."
-@preF
-"PF5: Must provide a valid Technician or Gardener"
+"PF4: Must provide a valid Technician or Gardener"
 @endPreF
 //postFunctional descriptions
 @postF 

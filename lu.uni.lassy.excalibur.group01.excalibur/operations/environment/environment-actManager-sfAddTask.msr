@@ -1,0 +1,59 @@
+package lu.uni.lassy.excalibur.group01.excalibur.environment.operations.actManager.outactManager.sfAddTask {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfAddTask():ptBoolean{
+	
+		// include below the specification information (pre,post or ocl or prolog)
+			preP{let TheSystem: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState in
+				let TheActor: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager in
+				self.rnActor.rnSystem = TheSystem
+				and self.rnActor = TheActor
+				
+				/* PreP01 */
+				and TheSystem.vpStarted = true
+				
+			}
+			preF{
+				let TheSystem: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState in
+				let TheActor: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager in
+				let AllTasks: Bag(lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask) in
+				self.rnActor.rnSystem = TheSystem
+				and self.rnActor = TheActor
+				/* PreF01 */
+				and TheSystem.rnCrops->select(id.eq(AdtCropID)) = AllTasks
+				and AllTasks->isEmpty() = true
+				
+				/* PreF02 */
+				let date: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate in
+				and date.is(AdtDate) = true
+				
+				/* PreF03 */
+				let taskDescription: dtString in
+				and taskDescription.is(AdtString) = true
+				
+				/* PreF04 */
+				let employe: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye in
+				and employe.is(AdtEmpoye) = true
+			}
+			
+			postF{let TheSystem: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState in
+				let TheManager: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager in
+				let newTask: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask in
+				self.rnActor.rnSystem = TheSystem
+				and self.rnActor = TheActor
+				/* PostF01 */
+				TheManager.init()
+				/* PostF02 */
+				and NewTask.init(AdtDate, AptInteger, AptBoolean, AptString, AptString, AdtEmploye)
+				/* PostF03 */
+				and TheSystem@post.rnTask = NewTask
+			}
+		}
+	}
+}

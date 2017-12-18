@@ -1,0 +1,10 @@
+/*
+@author Marc
+@date Mon Dec 18 20:35:21 CET 2017
+*/
+
+
+@@view operation-scope-outactManager-sfRemoveTask
+@model Operation lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfRemoveTask 
+@description "This is the operation view of the sfRemoveTask function."
+@caption "sfRemoveTask Operation Model"

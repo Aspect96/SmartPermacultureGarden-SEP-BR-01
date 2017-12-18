@@ -1,0 +1,10 @@
+/*
+@author Marc
+@date Mon Dec 18 20:34:32 CET 2017
+*/
+
+
+@@view operation-scope-outactManager-sfDelteCrop
+@model Operation lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfDelteCrop 
+@description ""
+@caption ""

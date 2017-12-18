@@ -1,0 +1,33 @@
+package lu.uni.lassy.excalibur.group01.excalibur.environment.operations.actGardener.outactGardener.oeLoadTaskGardener {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.oeLoadTaskGardener():ptBoolean{
+		// include below the specification information (pre,post or ocl or prolog)
+			preP {let TheSystem: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState in
+					let TheActor: lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener in
+					self.rnActor.rnSystem = TheSystem
+					and self.rnActor = TheActor
+					
+					/* PreP01 */
+					and TheSystem.vpStarted = true
+				}
+			preF{
+				let TheSystem: lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctState in
+				let TheActor: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager in
+				let AllTasks: Bag(lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask) in
+				self.rnActor.rnSystem = TheSystem
+				and self.rnActor = TheActor
+				/* PreF01 */
+				TheSystem.rnTask->select(employe.eq(AdtEmploye)) = AllTasks
+				and AllTasks->size().eq(1)
+				
+			}
+		}
+	}
+}

@@ -9,13 +9,13 @@ lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate.
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate.calculateDays.date1
-""
+"calculates the first date"
 @parameter
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate.calculateDays.date2
-""
+" calculation of the second date"
 @endParameters
 
-@description "
+@description "allows to calculate the given date with both dates.
  "
 //postFunctional descriptions
 @postF 

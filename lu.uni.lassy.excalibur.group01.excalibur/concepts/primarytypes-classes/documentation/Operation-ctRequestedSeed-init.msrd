@@ -1,0 +1,25 @@
+/*
+@author Gaetan1991
+@date Tue Dec 19 19:46:47 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSeed.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSeed.init.AdtName
+"describes the name of the given seed with the parameter AdtName"
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSeed.init.AdtAmount
+"describes the amount of seeds requested with the parameter AdtAmount"
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctRequestedSeed type. "
+//postFunctional descriptions
+@postF 
+"true iff the system post state includes the current object as a new ctRequestedSeed instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

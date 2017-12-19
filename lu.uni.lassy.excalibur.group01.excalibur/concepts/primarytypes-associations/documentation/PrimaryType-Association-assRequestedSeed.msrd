@@ -1,0 +1,8 @@
+/*
+@author Gaetan1991
+@date Tue Dec 19 20:05:29 CET 2017
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.associations.assRequestedSeed
+@description "is the association between ctRequestSeet and ctSeed"

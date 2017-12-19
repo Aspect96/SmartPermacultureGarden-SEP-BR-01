@@ -1,0 +1,22 @@
+/*
+@author Gaetan1991
+@date Tue Dec 19 19:58:51 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSchedule.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSchedule.init.name
+"initializes the name"
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctSchedule type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctSchedule instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

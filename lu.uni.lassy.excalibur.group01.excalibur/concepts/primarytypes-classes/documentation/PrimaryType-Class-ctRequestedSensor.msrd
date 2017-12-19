@@ -1,0 +1,22 @@
+/*
+@author Gaetan1991
+@date Tue Dec 19 19:25:06 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSensor
+@description "this ctClass represents all the sensors requested by the technician"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSensor.idSensor
+"is the identification of the sensor"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSensor.Reason
+"is the reason of type dtString why a given sensor needs to be replaced"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSensor.room
+"indicates for which room the sensor needs to be replaced"
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSensor.init
+"initializes the sensor requested by the technician"
+@endOperations

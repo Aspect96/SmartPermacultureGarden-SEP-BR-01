@@ -6,7 +6,7 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfAddCrop
-@description "
+@description "allows the manager to add a specific crop to ctCrop
  "
 //preProtocol descriptions
 @preP

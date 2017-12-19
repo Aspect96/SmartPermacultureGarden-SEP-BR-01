@@ -1,0 +1,19 @@
+/*
+@author Gaetan1991
+@date Tue Dec 19 19:23:23 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSeed
+@description "Describes all the seeds which where requested by the gardener"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSeed.name
+"describes the name of the seed"
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSeed.amount
+"describes the amount requested for the specific seed"
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSeed.init
+"initializes the requested seed"
+@endOperations

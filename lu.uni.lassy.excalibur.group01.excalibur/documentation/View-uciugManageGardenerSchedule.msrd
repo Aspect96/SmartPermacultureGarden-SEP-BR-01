@@ -6,5 +6,6 @@
 
 @@view uciugManageGardenerSchedule
 @instance Use-Case usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule 
-@description ""
-@caption ""
+@description "Displays an instance where the manager describes a normal path to manage the schedule from the gardener"
+@caption "Managing the gardener schedule"
+@scale 0.75

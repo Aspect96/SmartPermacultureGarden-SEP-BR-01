@@ -1,0 +1,28 @@
+/*
+@author Gaetan1991
+@date Tue Dec 19 19:50:11 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSensor.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSensor.init.idSensor
+"is the identification number of the given sensor"
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSensor.init.Reason
+"describes a reason why this sensor should be replaced "
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctRequestedSensor.init.room
+"describes the room number where the sensor needs to be replaced with"
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctRequestedSensor type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctRequestedSensor instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

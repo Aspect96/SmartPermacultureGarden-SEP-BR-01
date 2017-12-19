@@ -404,6 +404,12 @@ import lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes
 		executes sfDeleteRoom()
 		
 		}
+	use case system subfunction sfAskForASuggestion() {
+			actor lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener[primary, active]
+			 returned messages {
+        ieMessageSuggestion() returned to lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener
+		}
+		}
 	}
 
 }

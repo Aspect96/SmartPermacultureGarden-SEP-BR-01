@@ -6,23 +6,23 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician.outactTechnician.oeLogout
-@description "
+@description "the technician needs to log him self out after every workday.
  "
 //preProtocol descriptions
 @preP
-" "
+" The system is started and the vpState is on true."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+" None"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"The technician has now quit the functionalities of the system."
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"None"
 @endPostP
 //example
 @example" "

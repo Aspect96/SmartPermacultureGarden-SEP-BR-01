@@ -5,9 +5,10 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.oeLogin
-@description ""
+@description "describes the login , the give actor to access their functionalities"
 @protocolCondition
 "
+the system needs to be up and running the vpstarted variable needs to be on true.
 "
 @endProtocolConditions
 @preCondition

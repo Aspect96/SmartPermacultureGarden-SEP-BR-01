@@ -5,17 +5,18 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule
-@description ""
+@description "summary describes multiple usergoals to manage the schedule"
 @protocolCondition
 "
+the system needs to be booted up and the vpstarted variable is set on true
 "
 @endProtocolConditions
 @preCondition
-"
+"none
 "
 @endPreConditions
 @postCondition
-"
+"none
 "
 @endPostConditions
 @additionalInformation

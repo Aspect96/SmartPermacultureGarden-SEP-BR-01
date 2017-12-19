@@ -5,4 +5,4 @@
 
 
 @@Instance Use Case usecases.uciugManageGardenerSchedule.uciugManageGardenerSchedule
-@description ""
+@description "describes an instance where the manager can schedule the gardener (give him tasks)"

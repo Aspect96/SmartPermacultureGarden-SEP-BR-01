@@ -1,0 +1,8 @@
+/*
+@author Gaetan1991
+@date Tue Dec 19 20:06:00 CET 2017
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.associations.assCtCropCtCropStatistics
+@description "is the association between the ctCrops and ctCropsStatisics"

@@ -5,7 +5,7 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.suRequestItem
-@description ""
+@description "summary of multiple user goals and functions to describe a request"
 @protocolCondition
 "
 "

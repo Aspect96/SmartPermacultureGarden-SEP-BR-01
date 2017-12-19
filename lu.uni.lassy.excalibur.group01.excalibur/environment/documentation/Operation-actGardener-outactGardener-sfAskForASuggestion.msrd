@@ -1,0 +1,30 @@
+/*
+@author Gaetan1991
+@date Tue Dec 19 19:05:06 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.sfAskForASuggestion
+@description "
+the gardener can request help to the system where to place a given seed.With help of the parameter name
+entered by him. 
+ "
+//preProtocol descriptions
+@preP
+" the system needs to be booted up and initialized and the variable from ctState needs to be true."
+@endPreP
+//preFunctional descriptions
+@preF
+" the seed needs to be in the ctSeed (array rnSeeds) ."
+@endPreF
+//postFunctional descriptions
+@postF 
+"a message is displayed which suggest the room where the seed entered as parameter needs to be placed."
+@endPostF
+//postProtocol descriptions
+@postP 
+"None "
+@endPostP
+//example
+@example" "

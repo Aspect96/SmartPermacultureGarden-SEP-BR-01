@@ -5,26 +5,37 @@
 
 
 @@Primary Type Datatype lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye
-@description ""
+@description "the dataType dtEmplye describes all the personal information of an employee like the address and phone number"
+
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.id
-""
+"every employee possesses a specific identification number"
+
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.firstName
-""
+"describes the name of the employee"
+
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.lastName
-""
+"is the last name of the employee"
+
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.houseNumber
-""
+"the house number where the given employee lives"
+
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.street
-""
+"indicates the street where the given employee"
+
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.city
-""
+"gives the city where the employee lives"
+
 @attribute
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.phoneNumer
-""
+"is the phone number of the employee"
+
 @endAttributes
+@operation lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.is
+" describes if the attribute are incorrect format (checker)"
+@endOperations

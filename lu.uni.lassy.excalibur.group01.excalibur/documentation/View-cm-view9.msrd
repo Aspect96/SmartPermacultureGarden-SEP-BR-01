@@ -11,3 +11,5 @@
 @number 9
 @description "Here we see all functions, class types and attributes that at associated to crop instance."
 @caption "cm-Crop shows the concept model of a crop instance in relation to ctState"
+@scale 0.75 
+@orientation Landscape

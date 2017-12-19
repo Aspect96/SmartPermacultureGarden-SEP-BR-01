@@ -1,27 +1,25 @@
 /*
 @author Gaetan1991
-@date Wed Dec 13 14:16:59 CET 2017
+@date Tue Dec 19 19:18:08 CET 2017
 */
 
 
 @@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed
-@description "used to represent the seeds used by humans."
+@description "Is the class which represents all the seeds specifically buy given them specific attributes."
 @attribute
-lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.name
-"identification of the seed"
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.AdtName
+"describes the name of the seed"
 @attribute
-lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.amount
-"used to set a given number of seeds "
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.AdtAmount
+"describes the amount of a (specific ) seed left"
 @attribute
-lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.phAmount
-"a seed has his ph-amount for perfect growing"
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.AdtPhAmount
+"describes the favorite ph value of the given seed "
 @attribute
-lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.temperaturePreference
-"is used to set the temperature preference for a given seed."
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.AdtTemperaturePreference
+"describes the temperature preference of the given seed"
 @endAttributes
-
-@operation lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init
-"
-the \msrcode{ctSeed} class introduces an operation for instance creation and initialization.
-"
+@operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed.init
+"allows to initialize the given seeds"
 @endOperations

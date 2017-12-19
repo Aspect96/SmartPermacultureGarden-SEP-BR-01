@@ -9,13 +9,14 @@ lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropSta
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropStatistics.calculateAverageWeight.noOfPlants
-""
+"gives the number of plants (to calculate for the average)"
 @parameter
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropStatistics.calculateAverageWeight.weight
-""
+"is the weight of the different plants(crops)"
 @endParameters
 
 @description "
+Calculates the average weight harverdet for the different crops.
  "
 //postFunctional descriptions
 @postF 

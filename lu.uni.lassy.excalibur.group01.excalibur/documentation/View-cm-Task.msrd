@@ -11,3 +11,5 @@
 @number 11
 @description "In this Concept view we show all the classes and datatypes conserning tasks"
 @caption "cm-Task"
+@scale 0.75 
+@orientation Landscape

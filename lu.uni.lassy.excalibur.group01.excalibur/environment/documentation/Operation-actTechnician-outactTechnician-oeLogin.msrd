@@ -6,23 +6,23 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actTechnician.outactTechnician.oeLogin
-@description "
+@description "Before the technician can use his functionalities he needs to log in.
  "
 //preProtocol descriptions
 @preP
-" "
+" the system is running th vpstarted variable needs to be on true."
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+" None since it is the first stop to do before the technician can use his functionalities"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+" The technician is logged and can use his functionalities"
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"None"
 @endPostP
 //example
 @example" "

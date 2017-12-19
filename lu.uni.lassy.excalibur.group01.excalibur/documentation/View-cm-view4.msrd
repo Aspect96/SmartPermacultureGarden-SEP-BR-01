@@ -13,3 +13,5 @@
 Since the sensors is a small part of the system ,we can show in this local view, 
  all the necessary types associated to the sensors."
 @caption "Overview of the types assigned to a sensor."
+@scale 0.75 
+@orientation Landscape

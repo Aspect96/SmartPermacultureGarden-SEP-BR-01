@@ -7,6 +7,7 @@
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtCropID.is
 @description "
+checks if the cropID is not already used.
  "
 //postFunctional descriptions
 @postF 

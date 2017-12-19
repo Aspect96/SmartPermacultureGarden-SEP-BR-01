@@ -8,3 +8,5 @@
 @model Operation lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfRemoveTask 
 @description "This is the operation view of the sfRemoveTask function."
 @caption "sfRemoveTask Operation Model"
+@scale 0.75 
+@orientation Landscape

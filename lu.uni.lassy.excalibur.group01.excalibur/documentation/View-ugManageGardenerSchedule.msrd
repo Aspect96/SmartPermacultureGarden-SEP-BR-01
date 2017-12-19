@@ -6,5 +6,5 @@
 
 @@view ugManageGardenerSchedule
 @model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule 
-@description ""
-@caption ""
+@description "is the goal where the manager wants to schedule the workload of the gardener"
+@caption "Manager goal for the work schedule of the gardener"

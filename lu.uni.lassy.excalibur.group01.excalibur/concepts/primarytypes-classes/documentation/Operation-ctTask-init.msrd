@@ -1,0 +1,34 @@
+/*
+@author Gaetan1991
+@date Tue Dec 19 19:47:58 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask.init.id
+"is the identification code to identify the task"
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask.init.taskName
+"describes the task name"
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask.init.taskDescription
+"is a description of a task which needs to be done"
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask.init.importance
+"describes  the importance of an task"
+@parameter
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask.init.worker
+"describes for which person this task is asseigned to."
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the ctTask type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctTask instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

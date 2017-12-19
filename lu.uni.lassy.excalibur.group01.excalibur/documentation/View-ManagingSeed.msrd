@@ -10,4 +10,6 @@
 @sublevel Primary Class
 @number 10
 @description "All related data types for managing the seeds "
-@caption "Data types for managing the seeds"
+@caption "Operation VIEW! Data types for managing the seeds"
+@scale 0.75 
+@orientation Landscape

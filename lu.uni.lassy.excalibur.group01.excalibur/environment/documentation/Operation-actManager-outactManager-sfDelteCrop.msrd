@@ -6,7 +6,7 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfDelteCrop
-@description "
+@description "the manager has the ability to remove a given crop
  "
 //preProtocol descriptions
 @preP

@@ -5,17 +5,17 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugAddANewSensorToTheRoom
-@description ""
+@description "adds a new sensor the a specific room"
 @protocolCondition
-"
+"the system needs to be booted up the vpstarted variable from ctState needs to be set on true
 "
 @endProtocolConditions
 @preCondition
-"
+"the request for a sensor to the manager needs to be done and the manager should have approved this replacement
 "
 @endPreConditions
 @postCondition
-"
+"none
 "
 @endPostConditions
 @additionalInformation

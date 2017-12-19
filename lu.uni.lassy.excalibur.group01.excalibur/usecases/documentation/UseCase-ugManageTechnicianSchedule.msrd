@@ -5,17 +5,18 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageTechnicianSchedule
-@description ""
+@description "the managers goal is to schedule the work of the technician"
 @protocolCondition
-"
+"none
 "
 @endProtocolConditions
 @preCondition
-"
+"the system needs to be booted up and the vpState needs to be set on true
 "
 @endPreConditions
 @postCondition
 "
+the technician has now a new task schedule assigned to him.
 "
 @endPostConditions
 @additionalInformation

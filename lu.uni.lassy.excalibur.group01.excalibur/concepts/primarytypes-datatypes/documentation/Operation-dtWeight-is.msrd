@@ -6,7 +6,7 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtWeight.is
-@description "
+@description "checks if the weight of the crop is valid (not negative).
  "
 //postFunctional descriptions
 @postF 

@@ -7,10 +7,11 @@
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtEmploye.is
 @description "
+checks if every attribute(parameter) is write 
  "
 //postFunctional descriptions
 @postF 
-" "
+"The system needs to be booted up and vpstarded needs to be on true."
 @endPostF
 //example
 @example" "

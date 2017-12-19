@@ -9,17 +9,18 @@ lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropSta
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropStatistics.calculateAverageWeightGainPerDay.days
-""
+"the calculation is based on a given date for the weight (describes the date)."
 @parameter
 lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropStatistics.calculateAverageWeightGainPerDay.weight
-""
+"describes the average weight this means a given weight of a crops (or more) can be calculated for the specific date"
 @endParameters
 
 @description "
+the calculation of weight gained crops per day.
  "
 //postFunctional descriptions
 @postF 
-" "
+" none"
 @endPostF
 //example
-@example" "
+@example""

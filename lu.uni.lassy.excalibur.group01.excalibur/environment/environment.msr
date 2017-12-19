@@ -37,11 +37,13 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			operation ieLoadedTask():ptBoolean
 			operation ieRequestHasBeenSend():ptBoolean
 			operation ieSuccessfullyRetrivedSeedsFromInventory():ptBoolean
+			operation ieMessageSuggestion():ptBoolean
 			}
 			output interface outactGardener {
 			operation oeLoadTaskGardener():ptBoolean
 			operation sfAskForDiffrentSeed(AdtName:dtString,AdtAmount:dtInteger):ptBoolean
 			operation sfModifyRetriveSeedAmount(AdtName:dtString,AdtAmount:dtInteger):ptBoolean
+			operation sfAskForASuggestion():ptBoolean
 			}
 		}
 	

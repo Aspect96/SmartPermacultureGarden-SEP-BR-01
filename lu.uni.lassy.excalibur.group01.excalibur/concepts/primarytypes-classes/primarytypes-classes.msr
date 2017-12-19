@@ -60,6 +60,13 @@ Concept Model {
 			operation init( AdtName:dtString,AdtAmount:dtInteger) : ptBoolean
 		}
 		
+		class ctRequestedSensor role rnRequestedSensor cardinality[0..*] {
+			attribute idSensor : dtIDSensor
+			attribute Reason : dtString
+			attribute room: dtRoom
+			operation init( idSensor:dtIDSensor,Reason:dtString,room:dtRoom) : ptBoolean
+		}
+		
 		
 		
 		

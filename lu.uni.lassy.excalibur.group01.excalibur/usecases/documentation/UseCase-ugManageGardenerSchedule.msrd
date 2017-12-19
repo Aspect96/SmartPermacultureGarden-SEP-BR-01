@@ -5,17 +5,19 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group01.excalibur.usecases.ugManageGardenerSchedule
-@description ""
+@description "describes a user goal to manage the gardener schedule"
 @protocolCondition
-"
+"the system needs to be booted up and the variable vpState needs to be set one true
 "
 @endProtocolConditions
 @preCondition
 "
+none
 "
 @endPreConditions
 @postCondition
 "
+the gardener has a specific task to do
 "
 @endPostConditions
 @additionalInformation

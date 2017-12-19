@@ -1,0 +1,29 @@
+/*
+@author Gaetan1991
+@date Tue Dec 19 19:00:03 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group01.excalibur.usecases.sfAskForASuggestion
+@description "The gardener asks for a suggestion with the parameter seedName and the system returns a the 
+room where it should be placed."
+@protocolCondition
+"
+The system needs to be booted up and running the vpstarted variable needs to be set on true.In addition
+the parameter name should be in the ctSeeds (array).
+"
+@endProtocolConditions
+@preCondition
+"
+None
+"
+@endPreConditions
+@postCondition
+"
+The system displays a message where the given seeds needs to be placed.
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

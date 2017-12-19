@@ -8,3 +8,5 @@
 @model Operation lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfAddCrop 
 @description "Shows the concept model elements in the scope of the sfAddCrop operation"
 @caption "sfAddCrop operation scope"
+@scale 0.75 
+@orientation Landscape

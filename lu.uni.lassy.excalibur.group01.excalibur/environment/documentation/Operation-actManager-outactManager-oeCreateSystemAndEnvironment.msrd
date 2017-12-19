@@ -7,22 +7,23 @@
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.oeCreateSystemAndEnvironment
 @description "
+the manager or the technician need to do this first before they can benefit from the systems functionalities
  "
 //preProtocol descriptions
 @preP
-" "
+" none since there is no system available or running"
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+" none"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+" the system is running and the variable ctState is set on true"
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+" none"
 @endPostP
 //example
 @example" "

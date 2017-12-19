@@ -26,7 +26,7 @@ import lu.uni.lassy.messir.libraries.calendar
 				self.rnActor.rnSystem = TheSystem
 				and self.rnActor = TheActor
 				/* PreF01 */
-				and TheSystem.rnCrops->select(id.eq(AdtCropID)) = AllTasks
+				and TheSystem.rnTask->select(id.eq(AID)) = AllTasks
 				and AllTasks->isEmpty() = true
 				
 				/* PreF02 */

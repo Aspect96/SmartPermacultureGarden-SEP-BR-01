@@ -1,0 +1,8 @@
+/*
+@author Marc
+@date Tue Dec 19 15:14:04 CET 2017
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.associations.assAddTask
+@description "This represents the association between instances of ctSchedule and ctTask. "

@@ -6,5 +6,5 @@
 
 @@view operation-scope-outactManager-sfAddTask
 @model Operation lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfAddTask 
-@description ""
-@caption ""
+@description "This is the operation scope of the subfunction AddTask outgoing from the manager."
+@caption "operation-scope-outactManager-sfAddTask"

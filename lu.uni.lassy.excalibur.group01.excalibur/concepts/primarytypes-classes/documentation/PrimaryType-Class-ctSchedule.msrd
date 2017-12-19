@@ -1,0 +1,16 @@
+/*
+@author Marc
+@date Tue Dec 19 17:36:16 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSchedule
+@description "This is class for the schedule"
+@attribute 
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSchedule.name
+"This is the name of the Schedule"
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSchedule.init
+"This initializes the schedule"
+@endOperations

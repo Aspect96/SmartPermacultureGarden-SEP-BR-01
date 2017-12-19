@@ -6,5 +6,5 @@
 
 @@view suManageSchedule
 @model Use-Case lu.uni.lassy.excalibur.group01.excalibur.usecases.suManageSchedule 
-@description ""
-@caption ""
+@description "This is the summary for of the usergoals for managing the schedule."
+@caption "suManageSchedule"

@@ -1,0 +1,31 @@
+/*
+@author Marc
+@date Tue Dec 19 17:38:34 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask
+@description "This is class type for a task, it contains information like date, task description and the preson reponsible."
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask.id
+"This is the identification number of the task."
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask.taskName
+"This is the name of the task."
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask.taskDescritpiton
+"This is a brief description of the task."
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask.date
+"This is the date at which the task will be performed."
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask.importance
+"This will indicate if the task is to be prioritized or not."
+@attribute
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask.worker
+"This is all the information about the person that will perfom the task."
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask.init
+"This initializes the task instance."
+@endOperations

@@ -6,16 +6,17 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfRemoveTask
-@description "
+@description "This function will remove a task from the schedule.
  "
 //preProtocol descriptions
 @preP
-"The System needs to be booted up and ready. 
-The Manager has to be logged in and navigate to the Manage Gardener Schedule or Manage Technician Schedule Window."
+"The System needs to be booted up and ready."
+@preP
+"The Manager has to be logged in and navigate to the Manage Gardener Schedule or Manage Technician Schedule Window."
 @endPreP
 //preFunctional descriptions
 @preF
-"PF1: The id provided must be part of a task instance."
+"The id provided must be part of a task instance."
 @endPreF
 //postFunctional descriptions
 @postF 

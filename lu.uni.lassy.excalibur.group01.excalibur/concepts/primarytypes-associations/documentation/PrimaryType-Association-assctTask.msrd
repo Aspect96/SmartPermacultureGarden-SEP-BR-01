@@ -1,0 +1,8 @@
+/*
+@author Marc
+@date Tue Dec 19 17:45:17 CET 2017
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.associations.assctTask
+@description "This is the association between schedule and class allowing managing all intances of ctTask."

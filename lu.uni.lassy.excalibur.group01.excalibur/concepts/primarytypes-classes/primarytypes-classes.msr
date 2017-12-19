@@ -52,6 +52,18 @@ Concept Model {
 			operation init(id:dtCropID, datePlanted:lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate, dateHarvested:lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtDate, weight:dtWeight, noOfPlants:dtInteger, plantName:dtString) : ptBoolean
 		}
 		
+		
+		class ctRequestedSeed role rnRequestedSeed cardinality[0..*] {
+			attribute name : dtString
+			attribute amount : dtInteger
+	
+			operation init( AdtName:dtString,AdtAmount:dtInteger) : ptBoolean
+		}
+		
+		
+		
+		
+		
 		class ctCropStatistics role rnCropStatistics cardinality [0..*] {
 			operation calculateAverageWeight(noOfPlants:dtInteger, weight:dtWeight) : ptReal
 			operation calculateAverageWeightGainPerDay(days:ptInteger, weight:dtWeight) : ptReal

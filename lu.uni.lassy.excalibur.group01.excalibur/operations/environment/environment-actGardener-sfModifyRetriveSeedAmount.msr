@@ -26,7 +26,7 @@ import lu.uni.lassy.messir.libraries.calendar
 				
 				and AllSeeds->exists(self.name=adtName)
 				and AdtAmount>0
-				and AllSeeds->any(self.name=AdtName).amount>AdtAmount
+				and AllSeeds->one((self.name=AdtName).amount >= AdtAmount)
 				
 				
 			}
@@ -37,7 +37,7 @@ import lu.uni.lassy.messir.libraries.calendar
 				self.rnActor.rnSystem = TheSystem
 				let AllSeed: Set(lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSeed) in
 				and self.rnActor = TheActor
-				AllSeed->any(self.name=AdtName).amount@post = AllSeed->any(self.name=AdtName).amount@pre-AdtAmount
+				AllSeed->any(self.name=AdtName).amount@post = AllSeed->any(self.name=AdtName).amount@pre - AdtAmount
 				
 			}
 

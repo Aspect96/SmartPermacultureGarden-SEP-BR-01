@@ -16,11 +16,11 @@ The Manager has to be logged in.
 "
 @endPreP
 //preFunctional descriptions
-@preF "PF1: The Id must be unique."
-@preF "PF2: The date must be in a date format for the date harvested and planted."
-@preF "PF3: The number of plants must be higher than 0."
-@preF "PF4: The weight must be higher than 0."
-@preF "PF5: The name of the plant must not be empty"
+@preF "The Id must be unique."
+@preF "The date must be in a date format for the date harvested and planted."
+@preF "The number of plants must be higher than 0."
+@preF "The weight must be higher than 0."
+@preF "The name of the plant must not be empty"
 
 @endPreF
 //postFunctional descriptions

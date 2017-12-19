@@ -7,7 +7,7 @@ import lu.uni.lassy.messir.libraries.calendar
 
 	Operation Model {
 
-		operation: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfSortRequestByAmount(id:dtIDSensor):ptBoolean{
+		operation: lu.uni.lassy.excalibur.group01.excalibur.environment.actManager.outactManager.sfSortRequestByAmount(id:lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes.dtIDSensor):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
 
 		}

@@ -15,12 +15,13 @@ In addition the technician needs to be on he's home screen."
 @endPreP
 //preFunctional descriptions
 @preF
-"The sensors table needs to have at least one entry inside the table."
+"
+The ctSensors (rnCtSensors) needs at least one entry.
+"
 @endPreF
 //postFunctional descriptions
 @postF 
-"The table is categorized by type.The sensors from the selected type are displayed and the 
-non selected categorized sensor are hidden."
+"The table(rnCtSensor) of ctSensor are categorized by type."
 @endPostF
 //postProtocol descriptions
 @postP 

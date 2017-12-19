@@ -4,8 +4,21 @@
 */
 
 
+
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.sfAskForDiffrentSeed
+
+
+@parameter lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.sfAskForDiffrentSeed.AdtAmount
+"
+the amount of seeds asked.
+"
+@parameterlu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.sfAskForDiffrentSeed.AdtName
+"describes the name of the seed"
+@endParameters
+
+
+
 @description "
 The gardener has the ability to request a new Seed which isn't already in the storage.
  "
@@ -19,19 +32,23 @@ The gardener needs to be on he's home screen.
 @preF
 "
 It is supposed that the requested/ask seed isn't already in the inventory.
-In addition the asked seed needs to be NOT already in the seeds storage."
+"
+@preF
+"
+In addition the asked seed needs to be NOT already in the seeds storage.
+"
 @endPreF
 //postFunctional descriptions
 
 @postF 
-"PF1: The request has been send and a the request table for seeds 
-have been updated by adding the values of the requested seed. 
+"
+The instance of ctSeed is provided to the Manager.
 "
 @endPostF
 //postProtocol descriptions
 
 @postP 
-"The manager has now the ability to accept or decline such a request."
+"None"
 @endPostP
 //example
 @example" "

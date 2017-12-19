@@ -20,8 +20,9 @@ and need's to be on his home screen."
 @endPreF
 //postFunctional descriptions
 @postF 
-"PF1:The request has been send to the manager request sensor table by adding the values to the table.
-PF2:The manager has now the possibility to accept or decline such a request."
+"the request has been send to the manager request sensor table by adding the values to the table.
+"
+
 @endPostF
 //postProtocol descriptions
 @postP 

@@ -6,6 +6,16 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.sfModifyRetriveSeedAmount
+
+@parameter lu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.sfModifyRetriveSeedAmount.AdtAmount
+"
+describes the amount of seed retrieved.
+"
+@parameterlu.uni.lassy.excalibur.group01.excalibur.environment.actGardener.outactGardener.sfAskForDiffrentSeed.AdtName
+"describes the name of the seed"
+@endParameters
+
+
 @description "
 The gardener retrieves a given amount of a specific seed from the seeds inventory.
  "
@@ -22,9 +32,11 @@ The amount of retrieving seeds can not exceed the available left. "
 @endPreF
 //postFunctional descriptions
 @postF 
-"PF1: The retrieved amount of the selected seed are deducted from the current value of seed.
-PF2: The current value is updated.
-PF3: The request seed table is updated with the amount of seeds previously retrieved."
+"PF1: The amount of this specific seed is deducted from the ctSeed amount."
+@postF 
+"
+PF2: The ctSeed amount of this specific seed  is updated.
+"
 @endPostF
 //postProtocol descriptions
 @postP 

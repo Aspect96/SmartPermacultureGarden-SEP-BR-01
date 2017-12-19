@@ -27,7 +27,7 @@ import lu.uni.lassy.messir.libraries.calendar
 				and adtAmount>0
 				
 				
-				/* PreF02 */
+				/* PreF01 */
 				let TheResult:ptBoolean in
 			
 				if(adtAmount>0)

@@ -19,7 +19,7 @@ on his home screen. "
 @endPreF
 //postFunctional descriptions
 @postF 
-"The sensor table is updated with the new sensor with the given values entered by the technician."
+"The ctSensor gets a new entry."
 @endPostF
 //postProtocol descriptions
 @postP 

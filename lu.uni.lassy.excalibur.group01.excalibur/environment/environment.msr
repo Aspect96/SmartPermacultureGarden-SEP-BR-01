@@ -9,7 +9,7 @@ import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
-
+import lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.datatypes
 
 
 Environment Model {
@@ -22,10 +22,10 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			operation ieDisplaySensorByCategory():ptBoolean
 			}
 			output interface outactTechnician {
-			operation sfRequestANewSensor():ptBoolean
-			operation sfAddANewSensor():ptBoolean
-			operation sfRemoveSensorFromSensorList():ptBoolean
-			operation sfFilterBySensorName():ptBoolean
+			operation sfRequestANewSensor(id:dtCropID,room:dtRoom,reason:dtString):ptBoolean
+			operation sfAddANewSensor(id:dtIDSensor,location:dtLocation,type:etSensorType,update:etSensorUpdate):ptBoolean
+			operation sfRemoveSensorFromSensorList(id:dtIDSensor):ptBoolean
+			operation sfFilterBySensorName(type:etSensorType):ptBoolean
 			operation oeLoadTaskTechnician():ptBoolean
 			operation oeCreateSystemAndEnvironment():ptBoolean
 			operation oeLogin():ptBoolean
@@ -40,8 +40,8 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 			}
 			output interface outactGardener {
 			operation oeLoadTaskGardener():ptBoolean
-			operation sfAskForDiffrentSeed():ptBoolean
-			operation sfModifyRetriveSeedAmount():ptBoolean
+			operation sfAskForDiffrentSeed(AdtName:dtString,AdtAmount:dtInteger):ptBoolean
+			operation sfModifyRetriveSeedAmount(AdtName:dtString,AdtAmount:dtInteger):ptBoolean
 			}
 		}
 	
@@ -59,11 +59,11 @@ actor actTechnician role rnactTechnician cardinality[0 .. *] {
 				operation sfDelteCrop():ptBoolean
 				operation sfAddTask():ptBoolean
 				operation sfRemoveTask():ptBoolean
-			operation sfAcceptADiffrentSeed():ptBoolean
-			operation sfAddSeedToTheInventory():ptBoolean
-			operation sfSortRequestByAmount():ptBoolean
-			operation sfSortByAmountRequest():ptBoolean
-			operation sfAcceptRequestForNewSensor():ptBoolean
+			operation sfAcceptADiffrentSeed(id:dtString):ptBoolean
+			operation sfAddSeedToTheInventory(id:dtString,amount:dtInteger,phAmount:dtPhAmount,temperaturePref:dtInteger):ptBoolean
+			operation sfSortRequestByAmount(id:dtIDSensor):ptBoolean
+			operation sfSortByAmountRequest(id:dtIDSensor):ptBoolean
+			operation sfAcceptRequestForNewSensor(id:dtIDSensor):ptBoolean
 			}
 		}
 	actor actUser role rnactUser cardinality[0 .. *] {

@@ -16,7 +16,7 @@ Concept Model {
 	
 	Primary Types {
 		association assAddTask lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctSchedule(rnSchedule)[1..1] lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctTask(rnTask)[0..*]
-		association assCtCrop lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropStatistics(rnCropStatistics)[1..1] lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCrop(rnCrops)[0..*]
+		association assCtCropCtCropStatistics lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCropStatistics(rnCropStatistics)[1..1] lu.uni.lassy.excalibur.group01.excalibur.concepts.primarytypes.classes.ctCrop(rnCrops)[0..*]
 		association assRequestedSeed ctSeed(rnSeed)[1..1] ctRequestedSeed(rnRequestedSeed)[0..*]
 	}
 }
